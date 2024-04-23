@@ -1,0 +1,284 @@
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.exe
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.deps.json
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Alterar.resources
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Cadastrar.resources
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Consultar.resources
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Excluir.resources
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Login.resources
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfo.cs
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinFormsApp1.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CopyComplete
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastroPessoa.resources
+D:\projetos\C#\aulaTopicos\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Menu.resources
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.exe
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.deps.json
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Alterar.resources
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Cadastrar.resources
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastroPessoa.resources
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Consultar.resources
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Excluir.resources
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Login.resources
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Menu.resources
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CopyComplete
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinFormsApp1.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
+C:\Users\claud\Downloads\Gerenciamento de Tarefas (2)\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.exe
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.deps.json
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Alterar.resources
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Cadastrar.resources
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastroPessoa.resources
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Consultar.resources
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Excluir.resources
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Login.resources
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Menu.resources
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CopyComplete
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinFormsApp1.dll
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\claud\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.exe
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.deps.json
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Alterar.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Cadastrar.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastroPessoa.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Consultar.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Excluir.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Login.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Menu.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CopyComplete
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinFormsApp1.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastroUsuario.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AlterarAtividade.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastrarAtividade.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.ConsultarAtividade.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.ExcluirAtividade.resources
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.exe
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.deps.json
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AlterarAtividade.resources
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastrarAtividade.resources
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastroUsuario.resources
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.ConsultarAtividade.resources
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.ExcluirAtividade.resources
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Login.resources
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Menu.resources
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CopyComplete
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinFormsApp1.dll
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\david\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.exe
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.deps.json
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AlterarAtividade.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastrarAtividade.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastroUsuario.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.ConsultarAtividade.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.ExcluirAtividade.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Login.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Menu.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CopyComplete
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinFormsApp1.dll
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\david\Downloads\Gerenciamento de Tarefas 02-06 com passagem de parametro entre telas\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AlterarAtividade.resources
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastrarAtividade.resources
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.CadastroUsuario.resources
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.ConsultarAtividade.resources
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.ExcluirAtividade.resources
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Login.resources
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Menu.resources
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinFormsApp1.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.exe
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.deps.json
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CopyComplete
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\P08012631\Desktop\Gerenciamento de Tarefas\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
