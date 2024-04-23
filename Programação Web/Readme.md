@@ -10,6 +10,6 @@ Crie uma página Web HTML simples contendo formulário, com sua identidade visua
 
 [CV.html](https://github.com/claudiohpo/Fatec_ADS/blob/main/Programa%C3%A7%C3%A3o%20Web/CV.html)
 
-### - **_Calculadora de Notas**_
+### - **_Calculadora de Notas_**
 
 [Ver Projeto](https://github.com/claudiohpo/Fatec_ADS/blob/main/Programa%C3%A7%C3%A3o%20Web/Calculadora%20de%20Notas)
