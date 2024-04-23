@@ -159,7 +159,30 @@
                 <input type="number" placeholder="Nota M2">
                 <button onclick="removerDisciplina(this)">Remover</button>
             </div>
-            <!-- Mais disciplinas aqui -->
+            <div class="disciplina">
+                <input type="text" value="Eletiva - Programação WEB" disabled>
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>
+            </div>
+            <div class="disciplina">
+                <input type="text" value="Engenharia de Software II" disabled>
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>
+            </div>
+            <div class="disciplina">
+                <input type="text" value="Estruturas de Dados" disabled>
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>
+            </div>
+            <div class="disciplina">
+                <input type="text" value="Sociedade e Tecnologia" disabled>
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>
+            </div>
         </div>
         <!-- Div para os resultados -->
         <div id="resultados"></div><br>
@@ -176,8 +199,18 @@
         <button style="float: right;" onclick="fecharInstrucoes()">X</button>
         <p><b><i>Instruções de uso:</i></b></p>
         <ul>
-            <!-- Lista de instruções -->
-            <!-- Mais instruções aqui -->
+            <li><b>Passo 1:</b> Informe a nota da Primeira e Segunda média nos campos "Nota M1" e "Nota M2".</li>
+            <li><b>Passo 2:</b> Caso necessite, clique no botão "Remover" para excluir a disciplina listada desejada.</li>
+            <li><b>Passo 3:</b> Caso necessite, clique no botão "Adicionar Disciplina" para adiconar uma nova disciplina.</li>
+            <li><b>Passo 4:</b> Informe o nome da Disciplina no campo "Nome da Disciplina".</li>
+            <li><b>Passo 5:</b> Informe a nota da primeira média no campo "M1".</li>
+            <li><b>Passo 6:</b> Informe a nota da segunda média no campo "M2".</li>
+            <li><b>Passo 7:</b> Caso queira calcular mais disciplinas, repita os passos 3 até o 6.</li>
+            <li><b>Passo 8:</b> Clique no botão "Calcular" para obter o resultado.</li>
+            <li><b>Passo 9:</b> Visualize a(s) sua(s) média(s) final(is).</li><br>
+            <b>* </b>Utilize o botão "Limpar Disciplinas" para excluir <strong>TODAS</strong> as disciplinas e seus campos já cadastrados.<br>
+            <b>** </b>Utilize o botão "Limpar Cálculos" para limpar <strong>TODOS</strong> os resultados obtidos após os cálculos.<br>
+            <b>*** </b>Após a exclusão de alguma disciplina, alteração de notas M1 ou M2 e limpeza dos Cálculos, deve-se clicar em Calcular média para atualizar os valores.
         </ul>
     </div>
     
@@ -195,46 +228,114 @@
         /* Função para adicionar disciplina */
         function adicionarDisciplina() {
             // Código para adicionar disciplina aqui
+            const disciplinasContainer = document.getElementById('disciplinas');
+            const novaDisciplina = document.createElement('div');
+            novaDisciplina.classList.add('disciplina');
+            novaDisciplina.innerHTML = `
+                <input type="text" placeholder="Nome da Disciplina">
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>`;
+            disciplinasContainer.appendChild(novaDisciplina);
         }
 
         /* Função para calcular média */
         function calcularMedia() {
             // Código para calcular média aqui
+            const disciplinas = document.querySelectorAll('.disciplina');
+            resultados = []; 
+
+            disciplinas.forEach(disciplina => {
+                const nomeDisciplina = disciplina.querySelector('input:nth-of-type(1)').value;
+                const notaM1 = parseFloat(disciplina.querySelector('input:nth-of-type(2)').value);
+                const notaM2 = parseFloat(disciplina.querySelector('input:nth-of-type(3)').value);
+
+                
+                if (nomeDisciplina === '')
+                {
+                        resultados.push(`<p>Campo "Nome da Disciplina" vazio, informe o nome e prossiga.</p>`);
+                }
+                else
+                {
+                    if (!isNaN(notaM1) && !isNaN(notaM2)) 
+                    {
+                    if (notaM1 >= 0 && notaM1 <= 10 && notaM2 >= 0 && notaM2 <= 10) 
+                    {
+                        const mediaFinal = (notaM1 * 4 + notaM2 * 6) / 10;
+                        const status = mediaFinal >= 6 ? 'Aprovado' : 'Reprovado';
+                        const cor = mediaFinal >= 6 ? 'darkblue' : 'red';
+                        resultados.push(`<p><b>${nomeDisciplina}:</b> | Média Final: <strong style="color: ${cor}; font-weight: bold">${mediaFinal.toFixed(2)}</strong> | <strong>***</strong><span class="${status === 'Aprovado' ? 'Aprovado' : 'Reprovado'}">${status}</span><strong>***</strong></p>`);
+                    } 
+                    else 
+                    {
+                        resultados.push(`<p><strong>${nomeDisciplina}:</strong> Insira notas válidas (entre 0 e 10) para calcular a média.</p>`);
+                    }
+                } 
+                else 
+                {
+                    resultados.push(`<p><strong>${nomeDisciplina}:</strong> Insira notas válidas para calcular a média.</p>`);
+                }
+                } 
+            });
+            
+            document.getElementById('resultados').innerHTML = resultados.join('');
         }
 
         /* Função para limpar disciplinas */
         function limparDisciplinas() {
             // Código para limpar disciplinas aqui
+            const disciplinasContainer = document.getElementById('disciplinas');
+            disciplinasContainer.innerHTML = '';
         }
 
         /* Função para limpar cálculos */
         function limparCalculos() {
             // Código para limpar cálculos aqui
+            const resultadoContainer = document.getElementById('resultados');
+            resultadoContainer.innerHTML = '';
         }
 
         /* Função para exibir/ocultar balão de instruções */
         function toggleInstrucoes() {
             // Código para exibir/ocultar balão de instruções aqui
+            var balao = document.getElementById('balao-instrucoes');
+            var overlay = document.getElementById('overlay');
+            if (balao.style.display === 'block') {
+                balao.style.display = 'none';
+                overlay.style.display = 'none'; 
+            } else {
+                balao.style.display = 'block';
+                overlay.style.display = 'block'; 
+            }
         }
 
         /* Função para fechar balão de instruções */
         function fecharInstrucoes() {
             // Código para fechar balão de instruções aqui
+            var balao = document.getElementById('balao-instrucoes');
+            var overlay = document.getElementById('overlay');
+            balao.style.display = 'none';
+            overlay.style.display = 'none'; 
         }
 
         /* Função para remover disciplina */
         function removerDisciplina(botao) {
             // Código para remover disciplina aqui
+            botao.parentNode.remove();
         }
 
         /* Função para exibir overlay */
         function mostrarOverlay() {
             // Código para exibir overlay aqui
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'block';
         }
 
         /* Função para ocultar overlay */
         function ocultarOverlay() {
             // Código para ocultar overlay aqui
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
         }
     </script>
 </body>
