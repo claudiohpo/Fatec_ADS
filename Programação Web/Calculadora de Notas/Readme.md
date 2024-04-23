@@ -16,3 +16,5 @@ O resultado do cálculo deve ser exibido dinamicamente na página, mostrando a m
 Além da média final, deve ser exibida uma mensagem indicando se o aluno foi aprovado ou reprovado com base em um critério de aprovação *(média mínima de 6.0 para aprovação)*. Adicione estilos CSS para melhorar a aparência do site e dos elementos da calculadora.
 
 ![](https://github.com/claudiohpo/Fatec_ADS/blob/main/Programa%C3%A7%C3%A3o%20Web/Calculadora%20de%20Notas/thumbnail.png)
+
+Entrega: [Calculadora_de_Notas.html](https://github.com/claudiohpo/Fatec_ADS/blob/main/Programa%C3%A7%C3%A3o%20Web/Calculadora%20de%20Notas/Calculadora_de_Notas.html)
