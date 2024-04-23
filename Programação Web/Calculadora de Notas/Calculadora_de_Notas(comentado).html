@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Notas</title> <!-- Título da página -->
+    <style>
+        /* Estilos CSS */
+        /* Estilos para o corpo da página */
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte para o corpo do texto */
+            background-image: url('fundo_fatec_mc.jpg'); /* Define a imagem de fundo */
+            background-size: cover; /* Define o tamanho da imagem de fundo */
+            background-position: center; /* Define a posição da imagem de fundo */
+            background-repeat: no-repeat; /* Define que a imagem de fundo não deve se repetir */
+            margin: 0; /* Remove as margens externas */
+            padding: 0; /* Remove o preenchimento */
+            display: flex; /* Define o uso de flexbox */
+            min-height: 100vh; /* Define a altura mínima da página */
+            flex-direction: column; /* Define a direção dos itens no contêiner principal como coluna */
+        }
+        /* Estilos para o contêiner principal */
+        .container {
+            text-align: center; /* Centraliza o conteúdo */
+            justify-content: space-between; /* Distribui o espaço entre os itens */
+            max-width: 800px; /* Define a largura máxima */
+            margin: auto; /* Centraliza horizontalmente */
+            padding: 20px; /* Adiciona preenchimento interno */
+            flex-grow: 0; /* Impede que o contêiner principal cresça */
+            background-color: rgba(255, 255, 255, 0.72); /* Define a cor de fundo */
+        }
+        /* Estilos para as disciplinas */
+        .disciplina {
+            display: flex; /* Define o uso de flexbox */
+            justify-content: space-evenly; /* Distribui o espaço entre os itens de forma uniforme */
+            gap: 10px; /* Define o espaçamento entre os itens */
+            flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+            margin-bottom: 10px; /* Adiciona margem inferior */
+            flex-grow: 1; /* Permite que as disciplinas cresçam */
+        }
+        /* Estilos para o rodapé */
+        footer {
+            display: flex; /* Define o uso de flexbox */
+            justify-content: space-between; /* Distribui o espaço entre os itens */
+            text-align: center; /* Centraliza o texto */
+            font-style: italic; /* Define o estilo de fonte itálico */
+            font-size: 0.8em; /* Define o tamanho da fonte */
+            margin-top: auto; /* Alinha o rodapé ao final da página */
+            background-color: rgba(255, 255, 255, 0.72); /* Define a cor de fundo */
+        }
+        /* Estilos para o lado esquerdo do rodapé */
+        .footer-left {
+            flex-grow: 1; /* Permite que o lado esquerdo cresça */
+            text-align: center; /* Centraliza o texto */
+        }
+        /* Estilos para o lado direito do rodapé */
+        .footer-right {
+            text-align: right; /* Alinha o texto à direita */
+        }
+        /* Estilos para os botões */
+        button {
+            margin-top: 5px; /* Adiciona margem superior */
+            background-color: #4169E1; /* Define a cor de fundo */
+            color: white; /* Define a cor do texto */
+            padding: 10px 20px; /* Adiciona preenchimento */
+            border: none; /* Remove a borda */
+            border-radius: 5px; /* Adiciona borda arredondada */
+            cursor: pointer; /* Define o cursor do mouse */
+            transition: background-color 0.4s; /* Adiciona transição suave */
+        }
+        /* Estilos para o hover dos botões */
+        button:hover {
+            background-color: #45a049; /* Altera a cor de fundo no hover */
+        }
+        /* Estilos para o título */
+        .titulo {
+            font-family: Verdana, sans-serif; /* Define a fonte */
+            font-size: 24px; /* Define o tamanho da fonte */
+            color: #000080; /* Define a cor do texto */
+            text-align: center; /* Centraliza o texto */
+            text-transform: uppercase; /* Transforma o texto em maiúsculas */
+            margin-top: 15px; /* Adiciona margem superior */
+            display: inline-block; /* Permite que o título se ajuste ao conteúdo */
+        }
+        /* Estilos para o botão de ajuda */
+        .botao-ajuda {
+            background-color: #B22222; /* Define a cor de fundo */
+            color: #fff; /* Define a cor do texto */
+            border: none; /* Remove a borda */
+            padding: 5px 10px; /* Adiciona preenchimento */
+            border-radius: 15px; /* Adiciona borda arredondada */
+            cursor: pointer; /* Define o cursor do mouse */
+            margin-left: 2px; /* Adiciona margem à esquerda */
+        }
+        /* Estilos para o balão de instruções */
+        .balao-instrucoes {
+            display: none; /* Oculta o balão */
+            position: absolute; /* Define a posição absoluta */
+            background-color: #f9f9f9; /* Define a cor de fundo */
+            border: 1px solid #ccc; /* Adiciona borda */
+            border-radius: 5px; /* Adiciona borda arredondada */
+            padding: 10px; /* Adiciona preenchimento interno */
+            max-width: 90%; /* Define a largura máxima */
+            top: 30px; /* Define a distância do topo */
+            left: 50%; /* Define a distância da esquerda */
+            transform: translateX(-50%); /* Centraliza horizontalmente */
+            z-index: 999; /* Define a ordem de empilhamento */
+            font-size: 12px; /* Define o tamanho da fonte */
+            text-align: left; /* Alinha o texto à esquerda */
+            line-height: 1.5; /* Define a altura da linha */
+        }
+        /* Estilos para o overlay */
+        #overlay {
+            position: fixed; /* Define a posição fixa */
+            top: 0; /* Alinha ao topo */
+            left: 0; /* Alinha à esquerda */
+            width: 100%; /* Define a largura total */
+            height: 100%; /* Define a altura total */
+            background-color: rgba(0, 0, 0, 0.8); /* Define a cor de fundo com transparência */
+            z-index: 998; /* Define a ordem de empilhamento */
+            display: none; /* Oculta o overlay */
+        }
+        /* Estilos para o contêiner dos botões */
+        .botoes-container {
+            display: flex; /* Define o uso de flexbox */
+            justify-content: space-evenly; /* Distribui o espaço entre os itens de forma uniforme */
+            flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+            flex-grow: 1; /* Permite que o contêiner cresça */
+        }
+        /* Estilos para os botões dentro do contêiner */
+        .botoes-container button {
+            margin: 5px; /* Adiciona margem entre os botões */
+            justify-content: space-evenly; /* Distribui o espaço entre os itens de forma uniforme */
+            flex-grow: 1; /* Permite que os botões cresçam */
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Overlay para o balão de instruções -->
+    <div id="overlay"></div>
+
+    <!-- Contêiner principal -->
+    <div class="container">
+        <!-- Título -->
+        <div class="titulo">
+            <h3>Fatec Mogi das Cruzes</h3>
+            <p>Calculadora de Notas</p>
+        </div>
+        <!-- Botão de ajuda -->
+        <button class="botao-ajuda" onclick="toggleInstrucoes()">?</button>
+        <!-- Div para as disciplinas -->
+        <div id="disciplinas">
+            <!-- Disciplinas pré-cadastradas -->
+            <div class="disciplina">
+                <input type="text" value="Economia e Finanças" disabled>
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>
+            </div>
+            <!-- Mais disciplinas aqui -->
+        </div>
+        <!-- Div para os resultados -->
+        <div id="resultados"></div><br>
+        <!-- Contêiner para os botões -->
+        <div class="botoes-container">
+            <button onclick="adicionarDisciplina()">Adicionar Disciplina</button>
+            <button onclick="calcularMedia()">Calcular Média</button>
+            <button onclick="limparDisciplinas()">Limpar Disciplinas</button>
+            <button onclick="limparCalculos()">Limpar Cálculos</button>
+        </div>
+    </div>
+    <!-- Balão de instruções -->
+    <div id="balao-instrucoes" class="balao-instrucoes">
+        <button style="float: right;" onclick="fecharInstrucoes()">X</button>
+        <p><b><i>Instruções de uso:</i></b></p>
+        <ul>
+            <!-- Lista de instruções -->
+            <!-- Mais instruções aqui -->
+        </ul>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer>
+        <!-- Lado esquerdo do rodapé -->
+        <div class="footer-left">Médias calculadas conforme pesos: <b>M1=4 e M2=6</b>.</div>
+        <!-- Lado direito do rodapé -->
+        <div class="footer-right">@claudiohpo</div>
+    </footer>
+        
+    <!-- Script JavaScript -->
+    <script>
+        /* Funções JavaScript */
+        /* Função para adicionar disciplina */
+        function adicionarDisciplina() {
+            // Código para adicionar disciplina aqui
+        }
+
+        /* Função para calcular média */
+        function calcularMedia() {
+            // Código para calcular média aqui
+        }
+
+        /* Função para limpar disciplinas */
+        function limparDisciplinas() {
+            // Código para limpar disciplinas aqui
+        }
+
+        /* Função para limpar cálculos */
+        function limparCalculos() {
+            // Código para limpar cálculos aqui
+        }
+
+        /* Função para exibir/ocultar balão de instruções */
+        function toggleInstrucoes() {
+            // Código para exibir/ocultar balão de instruções aqui
+        }
+
+        /* Função para fechar balão de instruções */
+        function fecharInstrucoes() {
+            // Código para fechar balão de instruções aqui
+        }
+
+        /* Função para remover disciplina */
+        function removerDisciplina(botao) {
+            // Código para remover disciplina aqui
+        }
+
+        /* Função para exibir overlay */
+        function mostrarOverlay() {
+            // Código para exibir overlay aqui
+        }
+
+        /* Função para ocultar overlay */
+        function ocultarOverlay() {
+            // Código para ocultar overlay aqui
+        }
+    </script>
+</body>
+</html>
