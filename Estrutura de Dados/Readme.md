@@ -10,6 +10,6 @@
 
 ### - Pilhas
 
-[Exercícios]([https://github.com/claudiohpo/Fatec_ADS/tree/main/Estrutura%20de%20Dados/1%20-%20Introdu%C3%A7%C3%A3o](https://github.com/claudiohpo/Fatec_ADS/tree/main/Estrutura%20de%20Dados/2%20-%20Pilhas)
+[Exercícios](https://github.com/claudiohpo/Fatec_ADS/tree/main/Estrutura%20de%20Dados/1%20-%20Introdu%C3%A7%C3%A3o](https://github.com/claudiohpo/Fatec_ADS/tree/main/Estrutura%20de%20Dados/2%20-%20Pilhas)
 
 ### - Aplicação de Pilhas
