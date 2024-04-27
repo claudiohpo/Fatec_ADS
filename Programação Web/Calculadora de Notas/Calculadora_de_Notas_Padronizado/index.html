@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Notas</title> <!-- Fatec MC - Programação Web - Calculadora de Notas - Cláudio Henrique P. Oliveira -->
+    
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+
+<body>
+    <div id="overlay"></div>
+
+    <div class="container">
+        <div class="titulo">
+            <h3>Fatec Mogi das Cruzes</h3>
+            <p>Calculadora de Notas</p>
+        </div>
+        <button class="botao-ajuda" onclick="toggleInstrucoes()">?</button>
+        <div id="disciplinas">
+            <!-- Disciplinas pré-cadastradas -->
+            <div class="disciplina">
+                <input type="text" value="Economia e Finanças" disabled>
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>
+            </div>
+            <div class="disciplina">
+                <input type="text" value="Eletiva - Programação WEB" disabled>
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>
+            </div>
+            <div class="disciplina">
+                <input type="text" value="Engenharia de Software II" disabled>
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>
+            </div>
+            <div class="disciplina">
+                <input type="text" value="Estruturas de Dados" disabled>
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>
+            </div>
+            <div class="disciplina">
+                <input type="text" value="Sociedade e Tecnologia" disabled>
+                <input type="number" placeholder="Nota M1">
+                <input type="number" placeholder="Nota M2">
+                <button onclick="removerDisciplina(this)">Remover</button>
+            </div>
+        </div>
+        <div id="resultados"></div><br>
+        <div class="botoes-container">
+            <button onclick="adicionarDisciplina()">Adicionar Disciplina</button>
+            <button onclick="calcularMedia()">Calcular Média</button>
+            <button onclick="limparDisciplinas()">Limpar Disciplinas</button>
+            <button onclick="limparCalculos()">Limpar Cálculos</button>
+        </div>
+    </div>
+    <div id="balao-instrucoes" class="balao-instrucoes">
+        <button style="float: right;" onclick="fecharInstrucoes()">X</button>
+        <p><b><i>Instruções de uso:</i></b></p>
+        <ul>
+            <li><b>Passo 1:</b> Informe a nota da Primeira e Segunda média nos campos "Nota M1" e "Nota M2".</li>
+            <li><b>Passo 2:</b> Caso necessite, clique no botão "Remover" para excluir a disciplina listada desejada.</li>
+            <li><b>Passo 3:</b> Caso necessite, clique no botão "Adicionar Disciplina" para adiconar uma nova disciplina.</li>
+            <li><b>Passo 4:</b> Informe o nome da Disciplina no campo "Nome da Disciplina".</li>
+            <li><b>Passo 5:</b> Informe a nota da primeira média no campo "M1".</li>
+            <li><b>Passo 6:</b> Informe a nota da segunda média no campo "M2".</li>
+            <li><b>Passo 7:</b> Caso queira calcular mais disciplinas, repita os passos 3 até o 6.</li>
+            <li><b>Passo 8:</b> Clique no botão "Calcular" para obter o resultado.</li>
+            <li><b>Passo 9:</b> Visualize a(s) sua(s) média(s) final(is).</li><br>
+            <b>* </b>Utilize o botão "Limpar Disciplinas" para excluir <strong>TODAS</strong> as disciplinas e seus campos já cadastrados.<br>
+            <b>** </b>Utilize o botão "Limpar Cálculos" para limpar <strong>TODOS</strong> os resultados obtidos após os cálculos.<br>
+            <b>*** </b>Após a exclusão de alguma disciplina, alteração de notas M1 ou M2 e limpeza dos Cálculos, deve-se clicar em Calcular média para atualizar os valores.
+        </ul>
+    </div>
+    
+    <footer>
+        <div class="footer-left">Médias calculadas conforme pesos: <b>M1=4 e M2=6</b>.</div>
+        <div class="footer-right">@claudiohpo</div>
+    </footer>
+        
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>
