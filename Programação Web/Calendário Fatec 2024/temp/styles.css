@@ -1,0 +1,119 @@
+body {
+    background-image: url('fundo-fatec-cut.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.empty-day {
+    visibility: hidden;
+}
+
+.calendar-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.calendar-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.92);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.calendar-header button {
+    flex-shrink: 0;
+}
+
+#day-names {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 
+#day-names span {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+#calendar div {
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#calendar div:hover {
+    background: #d0d0d0;
+}
+
+#day-content {
+    width: 250px;
+    padding: 40px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 395px; /* Ajustar conforme necessário para a posição desejada */
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-justify: auto;
+    text-shadow: 90px;
+}
+
+#day-content.active {
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-top: auto;
+    background-color: rgba(255, 255, 255, 0.72);
+}
+.footer-left {
+    flex-grow: 1;
+    text-align: center;
+}
+.footer-right {
+    text-align: right;
+}
