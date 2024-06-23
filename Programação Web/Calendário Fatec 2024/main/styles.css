@@ -10,6 +10,20 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
+    flex-direction: column;
+}
+
+#calendar-title {
+    text-align: center;
+    display: flex;
+    font-size: 2em;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    margin-top: 50px ;
 }
 
 .empty-day {
@@ -19,6 +33,7 @@ body {
 .calendar-wrapper {
     display: flex;
     position: relative;
+    margin-top: 40px;
 }
 
 .calendar-container {
@@ -28,7 +43,8 @@ body {
     padding: 20px;
     width: 350px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.92);
+    background-color: rgba(255, 255, 255, 0.85);
+
 }
 
 .calendar-header {
@@ -51,27 +67,28 @@ body {
 
 #day-names {
     display: flex;
+    margin-top: 10px;
     justify-content: space-between;
-    font-weight: bold;
-    margin-bottom: 10px;
+    
+    
 }
- 
+
 #day-names span {
     flex: 1;
     text-align: center;
-    font-weight: bold;
+    
 }
 
 #calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
+    gap: 8px;
 }
 
 #calendar div {
     background: #e0e0e0;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -89,16 +106,58 @@ body {
     display: none;
     position: absolute;
     top: 0;
-    left: 395px; /* Ajustar conforme necessário para a posição desejada */
+    left: 395px;
     text-align: center;
     font-weight: bold;
     line-height: 1.5em;
-    text-justify: auto;
-    text-shadow: 90px;
 }
 
 #day-content.active {
     display: block;
+}
+
+.event-form {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: Center;
+    margin-top: 20px;
+}
+
+.event-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.event-form label {
+    margin-top: 10px;
+}
+
+.event-form input {
+    margin-top: 5px;
+    padding: 5px;
+    width: calc(100% - 10px); /* Adjust for padding */
+    box-sizing: border-box;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.event-form button {
+    padding: 5px;
+    flex: 1;
+    margin-right: 5px;
+}
+
+.event-form button:last-child {
+    margin-right: 0;
 }
 
 footer {
@@ -110,10 +169,12 @@ footer {
     margin-top: auto;
     background-color: rgba(255, 255, 255, 0.72);
 }
+
 .footer-left {
     flex-grow: 1;
-    text-align: center;
+    text-align: left;
 }
+
 .footer-right {
     text-align: right;
 }

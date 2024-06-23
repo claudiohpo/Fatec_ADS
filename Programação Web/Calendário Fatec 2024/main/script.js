@@ -257,5 +257,28 @@ document.getElementById('next-month').addEventListener('click', () => {
     generateCalendar(currentMonth, currentYear);
 });
 
+document.getElementById('new-event-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    const eventDate = document.getElementById('event-date').value;
+    const eventDescription = document.getElementById('event-description').value;
+    if (eventDate && eventDescription) {
+        if (monthData[eventDate]) {
+            monthData[eventDate] += " / " + eventDescription;
+        } else {
+            monthData[eventDate] = eventDescription;
+        }
+        generateCalendar(currentMonth, currentYear);
+    }
+});
+
+document.getElementById('delete-event').addEventListener('click', () => {
+    const eventDate = document.getElementById('event-date').value;
+    if (eventDate && monthData[eventDate]) {
+        delete monthData[eventDate];
+        generateCalendar(currentMonth, currentYear);
+    }
+});
+
+
 // Carregar o calendário inicial
 generateCalendar(currentMonth, currentYear);
