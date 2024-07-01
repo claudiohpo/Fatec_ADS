@@ -13,3 +13,7 @@ Crie uma página Web HTML simples contendo formulário, com sua identidade visua
 ### - **_Calculadora de Notas_**
 
 [Ver Projeto](https://github.com/claudiohpo/Fatec_ADS/blob/main/Programa%C3%A7%C3%A3o%20Web/Calculadora%20de%20Notas)
+
+### - **_Desenvolver sistema web para cadastro (CRUD) de Eventos em um calendário escolar_**
+
+[Ver Projeto](https://github.com/claudiohpo/Fatec_ADS/tree/main/Programa%C3%A7%C3%A3o%20Web/Calend%C3%A1rio%20Fatec%202024)
