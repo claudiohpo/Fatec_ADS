@@ -8,6 +8,14 @@
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Validador_CPF)
 
+### - Tratamento de erros
+
+[Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Tratamento%20de%20Erros)
+
+### - Imposto de Renda
+
+[1a. Avaliação](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/)
+
 
 ## Atividades em Sala
 
@@ -34,3 +42,9 @@
 ### - 17 de Setembro de 2024
 
 [Atividades](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Atividades%20em%20Sala/Aulas/Aula%2017-09-2024)
+
+
+Java
+Exercicios
+* Tratamento Erros (17/09)
+* Validador CPF
