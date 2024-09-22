@@ -24,6 +24,11 @@
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Exercícios%20Laços)
 
+### - Entrada de Dados
+
+[Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Atividades%20de%20Teclado)
+
+
 
 ## Atividades em Sala
 
@@ -59,3 +64,4 @@ Exercicios
 * Salario 27/08
 * 1a nota semestre
 * Laços 03/09
+* atividades do teclado
