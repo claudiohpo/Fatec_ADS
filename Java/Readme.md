@@ -16,6 +16,10 @@
 
 [1a. Avaliação](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Avaliação%201)
 
+### - Salário
+
+[Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Salário)
+
 
 ## Atividades em Sala
 
