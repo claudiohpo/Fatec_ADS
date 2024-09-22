@@ -1,15 +1,11 @@
 # Linguagem de Programação - JAVA
 
-* Cálculo Salarial
+* EXERCICIOS DE LAÇOS 
 
-## - Salário
+## - Laços
 
-FAZER UM PROGRAMA JAVA QUE: 
+* 1 CRIAR UM PROGRAMA QUE VERIFIQUE SE A PALAVRA PALMEIRAS FOI ESCRITA VIA TECLADO . CASO POSITIVO IMPRIMIR NA TELA LAMENTO, VOCÊ ESTÁ ENGANADO, O PALMEIRAS NÃO FOI CAMPEÃO DA LIBERTADORES 2023, TENTE NOVAMENTE. SE A PALAVRA ESCRITA FOR FLUMINENSE, ESCREVA, SIM, VOCÊ ESTÁ CERTO, O FLUMINENSE FOI O CAMPEÃO DA LIBERTADORES 2023 (USE COMANDO IF).
 
-Suponha que você precisa programar um código simples para definir o salário dos funcionários de uma empresa considerando o tempo que cada um tem nessa empresa.
+* 2 CRIAR UM PROGRAMA QUE COLETE O NOME DE 12 PESSOAS E AS IMPRIMA NA TELA. (USE O LOOP FOR).
 
-Então para cada 5 anos trabalhados, o trabalhador receber 5% a mais de salario e um bonus de 100% do salario.
-
-* Maricota tem 10 anos de empresa e um salario de R$ 5000. 
-* Dorgival com 3 anos de empresa e com salario de 1420,00
-* Amarilys tem 5 anos de empresa e um salario de  1900,00
+* 3 APROVEITANDO A ESTRUTURA DO PRIMEIRO PROGRAMA, FAÇA UM LOOP DO TIPO WHILE, QUE MANTENHA O USUARIO NO PROGRAMA ATÉ ELE DIGITAR FLUMINENSE.
