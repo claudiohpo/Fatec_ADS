@@ -22,3 +22,7 @@
 ### - Objetos
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/blob/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Atividades%20em%20Sala/Objetos)
+
+### - Velejadores
+
+[Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Atividades%20em%20Sala/PseudoC%C3%B3digo)
