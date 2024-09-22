@@ -20,6 +20,10 @@
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Salário)
 
+### - Laços
+
+[Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Exercícios%20Laços)
+
 
 ## Atividades em Sala
 
@@ -52,3 +56,6 @@ Java
 Exercicios
 * Tratamento Erros (17/09)
 * Validador CPF
+* Salario 27/08
+* 1a nota semestre
+* Laços 03/09
