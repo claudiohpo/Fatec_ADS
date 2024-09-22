@@ -34,7 +34,7 @@
 
 ### - Tipos Primitivos
 
-[Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Tipos&20Primitivos)
+[Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Tipos%20Primitivos)
 
 
 
