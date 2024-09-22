@@ -1,4 +1,22 @@
-//package src;
+/*
+Neste trabalho, vocês deverão criar um programa em Java que use de HERANÇA para 
+a passagem de parâmetros. É um sistema que calcula pontos para um programa de fidelidade de viagens. 
+Neste programa de fidelidade, o passageiro ganha pontos de acordo com o meio de transporte que ele 
+usa e o tipo de acomodação.
+ 
+Logo, temos:
+
+Modal			Standart	Luxo 
+Aereo			1000		2500
+Rodoviario		500			1000
+Ferroviario		2500		5000
+
+Os dados que devem constar do passageiro são:
+Codigo viagem, Nome, CPF, Data de Nascimento, Data da Viagem, Modal, Tipo (Standart ou Luxo).
+O programa deverá calcular quantos pontos o usuario acumulou durante 1 ano e apresentar na tela.
+*/
+
+//package Viagem; //Ativar para usar no Eclipse
 
 import java.util.Scanner;
 
@@ -11,7 +29,6 @@ public class Main{
 
         System.out.println("Informe o numero do CPF: ");
         String cpf = entrada.nextLine();
-
 
         System.out.println("Informe a data de nascimento: ");
         String dataNasc = entrada.nextLine();
@@ -36,7 +53,7 @@ public class Main{
 }
 
 class Passageiro{
-    //private int codViagem;
+    
     private String nome;
     private String cpf;
     private String dataNasc;
@@ -44,8 +61,8 @@ class Passageiro{
     private int modal;
     private int categoria;
 
-    public Passageiro(/*int codViagem,*/ String nome, String cpf, String dataNasc, String dataViagem, int modal, int categoria) {
-        //this.codViagem = codViagem;
+    public Passageiro( String nome, String cpf, String dataNasc, String dataViagem, int modal, int categoria) {
+       
         this.nome = nome;
         this.cpf = cpf;
         this.dataNasc = dataNasc;
