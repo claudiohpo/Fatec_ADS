@@ -9,10 +9,10 @@ usa e o tipo de acomodação.
  
 Logo, temos:
 
-* Modal			Standart	Luxo 
-* Aereo			1000		2500
-* Rodoviario		500			1000
-* Ferroviario		2500		5000
+* Modal	------- Standart -- Luxo 
+* Aereo	------- 1000 ------ 2500
+* Rodoviario --	500	------- 1000
+* Ferroviario -	2500 ------ 5000
 
 Os dados que devem constar do passageiro são:
 Codigo viagem, Nome, CPF, Data de Nascimento, Data da Viagem, Modal, Tipo (Standart ou Luxo).
