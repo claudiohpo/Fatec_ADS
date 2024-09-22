@@ -28,6 +28,15 @@
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Atividades%20de%20Teclado)
 
+### - Strings
+
+[Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Strings)
+
+### - Tipos Primitivos
+
+[Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Tipos&20Primitivos)
+
+
 
 
 ## Atividades em Sala
@@ -65,3 +74,5 @@ Exercicios
 * 1a nota semestre
 * Laços 03/09
 * atividades do teclado
+* Strings
+* Tipos Primitivos
