@@ -1,5 +1,7 @@
 # Programação Orientada à Objetos
 
+* Segundo trabalho de programação
+
 ## - Pontos Fidelidade
 
 Neste trabalho, vocês deverão criar um programa em Java que use de HERANÇA para 
