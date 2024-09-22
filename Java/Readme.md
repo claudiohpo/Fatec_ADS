@@ -14,7 +14,7 @@
 
 ### - Imposto de Renda
 
-[1a. Avaliação](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/)
+[1a. Avaliação](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Avaliação%201)
 
 
 ## Atividades em Sala
