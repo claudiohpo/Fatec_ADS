@@ -6,8 +6,6 @@ public class Abajur{
 	String cor;
 	int voltagem;
 	double peso;
-	
-	
 		public static void main(String[] args) {
 			Abajur Ab1 = new Abajur();
 			Ab1.material = "Porcelana";
@@ -19,8 +17,5 @@ public class Abajur{
 			System.out.println("Cor: " + Ab1.cor);
 			System.out.println("Voltagem: " + Ab1.voltagem);
 			System.out.println("Peso: " + Ab1.peso + "kg");
-			
-			
 		}		
-			
 }

@@ -6,8 +6,6 @@ public class GuardaChuva{
 	String cor;
 	double tamanho;
 	
-	
-	
 		public static void main(String[] args) {
 			GuardaChuva Guarda = new GuardaChuva();
 			Guarda.material = "Nylon";
@@ -17,8 +15,5 @@ public class GuardaChuva{
 			System.out.println("Material do Abajur: " + Guarda.material);
 			System.out.println("Cor: " + Guarda.cor);
 			System.out.println("Peso: " + Guarda.tamanho + "cm");
-			
-			
-		}		
-			
+		}					
 }
