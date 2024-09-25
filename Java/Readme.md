@@ -36,6 +36,10 @@
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Tipos%20Primitivos)
 
+### - **********
+
+[Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/)
+
 
 
 
@@ -65,14 +69,6 @@
 
 [Atividades](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Atividades%20em%20Sala/Aulas/Aula%2017-09-2024)
 
+### - 24 de Setembro de 2024
 
-Java
-Exercicios
-* Tratamento Erros (17/09)
-* Validador CPF
-* Salario 27/08
-* 1a nota semestre
-* Laços 03/09
-* atividades do teclado
-* Strings
-* Tipos Primitivos
+[Atividades](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Atividades%20em%20Sala/Aulas/Aula%2024-09-2024)

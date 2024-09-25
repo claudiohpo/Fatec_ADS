@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java/Atividades em Sala/Atividades em Sala.iml" filepath="$PROJECT_DIR$/Java/Atividades em Sala/Atividades em Sala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programação Orientada à Objetos/Atividades em Sala/Atividades em Sala1.iml" filepath="$PROJECT_DIR$/Programação Orientada à Objetos/Atividades em Sala/Atividades em Sala1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Engenharia de Software III/Atividades em Sala/Atividades em Sala2.iml" filepath="$PROJECT_DIR$/Engenharia de Software III/Atividades em Sala/Atividades em Sala2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programação Orientada à Objetos/Atividades em Sala/Aulas/Aulas.iml" filepath="$PROJECT_DIR$/Programação Orientada à Objetos/Atividades em Sala/Aulas/Aulas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Engenharia de Software III/Engenharia de Software III.iml" filepath="$PROJECT_DIR$/Engenharia de Software III/Engenharia de Software III.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/Exercícios/Exercícios.iml" filepath="$PROJECT_DIR$/Java/Exercícios/Exercícios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programação Orientada à Objetos/Exercícios/Exercícios1.iml" filepath="$PROJECT_DIR$/Programação Orientada à Objetos/Exercícios/Exercícios1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fatec_ADS.iml" filepath="$PROJECT_DIR$/.idea/Fatec_ADS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programação Orientada à Objetos/Programação Orientada à Objetos.iml" filepath="$PROJECT_DIR$/Programação Orientada à Objetos/Programação Orientada à Objetos.iml" />
+    </modules>
+  </component>
+</project>
