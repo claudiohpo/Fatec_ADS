@@ -1,0 +1,48 @@
+package exercicios; //coloque o nome do seu package
+ 
+public class TipoString {
+ 
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+System.out.println("olá pessoal".charAt(2));
+ 
+String s = "Boa tarde";
+System.out.println(s.concat("!!!"));
+System.out.println(s + "!!!");
+System.out.println(s.startsWith("BOA")); // tipo String pode retornar um boolean, não apenas strings
+System.out.println(s.toUpperCase().startsWith("BOA")); // o retorno É CASE SENSITIVE
+System.out.println(s.length()); // pode retornar um numero inteiro tambem
+System.out.println(s.toLowerCase().equals("BOA TARDE")); // faz comparações e É CASE SENSITIVE como opcional
+System.out.println(s.equalsIgnoreCase("BOA TARDE")); // faz comparações e ignora o CASE SENSITIVE
+ 
+// usos de String retornando valores e frases 
+ 
+var nome = "Pedro";
+var sobrenome = "Santos";
+var idade = 33;
+var salario = 12345.987;
+ 
+// Concatenação simples e manual 
+String maisUmaFrase = "Nome: " + nome + "\nSobrenome: " 
++ sobrenome + "\nIdade: " + idade + 
+"\nSalario: " + salario + "\n\n";
+System.out.println(maisUmaFrase);
+ 
+// uso de printf . Lembrar que os % indicam o tipo de variavel a ser exibida
+System.out.printf("O senhor %s %s tem %d anos e ganha R$%.2f.",
+nome, sobrenome, idade, salario);
+ 
+// uso de stringformat armazenado em uma variável
+String frase = String.format("\nO senhor %s %s tem %d anos e ganha R$%.2f.",
+nome, sobrenome, idade, salario);
+System.out.println(frase);
+ 
+ 
+// propriedade de contagem , index e substring
+System.out.println("Frase qualquer".contains("qual"));
+System.out.println("Frase qualquer".indexOf("qual"));
+System.out.println("Frase qualquer".substring(6));
+System.out.println("Frase qualquer".substring(6, 10));
+}
+ 
+}
