@@ -38,5 +38,6 @@
 	        System.out.println("tudo bem com a diferença. ");
 	    	validado2=true;
         }
-    }}
+    }
+}
 

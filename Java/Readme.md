@@ -4,39 +4,39 @@
 
 ## Exercícios
 
-### - Validador CPF
+### - [x] - Validador CPF
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Validador_CPF)
 
-### - Tratamento de erros
+### - [x] - Tratamento de erros
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Tratamento%20de%20Erros)
 
-### - Imposto de Renda
+### - [x] - Imposto de Renda
 
 [1a. Avaliação](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Avaliação%201)
 
-### - Salário
+### - [x] - Salário
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Salário)
 
-### - Laços
+### - [x] - Laços
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Exercícios%20Laços)
 
-### - Entrada de Dados
+### - [x] - Entrada de Dados
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Atividades%20de%20Teclado)
 
-### - Strings
+### - [x] - Strings
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Strings)
 
-### - Tipos Primitivos
+### - [x] - Tipos Primitivos
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Tipos%20Primitivos)
 
-### - Java Swing
+### - [x] - Java Swing
 
 [Exercício](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Swing)
 
