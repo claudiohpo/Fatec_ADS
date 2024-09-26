@@ -1,21 +1,22 @@
 # Linguagem de Programação - JAVA
 
-* Interface grafica Javax Swing
+* Interface gráfica Javax Swing
 
 ## - Javax Swing
 
 * Criar em interface gráfica Java Swing uma versão do programa feito durante a aula de hoje. 
-* Como referencia, transcrevo aqui uma solução possivel do programa a ser adaptado.
+* Como referência, transcrevo aqui uma solução possível do programa a ser adaptado.
 
     
     package exercicios;
     import java.util.*;
+
     public class compara {
-    public static void main(String[] args) {
-    double numero1=0;
-    double numero2=0;
-    boolean validado = false;
-    boolean validado2 = false;
+        public static void main(String[] args) {
+        double numero1=0;
+        double numero2=0;
+        boolean validado = false;
+        boolean validado2 = false;
 
 	    while(!validado) {
 	      try {
@@ -37,6 +38,5 @@
 	        System.out.println("tudo bem com a diferença. ");
 	    	validado2=true;
         }
-    }
-}
+    }}
 
