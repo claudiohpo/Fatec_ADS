@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ESTADOS_CIDADES" directorySegmentName="seg_0" id="CB6DA77A-6AD5-5E84-BDF0-B7064C904B7E">
+<createdBy>CLAUDIODEOLIVEIRA</createdBy>
+<createdTime>2024-09-27 00:35:21 UTC</createdTime>
+<ownerDesignName>Exercicio1_26-09-24</ownerDesignName>
+<engineerTo>
+<item key="7D0CF466-02A8-2019-D118-38D4915AEDEA" value="true"/>
+</engineerTo>
+<sourcePk>D7C08A69-D184-0F65-C2A2-BCB5213F7703</sourcePk>
+<targetPk>C52A0A92-56D9-19FF-2502-C804B4464059</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>9B304674-AAD3-BFB9-0A8C-82B3227D2E1A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>49CC80CF-6094-AFAA-1999-20C74773F70E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

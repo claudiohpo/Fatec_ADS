@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PESSOAS_CIDADES" directorySegmentName="seg_0" id="EBBDA68A-B555-94F3-24C8-E480FF202D63">
+<createdBy>CLAUDIODEOLIVEIRA</createdBy>
+<createdTime>2024-09-27 00:37:14 UTC</createdTime>
+<ownerDesignName>Exercicio1_26-09-24</ownerDesignName>
+<engineerTo>
+<item key="7D0CF466-02A8-2019-D118-38D4915AEDEA" value="true"/>
+</engineerTo>
+<sourcePk>C52A0A92-56D9-19FF-2502-C804B4464059</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>49CC80CF-6094-AFAA-1999-20C74773F70E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E6EF5B11-2907-DDD4-B092-80CB2924EEBA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

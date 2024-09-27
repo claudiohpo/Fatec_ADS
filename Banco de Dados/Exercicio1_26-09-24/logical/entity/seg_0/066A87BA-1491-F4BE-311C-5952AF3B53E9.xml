@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="066A87BA-1491-F4BE-311C-5952AF3B53E9" name="TIPOS_LOGRADOURO">
+<createdBy>CLAUDIODEOLIVEIRA</createdBy>
+<createdTime>2024-09-27 00:29:22 UTC</createdTime>
+<ownerDesignName>Exercicio1_26-09-24</ownerDesignName>
+<engineerTo>
+<item key="7D0CF466-02A8-2019-D118-38D4915AEDEA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tpl_id" id="2137DF1E-0508-BCFA-E9FA-A2E0009623BC">
+<createdBy>CLAUDIODEOLIVEIRA</createdBy>
+<createdTime>2024-09-27 00:30:09 UTC</createdTime>
+<ownerDesignName>Exercicio1_26-09-24</ownerDesignName>
+<engineerTo>
+<item key="7D0CF466-02A8-2019-D118-38D4915AEDEA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,,6</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tpl_tipo" id="02B9EC0F-DA3A-9C5E-D29F-71FB52B5B2D5">
+<createdBy>CLAUDIODEOLIVEIRA</createdBy>
+<createdTime>2024-09-27 00:29:38 UTC</createdTime>
+<ownerDesignName>Exercicio1_26-09-24</ownerDesignName>
+<engineerTo>
+<item key="7D0CF466-02A8-2019-D118-38D4915AEDEA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2CB5881B-C489-0744-1FF1-CFBBD67DB66E" name="TIPOS_LOGRADOURO PK">
+<createdBy>CLAUDIODEOLIVEIRA</createdBy>
+<createdTime>2024-09-27 00:30:24 UTC</createdTime>
+<ownerDesignName>Exercicio1_26-09-24</ownerDesignName>
+<engineerTo>
+<item key="7D0CF466-02A8-2019-D118-38D4915AEDEA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2137DF1E-0508-BCFA-E9FA-A2E0009623BC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PESSOAS_TP_LOGRA" directorySegmentName="seg_0" id="96CCFA05-A256-D48E-0E60-93AAA3044CEC">
+<createdBy>CLAUDIODEOLIVEIRA</createdBy>
+<createdTime>2024-09-27 00:37:34 UTC</createdTime>
+<ownerDesignName>Exercicio1_26-09-24</ownerDesignName>
+<engineerTo>
+<item key="7D0CF466-02A8-2019-D118-38D4915AEDEA" value="true"/>
+</engineerTo>
+<sourcePk>2CB5881B-C489-0744-1FF1-CFBBD67DB66E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>066A87BA-1491-F4BE-311C-5952AF3B53E9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E6EF5B11-2907-DDD4-B092-80CB2924EEBA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

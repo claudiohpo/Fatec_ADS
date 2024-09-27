@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CARGOS_FUNCIONARIOS" directorySegmentName="seg_0" id="AADFAB4F-EF49-7DAA-9646-ED1DC78556CC">
+<createdBy>CLAUDIODEOLIVEIRA</createdBy>
+<createdTime>2024-09-27 00:39:58 UTC</createdTime>
+<ownerDesignName>Exercicio1_26-09-24</ownerDesignName>
+<engineerTo>
+<item key="7D0CF466-02A8-2019-D118-38D4915AEDEA" value="true"/>
+</engineerTo>
+<sourcePk>28C0E58F-EB27-C54F-0B14-306736E5DFF5</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>32693AD4-3122-B7C9-41FE-B4AE47F629D7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>67C7D5D2-6281-ABE1-9CD6-5C7B53908FB3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
