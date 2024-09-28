@@ -1,4 +1,5 @@
 //package Viagem; //Ativar para usar no Eclipse
+package Pontos_Fidelidade;
 
 import java.util.Scanner;
 
