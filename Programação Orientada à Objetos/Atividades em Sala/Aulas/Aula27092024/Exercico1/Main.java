@@ -8,7 +8,7 @@ public class Main {
         pf1.exibir();
 
         PessoaJ pj = new PessoaJ("Julius Mecanica ltda", 1261, 2514, 105478.85,"00.458.789/0001-85", "Julio Cesar Silva", "Média", "02/08/2005");
-        PessoaJ pj1 = new PessoaJ("Diane Modas DiVestiti SA", 411, 1425, 14521.14, "02.021.258/0001-69", "Diane Driely", "Pequeuna", "01/02/2010");
+        PessoaJ pj1 = new PessoaJ("Diane Modas DiVestiti SA", 411, 1425, 14521.14, "02.021.258/0001-69", "Diane Driely", "Pequena", "01/02/2010");
         pj.exibir();
         pj1.exibir();
     }

@@ -1,4 +1,4 @@
-package Aula27092024.Abstrato;
+package Aula_27_09_2024.Abstrato;
 
 public class TesteAbstrato {
     public static void main(String[] args) {

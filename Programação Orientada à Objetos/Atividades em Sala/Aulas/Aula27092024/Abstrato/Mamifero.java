@@ -1,4 +1,4 @@
-package Aula27092024.Abstrato;
+package Aula_27_09_2024.Abstrato;
 
 public abstract class Mamifero extends Animal {
     public abstract String mamar();
