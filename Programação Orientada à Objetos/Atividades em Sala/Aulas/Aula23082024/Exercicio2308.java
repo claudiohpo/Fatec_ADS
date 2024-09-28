@@ -1,6 +1,7 @@
 //23 de Agosto de 2024
+package Aula23082024;
 
-public class Circulo{
+public class Exercicio2308{
 	
 	public static void main(String[] args) {
 		

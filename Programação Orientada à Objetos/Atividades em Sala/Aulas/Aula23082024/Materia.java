@@ -1,5 +1,5 @@
 //23 de Agosto de 2024
-
+package Aula23082024;
 public class Materia{
 	
 	//definindo as propriedades
