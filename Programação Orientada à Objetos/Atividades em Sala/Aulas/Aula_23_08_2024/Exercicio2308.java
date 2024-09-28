@@ -1,5 +1,5 @@
 //23 de Agosto de 2024
-package Aula23082024;
+package Aula_23_08_2024;
 
 public class Exercicio2308{
 	

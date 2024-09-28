@@ -1,4 +1,4 @@
-package Aula27092024.Abstrato2;
+package Aula_27_09_2024.Abstrato2;
 
 
 public class Teste {
@@ -13,7 +13,7 @@ public class Teste {
 
         System.out.println(a.respirar());
 
-        System.out.println((a.Piar));
+        //System.out.println((a.Piar));
 
     }
 
