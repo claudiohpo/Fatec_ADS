@@ -32,4 +32,4 @@
 
 ### - [20 de Setembro de 2024](https://github.com/claudiohpo/Fatec_ADS/tree/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Atividades%20em%20Sala/Aulas/Aula_20_09_2024)
 
-### - [27 de Setembro de 2024es](https://github.com/claudiohpo/Fatec_ADS/tree/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Atividades%20em%20Sala/Aulas/Aula_27_09_2024)
+### - [27 de Setembro de 2024](https://github.com/claudiohpo/Fatec_ADS/tree/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Atividades%20em%20Sala/Aulas/Aula_27_09_2024)
