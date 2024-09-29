@@ -1,4 +1,4 @@
-package Aula_27_09_2024.Exercico1;
+package Exercicio_Heranca;
 
 public class PessoaJ extends Cliente{
     private String CNPJ;
