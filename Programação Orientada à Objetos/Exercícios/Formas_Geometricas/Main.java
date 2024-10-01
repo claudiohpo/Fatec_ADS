@@ -1,4 +1,4 @@
-//package Formas_Geometricas; //Usar essa linha para rodar no Eclipse
+package Formas_Geometricas;//package Formas_Geométricas; //Usar essa linha para rodar no Eclipse
 
 import java.util.Scanner;
 
