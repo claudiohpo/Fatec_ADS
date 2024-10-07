@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Tipos Primitivos" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tratamento de Erros" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Validador_CPF" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Calculadora" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

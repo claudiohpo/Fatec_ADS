@@ -22,7 +22,7 @@
 
 ### - [Java Swing](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Swing)
 
-### - [Calculadora](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/>>>>Completar<<<)
+### - [Calculadora](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exerc%C3%ADcios/Calculadora)
 
 
 
