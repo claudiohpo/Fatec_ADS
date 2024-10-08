@@ -69,7 +69,8 @@ public class Memoria {
         } else if (ultimaOperacao == TipoComando.MULT) {
             resultado = numeroBuffer * numeroAtual;
         } else if (ultimaOperacao == TipoComando.PERCENT) {
-            resultado = (numeroBuffer / 100) *  numeroAtual;
+            numeroAtual = numeroBuffer * (numeroAtual / 100);
+            resultado = numeroBuffer + numeroAtual;
         } else if (ultimaOperacao == TipoComando.RAIZ) {
             resultado = Math.sqrt(numeroBuffer);
         } else if (ultimaOperacao == TipoComando.DIV) {
