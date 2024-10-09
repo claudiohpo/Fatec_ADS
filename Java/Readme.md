@@ -45,3 +45,5 @@
 ### - [24 de Setembro de 2024](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Atividades%20em%20Sala/Aulas/Aula%2024-09-2024)
 
 ### - [01 de Outubro de 2024](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Atividades%20em%20Sala/Aulas/Aula%2001-10-2024)
+
+### - [08 de Outubro de 2024](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Atividades%20em%20Sala/Aulas/Aula%2008-10-2024)
