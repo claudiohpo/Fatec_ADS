@@ -1,7 +1,7 @@
 public class Cidade {
 
     private String descricao;
-    private Estado estado = estado;
+    private Estado estado;
 
     public Cidade(String descricao, Estado estado) {
         this.descricao = descricao;
