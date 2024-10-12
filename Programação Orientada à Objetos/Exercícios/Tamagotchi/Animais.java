@@ -1,4 +1,4 @@
-package Aula_11_10_2024;
+package Tamagotchi;
 
 public class Animais {
     private String nome;
@@ -9,12 +9,11 @@ public class Animais {
     private int caloria;
     private int forca;
 
-
     public Animais(String nome, String classe, String familia, int idade, boolean estado, int caloria, int forca) {
         this.nome = nome;
         this.classe = classe;
         this.familia = familia;
-        this.idade = idade ;
+        this.idade = idade;
         this.estado = estado;
         this.caloria = caloria;
         this.forca = forca;
@@ -58,23 +57,15 @@ public class Animais {
         return forca;
     }
 
-    public void nascer(){
-
-    }
-
     @Override
     public String toString() {
-        return "\n**** Nome: " + nome +
-                ", Classe: " + classe +
-                ", Família: " + familia +
-                ", Idade: " + idade +
-                ", Estado: " + (estado ? "Vivo" : "Morto") +
-                ", Caloria: " + caloria +
-                ", Força: " + forca + " ****\n";
+        return "Classe: " + classe + "  |  Família: " + familia +
+                "\nNome: " + nome + "  |  Idade: " + idade +
+                "\nCaloria: " + caloria + "  |  Força: " + forca + "  |  Estado: " +
+                (estado ? "Vivo" : "Morto");
     }
 
-    public String nasceu(){
-        System.out.println("O bichinho Nasceu!!!");
+    public String nasceu() {
         return "Seu bichinho " + nome + " é da classe " +
                 classe + " da família " + familia +
                 ". \nO animal possui força de " + forca +
@@ -82,70 +73,74 @@ public class Animais {
                 " anos.";
     }
 
-    public String morrer(){
+    public boolean isVivo() {
+        return estado;
+    }
+
+    public String morrer() {
         forca = 0;
         estado = false;
-        String estadoAtual = toString();
-        System.out.println("Seu bichinho morreu! :(");
-        System.out.println(estadoAtual);
-        System.exit(0);
-        return "";
+//        String estadoAtual = toString();
+//        System.out.println();
+//        System.out.println(estadoAtual);
+//        //System.exit(0);
+        return "Seu bichinho morreu! :(\n"; // Poderia retornar uma mensagem, se necessário
     }
 
-    public String comer(){
-        if(!estado){
+    public String comer() {
+        if (!estado) {
             return morrer();
         }
 
-        if(caloria < 100){
+        if (caloria < 100) {
             caloria += 10;
             forca -= 2;
-            if (forca <= 0){
+            if (forca <= 0) {
                 forca = 0;
                 return morrer();
             }
-        }else{
+        } else {
             return nome + " está cheio! Não pode comer mais no momento!";
         }
-        return "Seu bichinho comeu! Sua força atual é de " + forca + " e suas calorias valem " + caloria;
+        return "Seu bichinho comeu! \nSua força atual é de " + forca + " e suas calorias valem " + caloria;
     }
 
-    public String correr(){
-        if(!estado){
+    public String correr() {
+        if (!estado) {
             return morrer();
         }
-        if(caloria > 0){
+        if (caloria > 0) {
             caloria -= 5;
             forca -= 5;
-            if (forca <= 0){
+            if (forca <= 0) {
                 forca = 0;
                 return morrer();
             }
-        }else{
+        } else {
             return nome + " está exausto! Não pode correr mais no momento!";
         }
-        return "Seu bichinho está correndo! Sua força atual é de " + forca + " e suas calorias valem " + caloria;
+        return "Seu bichinho está correndo! \nSua força atual é de " + forca + " e suas calorias valem " + caloria;
     }
 
-    public String dormir(){
-        if(!estado){
+    public String dormir() {
+        if (!estado) {
             return morrer();
-        }else{
-            if(forca >= 100){
+        } else {
+            if (forca >= 100) {
                 forca = 100;
-                System.out.println("Seu bichinho já está com a força no máximo!");
-            }else{
+                return "Seu bichinho já está com a força no máximo!";
+            } else {
                 caloria -= 2;
                 forca += 10;
-                if (caloria < 0){
+                if (caloria < 0) {
                     caloria = 0;
                 }
             }
         }
-        return "Seu bichinho está dormindo! Sua força atual é de " + forca + " e suas calorias valem " + caloria;
+        return "Seu bichinho está dormindo! \nSua força atual é de " + forca + " e suas calorias valem " + caloria;
     }
 
-    public String status(){
+    public String status() {
         return toString();
     }
 }

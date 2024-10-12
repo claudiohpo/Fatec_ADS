@@ -22,11 +22,9 @@ public class Main {
             System.out.println(a1.nasceu());
 
             while (op != 4) {
-                System.out.println("Escolha uma das opçoes: ");
-                System.out.println("1 - Comer");
-                System.out.println("2 - Correr");
-                System.out.println("3 - Dormir");
-                System.out.println("4 - Morrer");
+                System.out.println("Escolha uma das opções: \n" +
+                        ("1 - Comer\n") + ("2 - Correr\n") +
+                        ("3 - Dormir\n") + ("4 - Morrer\n") + ("5 - Status"));
                 op = teclado.nextInt();
 
                 switch (op) {
@@ -41,6 +39,9 @@ public class Main {
                         break;
                     case 4:
                         System.out.println(a1.morrer());
+                        break;
+                    case 5:
+                        System.out.println(a1.status());
                         break;
                     default:
                         System.out.println("Opção Inválida, tente novamente!");
