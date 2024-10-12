@@ -14,7 +14,7 @@
 
 ### - [Polimorfismo](https://github.com/claudiohpo/Fatec_ADS/blob/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Exerc%C3%ADcios/Polimorfismo)
 
-### - [Tamagotchi](https://github.com/claudiohpo/Fatec_ADS/blob/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Exerc%C3%ADcios/Tamagochi)
+### - [Tamagotchi](https://github.com/claudiohpo/Fatec_ADS/blob/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Exerc%C3%ADcios/Tamagotchi)
 
 
 
