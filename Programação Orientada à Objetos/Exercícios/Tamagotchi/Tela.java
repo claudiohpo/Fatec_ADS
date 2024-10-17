@@ -10,9 +10,9 @@ public class Tela extends JFrame {
     private JPanel displayPanel;
     private JTextArea statusArea;
     private int animationState = 0;
-    private boolean isEating = false; // Novo estado para quando o bichinho está comendo
-    private boolean isTired = false;  // Novo estado para quando o bichinho está cansado
-    private boolean isSleeping = false; // Novo estado para quando o bichinho está dormindo
+    private boolean isEating = false;
+    private boolean isTired = false;
+    private boolean isSleeping = false;
 
     public Tela(Animais animal) {
         this.animal = animal;
@@ -67,7 +67,7 @@ public class Tela extends JFrame {
         g.fillRect(0, 0, getWidth(), getHeight());
 
         // Cabeça
-        int headSize = 200; // Novo tamanho da cabeça
+        int headSize = 200;
         g.setColor(Color.YELLOW);
         g.fillOval(70, 50, headSize, headSize);
 
@@ -76,45 +76,42 @@ public class Tela extends JFrame {
         g.drawOval(70, 50, headSize, headSize);
 
         // Tamanho e posição dos olhos
-        int eyeSize = 20; // Tamanho dos olhos
-        int eyeY = 130;   // Y para os olhos
-        int leftEyeX = 130; // X para o olho esquerdo
-        int rightEyeX = 190; // X para o olho direito
+        int eyeSize = 20;
+        int eyeY = 130;
+        int leftEyeX = 130;
+        int rightEyeX = 190;
 
         if (!animal.isVivo()) {
             // Desenho do bichinho morto
-            g.drawLine(leftEyeX, eyeY, leftEyeX + eyeSize, eyeY + 10); // Olho esquerdo - diagonal
-            g.drawLine(leftEyeX + eyeSize, eyeY, leftEyeX, eyeY + 10); // Olho esquerdo - diagonal
-            g.drawLine(rightEyeX, eyeY, rightEyeX + eyeSize, eyeY + 10); // Olho direito - diagonal
-            g.drawLine(rightEyeX + eyeSize, eyeY, rightEyeX, eyeY + 10); // Olho direito - diagonal
-            g.drawLine(120, 180, 220, 180); // Boca
+            g.drawLine(leftEyeX, eyeY, leftEyeX + eyeSize, eyeY + 10);
+            g.drawLine(leftEyeX + eyeSize, eyeY, leftEyeX, eyeY + 10);
+            g.drawLine(rightEyeX, eyeY, rightEyeX + eyeSize, eyeY + 10);
+            g.drawLine(rightEyeX + eyeSize, eyeY, rightEyeX, eyeY + 10);
+            g.drawLine(120, 180, 220, 180);
         } else {
             // Se o bichinho está dormindo
             if (isSleeping) {
-                g.drawLine(leftEyeX, eyeY, leftEyeX + eyeSize, eyeY); // Olho esquerdo fechado
-                g.drawLine(rightEyeX, eyeY, rightEyeX + eyeSize, eyeY); // Olho direito fechado
-                g.drawString("ZzZz", 150, 40); // Desenha "ZzZz" acima da cabeça
+                g.drawLine(leftEyeX, eyeY, leftEyeX + eyeSize, eyeY);
+                g.drawLine(rightEyeX, eyeY, rightEyeX + eyeSize, eyeY);
+                g.drawString("ZzZz", 150, 40);
             } else {
                 // Desenho dos olhos abertos
-                g.fillOval(leftEyeX, eyeY, eyeSize, eyeSize); // Olho esquerdo
-                g.fillOval(rightEyeX, eyeY, eyeSize, eyeSize); // Olho direito
+                g.fillOval(leftEyeX, eyeY, eyeSize, eyeSize);
+                g.fillOval(rightEyeX, eyeY, eyeSize, eyeSize);
             }
 
-            // Boca com base no estado da animação
+            // Bocas
             if (isEating) {
-                g.drawArc(110, 180, 120, 40, 0, 180); // Boca aberta (simulando que está comendo)
-                g.drawArc(110, 180, 120, 40, 0, -180); // Boca triste (simulando que está cansado)
+                g.drawArc(110, 180, 120, 40, 0, 180);
+                g.drawArc(110, 180, 120, 40, 0, -180);
             }
             if (isTired) {
-                g.drawArc(110, 180, 120, 40, 0, 180); // Boca aberta (simulando que está comendo)
+                g.drawArc(110, 180, 120, 40, 0, 180);
             } else {
-                g.drawArc(110, 180, 120, 40, 0, -180); // Boca sorrindo
+                g.drawArc(110, 180, 120, 40, 0, -180);
                 }
             }
         }
-
-
-
 
     // Ação dos botões
     private class ButtonAction implements ActionListener {
@@ -130,28 +127,25 @@ public class Tela extends JFrame {
             switch (action) {
                 case "Comer":
                     result = animal.comer();
-                    isEating = true; // Bichinho está comendo
-                    isTired = false; // Reseta estado de cansaço
-                    isSleeping = false; // Reseta estado de sono
+                    isEating = true;
+                    isTired = false;
+                    isSleeping = false;
                     break;
                 case "Correr":
                     result = animal.correr();
-                    isEating = false; // Reseta estado de comer
-                    isTired = true; // Bichinho está cansado
-                    isSleeping = false; // Reseta estado de sono
+                    isEating = false;
+                    isTired = true;
+                    isSleeping = false;
                     break;
                 case "Dormir":
                     result = animal.dormir();
-                    isEating = false; // Reseta estado de comer
-                    isTired = false; // Reseta estado de cansaço
-                    isSleeping = true; // Bichinho está dormindo
+                    isEating = false;
+                    isTired = false;
+                    isSleeping = true;
                     break;
                 case "Morrer":
                     result = animal.morrer();
                     break;
-//                case "Status":
-//                    result = animal.status();
-//                    break;
             }
             animationState++;
             displayPanel.repaint();

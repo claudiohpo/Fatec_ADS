@@ -23,10 +23,10 @@ public class Animais {
         this.nome = nome;
         this.classe = classe;
         this.familia = familia;
-        this.idade = 0; // Definindo a idade inicial como 0
-        this.estado = true; // Animal nasce vivo
-        this.caloria = 10; // Caloria inicial 10
-        this.forca = 10; // Força inicial 10
+        this.idade = 0;
+        this.estado = true;
+        this.caloria = 10;
+        this.forca = 10;
     }
 
     public String getNome() {
@@ -83,8 +83,8 @@ public class Animais {
 //        String estadoAtual = toString();
 //        System.out.println();
 //        System.out.println(estadoAtual);
-//        //System.exit(0);
-        return "Seu bichinho morreu! :(\n"; // Poderia retornar uma mensagem, se necessário
+//        System.exit(0);
+        return "Seu bichinho morreu! :(\n";
     }
 
     public String comer() {
