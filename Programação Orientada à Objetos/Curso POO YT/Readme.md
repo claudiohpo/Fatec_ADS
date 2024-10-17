@@ -13,7 +13,7 @@
 
 ### - [Aula05](https://github.com/claudiohpo/Fatec_ADS/blob/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Curso%20POO%20YT/Aula05)
 
-### - [](https://github.com/claudiohpo/Fatec_ADS/tree/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Curso%20POO%20YT/)
+### - [Aula06](https://github.com/claudiohpo/Fatec_ADS/tree/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Curso%20POO%20YT/Aula06)
 
 ### - [](https://github.com/claudiohpo/Fatec_ADS/tree/main/Programa%C3%A7%C3%A3o%20Orientada%20%C3%A0%20Objetos/Curso%20POO%20YT/)
 
