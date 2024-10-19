@@ -1,6 +1,6 @@
-package Aula05;
+package Atividades_18_Outubro;
 
-public class ContaBanco {
+public class Banco {
 
     public void estadoAtual(){
         System.out.println("---------------------------");
@@ -20,7 +20,7 @@ public class ContaBanco {
     private boolean status;
 
     //Construtor - Método Especial
-    public ContaBanco() {
+    public Banco() {
         this.saldo = 0;
         this.status = false;
     }
@@ -66,14 +66,12 @@ public class ContaBanco {
         this.status = status;
     }
 
-    //Métodos Personalizados
     public void abrirConta(String T){
         this.setTipo(T);
         this.setStatus(true);
 
         if(T == "CC"){
-            //this.saldo = 50; //diretamente no atributo
-            this.setSaldo(50); //Utilizando o método
+            this.setSaldo(50);
         }else if(T == "CP"){
             this.setSaldo(150);
         }
@@ -86,15 +84,14 @@ public class ContaBanco {
         } else if (this.getSaldo() < 0){
             System.out.println(dono + ", Conta em débito, não pode ser encerrada!");
         }else{
-            this.setStatus(false); //ou Status = false;
+            this.setStatus(false);
             System.out.println(dono + ", Conta encerrada com sucesso!");
         }
     }
 
     public void depositar(float valor){
-        if (this.getStatus() == true) { //ou if (getStatus == true) ou (getStatus)
-            //this.saldo = this.saldo + valor; // ou setSaldo(getSaldo() + valor);
-            this.setSaldo(this.getSaldo() + valor); //trabalhando diretamente com os métodos especiais
+        if (this.getStatus() == true) {
+            this.setSaldo(this.getSaldo() + valor);
             System.out.println("Depósito realizado com sucesso na conta de " + dono);
         }else{
             System.out.println(dono + ", Impossível depositar em uma conta fechada!");
@@ -102,7 +99,7 @@ public class ContaBanco {
     }
 
     public void sacar(float valor){
-        if (this.getStatus() == true){ //Pode ser também: "if (this.getStatus()){}
+        if (this.getStatus() == true){
             if (this.getSaldo() >= valor){
                 this.setSaldo(this.getSaldo() - valor);
                 System.out.println("Saque de R$ " + valor + " efetuado com sucesso na conta de " + dono);
@@ -133,5 +130,44 @@ public class ContaBanco {
         }
     }
 
+    public void transferir(float valor){
+        if (this.getStatus() == true){
+            if (this.getSaldo() >= valor){
+                this.setSaldo(this.getSaldo() - valor);
+                System.out.println("Transferência de R$ " + valor + " efetuado com sucesso na conta de " + dono);
+            }else{
+                System.out.println(dono + ", Saldo Insuficiente para o saque");
+            }
+        }else{
+            System.out.println(dono + ", Impossível transferir");
+        }
+    }
+
+        public static void main(String[] args) {
+
+            Banco pessoa1 = new Banco();
+            pessoa1.setConta(1206);
+            pessoa1.setDono("Pedro");
+            pessoa1.abrirConta("CC");
+
+            Banco pessoa2 = new Banco();
+            pessoa2.setConta(1207);
+            pessoa2.setDono("Creuza");
+            pessoa2.abrirConta("CP");
+
+            pessoa1.depositar(100);
+            pessoa2.depositar(500);
+
+            pessoa1.transferir(75);
+            pessoa2.sacar(100);
+
+            pessoa1.fecharConta();
+
+            pessoa2.sacar(550);
+            pessoa2.fecharConta();
+
+            pessoa1.estadoAtual();
+            pessoa2.estadoAtual();
+        }
 
 }
