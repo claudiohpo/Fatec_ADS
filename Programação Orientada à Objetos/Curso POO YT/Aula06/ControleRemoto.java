@@ -116,7 +116,4 @@ public class ControleRemoto implements Controlador{
             System.out.println("Não consigo pausar!");
         }
     }
-
-
-
 }
