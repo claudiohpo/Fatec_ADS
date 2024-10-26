@@ -1,0 +1,47 @@
+Exercício 1 -
+Classe lâmpada
+Métodos
+	-Potencia da Lâmpada(potencia_lamp)
+		*Mostra a potência em Watts da lâmpada
+	-Soquete da Lâmpada(soquete_lamp)
+		*Mostra o tipo do soquete da lâmpada
+	-Valor da Lâmpada(valor_Lamp_un)
+		*Mostra o valor unitário de cada lâmpada
+
+Exercício 2 -
+Classe Livro
+Métodos
+	-Título do Livro(título_livro)
+	-Ano de publicação(ano livro)
+	-Autor do Livro(autor livro)
+
+Exercício 3 -
+Classe LivroDeLivraria
+Métodos
+	-Título do Livro(título_livro)
+	-Ano de publicação(ano livro)
+	-Autor do Livro(autor livro)
+	-Valor do Livro(valor livro)
+
+Exercício 4 -
+Classe LivroDeBiblioteca
+Métodos
+	-Título do Livro(título_livro)
+	-Ano de publicação(ano livro)
+	-Autor do Livro(autor livro)
+	-Emprestado?(livro_emrpesatado)
+	-Usuário portador do livro(usuario_livro)
+
+Exercício 5 -
+Classe Contato
+Método
+	-Nome(nome contato)
+	-Telefone(telefone_contato)
+	
+
+Exercício 6 - 
+
+Classe Contatinho
+Métodos
+	-Apelido do contato(apelido contato)
+	-Telefone(telefone_contato)
