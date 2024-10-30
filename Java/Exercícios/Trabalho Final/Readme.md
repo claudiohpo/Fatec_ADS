@@ -2,7 +2,7 @@
 
 * Trabalho Final
 
-## - DIRETRIZES PARA OS TRABALHOS FINAIS.
+## DIRETRIZES PARA OS TRABALHOS FINAIS.
 
 VOCÊS TERÃO  ATÉ A AULA DO DIA 26/11 PARA REALIZAR A ENTREGA DO(S) TRABALHO(S)
 
@@ -12,7 +12,7 @@ DEVERÁ SER ENTREGUE O ARQUIVO .JAVA DO TRABALHO E UM MANUAL DO USUÁRIO, VOLTAD
 
 ### CONTARÃO PONTOS:
 
--CLAREZA DO CÓDIGO; à 4,0
+- CLAREZA DO CÓDIGO; à 4,0
 
 - USO DE BIBLIOTECAS;  à 1,0
 
@@ -33,10 +33,11 @@ DEVERÁ SER ENTREGUE O ARQUIVO .JAVA DO TRABALHO E UM MANUAL DO USUÁRIO, VOLTAD
 - Serão ofertados 5 opções de programas para serem feitos 
 ### - [Diretrizes](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exercícios/Trabalho%20Final/DIRETRIZES%20PARA%20OS%20TRABALHOS%20FINAIS.txt)
 
-Criação de programa para entrada e saída de veículos em um estacionamento.
+> [!NOTE]
+> **Criação de programa para entrada e saída de veículos em um estacionamento;**
 
-Um usuário qualquer deverá entrar no estacionamento e ter a sua placa cadastrada. Ela deverá conter: Modelo do veiculo, cor , placa, nome do motorista, horário de entrada, horário de saida, e foto do veiculo
+>**Um usuário qualquer deverá entrar no estacionamento e ter a sua placa cadastrada. Ela deverá conter: Modelo do veiculo, cor , placa, nome do motorista, horário de entrada, horário de saida, e foto do veiculo;**
 
-O sistema deverá controlar o período de permanência, emitindo o tíquete correspondente ao numero de horas que o veiculo permanecer no estacionamento
+> **O sistema deverá controlar o período de permanência, emitindo o tíquete correspondente ao numero de horas que o veiculo permanecer no estacionamento;**
 
-O sistema devera cobrar o estacionamento por hora. 
+> **O sistema devera cobrar o estacionamento por hora;**
