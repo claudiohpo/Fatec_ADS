@@ -1,0 +1,136 @@
+DIRETRIZES PARA OS TRABALHOS FINAIS.
+
+VOCÊS TERÃO  ATÉ A AULA DO DIA 26/11 PARA REALIZAR A ENTREGA DO(S) TRABALHO(S)
+
+TRABALHO SERÁ INDIVIDUAL UTILIZANDO QUALQUER VERSÃO DO JAVA.
+
+DEVERÁ SER ENTREGUE O ARQUIVO .JAVA DO TRABALHO E UM MANUAL DO USUARIO, VOLTADO PARA O USUARIO FINAL, EM PDF COM ILUSTRAÇÕES.
+CONTARÃO PONTOS:
+CLAREZA DO CÓDIGO;  4,0
+USO DE BIBLIOTECAS;   1,0
+USABILIDADE;  2,0
+TRATAMENTO DE ERROS;  2,0
+CLAREZA E OBJETIVIDADE DO MANUAL DO USUARIO;  1,0
+CONTARÃO PONTO EXTRA:
+SISTEMA DE AJUDA E/OU TUTORIAL DO SISTEMA BILINGUE (PORTUGUES E ESPANHOL) 1,0
+USO DE APENAS JAVA PARA A CRIAÇÃO DA CAMADA DE APRESENTAÇÃO 2,0 
+
+Sistematica de execução
+Serão ofertados 5 opções de programas para serem feitos
+
+Criação de programa para entrada e saída de veículos em um estacionamento.
+
+Criação de programa para entrada e saída de veículos em um estacionamento.
+ 
+Um usuario qualquer deverá entrar entrar no estacionamento e ter a sua placa cadastrada. Ela deverá conter: Modelo do veiculo, cor , placa, nome do motorista, horario de entrada, horario de saida, e foto do veiculo
+ 
+o sistema deverá controlar  o periodo de permanencia, emitindo o tiquete correspondente ao numero de horas que o veiculo permanecer no estacionamento
+ 
+o sistema devera cobrar o estacionamento por hora. 
+ 
+Quem vai fazer
+AMANDA TAVEIRA AMORIM				
+ANTONIO KLECIO MARQUES DIAS				
+BEATRIZ FERREIRA DE OLIVEIRA				
+BRUNO SONODA				
+CAIQUE ANTUNES GUIMARAES SOUSA				
+CARLOS GONCALVES DA SILVA NETO				
+CESAR MORAIS FAUSTINO				
+CLAUDIO HENRIQUE PINHEIRO DE OLIVEIRA				
+EDUARDO ROQUE SERAPILHA DE SOUSA
+
+Segundo sistema
+Fazer um sistema de controle de entrada e saída de medicamentos no estoque de uma clinica veterinária
+Deverá constar:
+Nome do medicamento
+Nome do tutor
+Nome do pet
+Especie
+Raça
+Data de venda
+Quantidade.
+
+Essse sistema deverá controlar a saída de medicamentos, sempre dando o alerta quando um determinado medicamento tiver 5 ou menos unidades em estoque.
+Deverá também proibir a venda a venda de um mesmo medicamento para um mesmo pet num prazo inferior a 30 dias
+Quem vai fazer
+ENZO ALBUQUERQUE BERNARDES ALVAREZ
+FLAVIA ISHIZAKI BROCANELLA WITTER
+GABRIEL DOS SANTOS MEIRELES
+GABRIEL GORIS DE MOURA
+GABRIEL MATIAS XAVIER
+GUILHERME GRASSER ALEXANDRE
+GUILHERME KENJI NONAKA OJIMA
+GUILHERME NASCIMENTO LOURENCO
+GUILHERME THEO MEZEI SILVA
+
+Terceiro programa
+Fazer um sistema para controle de entrada e saída de pessoas em prédio.
+Este sistema deverá registrar:
+Nome da pessoa
+RG
+Foto
+Data e hora de entrada
+Motivo da visita
+Apartamento visitado
+Horario de saída
+O sistema deverá emitir um alerta caso a pessoa passe mais de 1 hora dentro do prédio.
+
+
+GUSTAVO HENRIQUE BARRETO PEREIRA ALVES
+JÉSSICA CONCEIÇÃO DE OLIVEIRA
+JOAO VITOR DA SILVA LIRA
+JULIA CAROLINA DA SILVA SOUSA
+LEONARDO HIDEKI KYOHARA
+LEONARDO SANTANA DE SOUZA RAMOS
+LUCAS CAETANO ROCHA DA SILVA
+LUCAS MOREIRA ALVES RODRIGUES
+LUIZ FELIPE PIERRE DE CARVALHO
+Programa numero 4
+Programa de controle de pagamentos de um condomínio
+Deverá constar
+Numero do Apartamento
+Proprietario
+Data da emissão
+Mês de Competencia
+Valor a pagar
+Data de Vencimento
+
+O programa deverá controlar quem está pagando na data de vencimento, além disso , deverá conceder 5% de desconto para quem pagar 3 dias antes do vencimento.
+MARCOS ANDRE FERREIRA LOPES
+MARIANA GOMES TEIXEIRA
+MATHEUS BATISTA RODRIGUES CARVALHO
+NATHAN ELSHADAY LOPES PEDROSO
+NICHOLAS EDUARDO GRUS
+N ICKOLAS ALEXANDRE DE SOUZA SANTOS
+RODOLFO GOMES RAMOS DOS SANTOS
+RYAN TAKATA DE SIQUEIRA
+THALIA APARECIDA COSTA SOARES
+
+Programa numero 5
+Criar um programa que : 
+Faça o controle de empréstimo de livros de uma biblioteca
+Neste programa deverá constar:
+Nome do livro
+Autor
+Ano publicação
+Data do empréstimo
+Usuario (quem está de posse do livro)
+Email
+Telefone
+Data de retirada
+Data de devolução
+Esse programa deverá controlar o empréstimo de livros, alertando na véspera da data de devolução (sempre 7 dias depois da data de empréstimo) o usuário que emprestou o livro.
+Caso ele entregue fora da data estipulada, deverá cobrar uma multa de $20,00
+Deverá calcular automaticamente a data de devolução
+THIAGO MONTEIRO BORGES DA SILVA
+VALMIR DONIZETE DE CAMARGO FRANCO JUNIOR
+VICTOR HUGO MACEDO ACUNA
+YAN PHILLIPE DE DEUS ALMEIDA CAPOBIANCO
+YASMIN DOS SANTOS FERNANDES				
+
+
+ PARA QUEM DESEJA GARANTIR A MAIOR NOTA POSSÍVEL DENTRO DA MÉDIA ALCANÇAVEL PELOS TRABALHOS FINAIS.... 
+TRABALHO PLUS..
+REALIZAR A INTEGRAÇÃO DO JAVA COM UMA API DE PESQUISA DE NOME DE EMPRESAS (PESQUISA DE CNPJ) , DISPONIVEL EM https://apicenter.estaleiro.serpro.gov.br/documentacao/consulta-cnpj/ 
+
+

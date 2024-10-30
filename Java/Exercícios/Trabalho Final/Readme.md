@@ -31,7 +31,7 @@ DEVERÁ SER ENTREGUE O ARQUIVO .JAVA DO TRABALHO E UM MANUAL DO USUÁRIO, VOLTAD
 ### Sistemática de execução:
 
 - Serão ofertados 5 opções de programas para serem feitos 
-### - [Diretrizes](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exercícios/Trabalho%20Final/DIRETRIZES%20PARA%20OS%20TRABALHOS%20FINAIS.docx)
+### - [Diretrizes](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exercícios/Trabalho%20Final/DIRETRIZES%20PARA%20OS%20TRABALHOS%20FINAIS.txt)
 
 Criação de programa para entrada e saída de veículos em um estacionamento.
 
