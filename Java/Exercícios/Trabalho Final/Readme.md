@@ -34,10 +34,7 @@ DEVERÁ SER ENTREGUE O ARQUIVO .JAVA DO TRABALHO E UM MANUAL DO USUÁRIO, VOLTAD
 ### - [Diretrizes](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Exercícios/Trabalho%20Final/DIRETRIZES%20PARA%20OS%20TRABALHOS%20FINAIS.txt)
 
 > [!NOTE]
-> **Criação de programa para entrada e saída de veículos em um estacionamento;**
-
->**Um usuário qualquer deverá entrar no estacionamento e ter a sua placa cadastrada. Ela deverá conter: Modelo do veiculo, cor , placa, nome do motorista, horário de entrada, horário de saida, e foto do veiculo;**
-
-> **O sistema deverá controlar o período de permanência, emitindo o tíquete correspondente ao numero de horas que o veiculo permanecer no estacionamento;**
-
-> **O sistema devera cobrar o estacionamento por hora;**
+>**Criação de programa para entrada e saída de veículos em um estacionamento;**<br/>
+>**Um usuário qualquer deverá entrar no estacionamento e ter a sua placa cadastrada. Ela deverá conter: Modelo do veiculo, cor , placa, nome do motorista, horário de entrada, horário de saida, e foto do veiculo;**<br/>
+>**O sistema deverá controlar o período de permanência, emitindo o tíquete correspondente ao numero de horas que o veiculo permanecer no estacionamento;**<br/>
+>**O sistema devera cobrar o estacionamento por hora;**<br/>
