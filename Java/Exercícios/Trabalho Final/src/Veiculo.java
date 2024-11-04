@@ -10,16 +10,28 @@ public class Veiculo {
     private Timestamp horarioEntrada;
     private Timestamp horarioSaida;
     private byte[] fotoVeiculo;
+    private double valorTotal;
 
-    public Veiculo(int id, String marca, String modelo, String cor, String placa, String nomeMotorista, Timestamp horarioEntrada, byte[] fotoVeiculo) {
-        this.id = id;
+    public Veiculo( String marca, String modelo, String cor, String placa, String nomeMotorista, Timestamp horarioEntrada, Timestamp horarioSaida, byte[] fotoVeiculo) {
+
         this.marca = marca;
         this.modelo = modelo;
         this.cor = cor;
         this.placa = placa;
         this.nomeMotorista = nomeMotorista;
         this.horarioEntrada = horarioEntrada;
+        this.horarioSaida = horarioSaida;
         this.fotoVeiculo = fotoVeiculo;
+    }
+
+        public Veiculo(String marca, String modelo, String cor, String placa, String nomeMotorista, Timestamp horarioEntrada, Object fotos) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.cor = cor;
+        this.placa = placa;
+        this.nomeMotorista = nomeMotorista;
+        this.horarioEntrada = horarioEntrada;
+
     }
 
     public int getId() {
@@ -96,9 +108,17 @@ public class Veiculo {
 
     public long calculoPermanencia(){
         if(horarioSaida != null && horarioEntrada != null){
-            long millisegundos = horarioSaida.getTime() - horarioEntrada.getTime();
-            return millisegundos / (60*60*1000);
+            //long millisegundos = horarioSaida.getTime() - horarioEntrada.getTime();
+            return horarioSaida.getTime() - horarioEntrada.getTime();
         }
         return 0;
+    }
+
+    public double getValorTotal(){
+        return valorTotal;
+    }
+
+    public void setValorTotal(double valorTotal) {
+        this.valorTotal = valorTotal;
     }
 }

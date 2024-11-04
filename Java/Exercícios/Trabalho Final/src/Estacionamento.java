@@ -1,4 +1,6 @@
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Estacionamento {
     private Connection conn;
@@ -8,18 +10,24 @@ public class Estacionamento {
     }
 
     public void registrarEntrada(Veiculo veiculo) throws SQLException {
-        String sql = "INSERT INTO veiculos (id, marca, modelo, cor, placa, nomeMotorista, horarioEntrada, fotoVeiculo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO veiculos (marca, modelo, cor, placa, nomeMotorista, horarioEntrada, fotoVeiculo) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
-            stmt.setString(1, String.valueOf(veiculo.getId()));
-            stmt.setString(2, veiculo.getMarca());
-            stmt.setString(3, veiculo.getModelo());
-            stmt.setString(4, veiculo.getCor());
-            stmt.setString(5, veiculo.getPlaca());
-            stmt.setString(6, veiculo.getNomeMotorista());
-            stmt.setTimestamp(7, veiculo.getHorarioEntrada());
-            stmt.setBytes(8, veiculo.getFotoVeiculo());
+//            stmt.setString(1, String.valueOf(veiculo.getId()));
+            stmt.setString(1, veiculo.getMarca());
+            stmt.setString(2, veiculo.getModelo());
+            stmt.setString(3, veiculo.getCor());
+            stmt.setString(4, veiculo.getPlaca());
+            stmt.setString(5, veiculo.getNomeMotorista());
+            stmt.setTimestamp(6, veiculo.getHorarioEntrada());
+            stmt.setBytes(7, veiculo.getFotoVeiculo());
 
             stmt.executeUpdate();
+
+            ResultSet rs = stmt.getGeneratedKeys();
+            if (rs.next()){
+                int idGerado = rs.getInt(1);
+                System.out.println("ID Registrado: " + idGerado);
+            }
             try (ResultSet generatedKeys = stmt.getGeneratedKeys()) {
                 if (generatedKeys.next()) {
                     veiculo.setId(generatedKeys.getInt(1));
@@ -38,7 +46,7 @@ public class Estacionamento {
                 int id = rs.getInt("id");
                 Timestamp horaEntrada = rs.getTimestamp("horarioEntrada");
 
-                Veiculo veiculo = new Veiculo(rs.getInt("id"), rs.getString("marca"), rs.getString("modelo"), rs.getString("cor"), placa, rs.getString("nomeMotorista"), horaEntrada, rs.getBytes("fotoVeiculo"));
+                Veiculo veiculo = new Veiculo(rs.getString("marca"), rs.getString("modelo"), rs.getString("cor"), placa, rs.getString("nomeMotorista"), horaEntrada, rs.getBytes("fotoVeiculo"));
                 veiculo.setId(id);
                 veiculo.setHorarioSaida(horaSaida);
 
@@ -54,13 +62,13 @@ public class Estacionamento {
 
                 Controle ticket = new Controle(id, veiculo, horaEntrada, horaSaida, custo);
 
-                String insereTicket = "INSERT INTO controle (id, horaEntrada, horaSaida, valorTotal) VALUES (?, ?, ?, ?)";
+                String insereTicket = "INSERT INTO controle (horaEntrada, horaSaida, valorTotal) VALUES (?, ?, ?)";
                 try (PreparedStatement ticketStmt = conn.prepareStatement(insereTicket)) {
-                    ticketStmt.setInt(1, id);
+//                    ticketStmt.setInt(1, id);
                     //ticketStmt.setString(2, String.valueOf(veiculo));
-                    ticketStmt.setTimestamp(2, horaEntrada);
-                    ticketStmt.setTimestamp(3, horaSaida);
-                    ticketStmt.setDouble(4, custo);
+                    ticketStmt.setTimestamp(1, horaEntrada);
+                    ticketStmt.setTimestamp(2, horaSaida);
+                    ticketStmt.setDouble(3, custo);
                     ticketStmt.executeUpdate();
                 }
 
@@ -72,8 +80,72 @@ public class Estacionamento {
         }
     }
 
-    private double calcularCobranca(long horas) {
+    private double calcularCobranca(long duracaoMilissegundos) {
         double valorPorHora = 5.0; // Valor fixo por hora
-        return horas * valorPorHora;
+        long duracaoMinutos = duracaoMilissegundos / (60 * 1000);
+
+        if (duracaoMinutos <5){
+            return 0;
+        }
+
+        long horasCobradas = (duracaoMinutos + 59) / 60;
+
+        return horasCobradas * valorPorHora;
     }
+
+    public List<Veiculo> consultarVeiculos() throws SQLException{
+        List<Veiculo> veiculos = new ArrayList<>();
+        String sql = "SELECT * FROM veiculos where horarioSaida IS NULL";
+
+        try (PreparedStatement stmt = conn.prepareStatement(sql);
+            ResultSet rs = stmt.executeQuery()){
+
+            while(rs.next()) {
+                Veiculo veiculo = new Veiculo(
+                        //rs.getString("id"),
+                        rs.getString("marca"),
+                        rs.getString("modelo"),
+                        rs.getString("cor"),
+                        rs.getString("placa"),
+                        rs.getString("nomeMotorista"),
+                        rs.getTimestamp("horarioEntrada"),
+                        rs.getBytes("fotoVeiculo"));
+
+                veiculo.setId(rs.getInt("id"));
+                //veiculo.setHorarioSaida();
+                veiculos.add(veiculo);
+
+            }
+        }
+        return veiculos;
+    }
+
+    public List<Veiculo> consultarVeiculosHistorico() throws SQLException{
+        List<Veiculo> veiculos = new ArrayList<>();
+        String sql = "SELECT v.*, c.valorTotal FROM veiculos v JOIN controle c ON v.id = c.id";
+
+        try (PreparedStatement stmt = conn.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()){
+
+            while(rs.next()) {
+                Veiculo veiculo = new Veiculo(
+                        rs.getString("marca"),
+                        rs.getString("modelo"),
+                        rs.getString("cor"),
+                        rs.getString("placa"),
+                        rs.getString("nomeMotorista"),
+                        rs.getTimestamp("horarioEntrada"),
+                        rs.getTimestamp("horarioSaida"),
+                        rs.getBytes("fotoVeiculo"));
+
+                veiculo.setId(rs.getInt("id"));
+                veiculo.setValorTotal(rs.getDouble("valorTotal"));
+                veiculos.add(veiculo);
+
+            }
+        }
+        return veiculos;
+    }
+
+
 }
