@@ -82,15 +82,15 @@ public class Main {
                                 System.out.println("Não há veículos no estacionamento.");
                             } else {
                                 System.out.println("Veículos no estacionamento:");
-                                System.out.println("-------------------------------------------------------------------------------------------------");
-                                System.out.printf("%-3s %-15s %-15s %-10s %-10s %-20s %-20s%n", "ID", "Marca", "Modelo", "Cor", "Placa", "Motorista", "Hora de Entrada");
-                                System.out.println("-------------------------------------------------------------------------------------------------");
+                                System.out.println("------------------------------------------------------------------------------------------------------");
+                                System.out.printf("| %-3s %-15s %-15s %-10s %-10s %-20s %-19s |%n", "ID", "Marca", "Modelo", "Cor", "Placa", "Motorista", "Hora de Entrada");
+                                System.out.println("------------------------------------------------------------------------------------------------------");
 
                                 SimpleDateFormat formatoSimples = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
                                 for (Veiculo veiculo1: veiculosEstacionados) {
                                     String dataFormatada = formatoSimples.format(veiculo1.getHorarioEntrada());
-                                    System.out.printf("%-3s %-15s %-15s %-10s %-10s %-20s %-20s%n",
+                                    System.out.printf("| %-3s %-15s %-15s %-10s %-10s %-20s %-19s |%n",
                                             veiculo1.getId(),
                                             veiculo1.getMarca(),
                                             veiculo1.getModelo(),
@@ -99,6 +99,7 @@ public class Main {
                                             veiculo1.getNomeMotorista(),
                                             dataFormatada);
                                 }
+                                System.out.println("------------------------------------------------------------------------------------------------------");
                             }
                             break;
 
@@ -117,7 +118,14 @@ public class Main {
 
                                 for (Veiculo veiculo2: veiculosHistorico) {
                                     String dataFormatadaEntrada = formatoSimples.format(veiculo2.getHorarioEntrada());
-                                    String dataFormatadaSaida = formatoSimples.format(veiculo2.getHorarioSaida());
+
+                                    String dataFormatadaSaida;
+                                    if (veiculo2.getHorarioSaida() != null) {
+                                        dataFormatadaSaida = formatoSimples.format(veiculo2.getHorarioSaida());
+                                    } else {
+                                        dataFormatadaSaida = "";
+                                    }
+
 
                                     //double valorTotal = Controle.getValorTotal();
                                     System.out.printf("| %-3s %-15s %-15s %-10s %-10s %-20s %-20s %-20s R$ %-9.2f |%n", //%-8s -> colocar no final coluna valor R$%-8.2f

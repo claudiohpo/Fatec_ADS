@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17e9e988-03bb-48bb-8dc0-8ec1ab4b7b80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/claud.xml" afterDir="false" />
+    <list default="true" id="17e9e988-03bb-48bb-8dc0-8ec1ab4b7b80" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/Estacionamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/Estacionamento.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/Veiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/Veiculo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Estacionamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estacionamento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +22,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2oLRiqc5l96g5rMW4nQ6FxQWHXY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,6 +49,11 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "proofread",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -70,12 +72,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730647000478</updated>
-      <workItem from="1730647001847" duration="13680000" />
+      <workItem from="1730647001847" duration="25834000" />
+      <workItem from="1730737844434" duration="5115000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1730696305638</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730696305639</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -84,11 +100,6 @@
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Estacionamento.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

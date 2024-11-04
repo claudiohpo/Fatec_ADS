@@ -60,15 +60,15 @@ public class Estacionamento {
                     updateStmt.executeUpdate();
                 }
 
-                Controle ticket = new Controle(id, veiculo, horaEntrada, horaSaida, custo);
+                Controle ticket = new Controle( veiculo, horaEntrada, horaSaida, custo);
 
-                String insereTicket = "INSERT INTO controle (horaEntrada, horaSaida, valorTotal) VALUES (?, ?, ?)";
+                String insereTicket = "INSERT INTO controle (id_veiculo, horaEntrada, horaSaida, valorTotal) VALUES (?, ? , ?, ?)";
                 try (PreparedStatement ticketStmt = conn.prepareStatement(insereTicket)) {
-//                    ticketStmt.setInt(1, id);
+                    ticketStmt.setInt(1, id);
                     //ticketStmt.setString(2, String.valueOf(veiculo));
-                    ticketStmt.setTimestamp(1, horaEntrada);
-                    ticketStmt.setTimestamp(2, horaSaida);
-                    ticketStmt.setDouble(3, custo);
+                    ticketStmt.setTimestamp(2, horaEntrada);
+                    ticketStmt.setTimestamp(3, horaSaida);
+                    ticketStmt.setDouble(4, custo);
                     ticketStmt.executeUpdate();
                 }
 
@@ -122,7 +122,7 @@ public class Estacionamento {
 
     public List<Veiculo> consultarVeiculosHistorico() throws SQLException{
         List<Veiculo> veiculos = new ArrayList<>();
-        String sql = "SELECT v.*, c.valorTotal FROM veiculos v JOIN controle c ON v.id = c.id";
+        String sql = "SELECT v.*, c.valorTotal FROM veiculos v LEFT JOIN controle c ON v.id = c.id_veiculo";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()){
@@ -139,6 +139,12 @@ public class Estacionamento {
                         rs.getBytes("fotoVeiculo"));
 
                 veiculo.setId(rs.getInt("id"));
+
+
+//                // Verifica se há um `valorTotal` registrado e define no objeto `veiculo`
+//                double valorTotal = rs.getDouble("valorTotal");
+//                veiculo.setValorTotal(valorTotal);
+
                 veiculo.setValorTotal(rs.getDouble("valorTotal"));
                 veiculos.add(veiculo);
 
