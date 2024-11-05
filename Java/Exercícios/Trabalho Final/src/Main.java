@@ -20,7 +20,7 @@ public class Main {
                 System.out.println("1 - Registrar Entrada de Veículos");
                 System.out.println("2 - Registrar Saída de Veículos");
                 System.out.println("3 - Consultar Veículos Estacionados");
-                System.out.println("4 - Histórico de Véiculos");
+                System.out.println("4 - Histórico de Veículos");
                 System.out.println("5 - Sair");
                 System.out.print("\nEscolha uma opção: ");
                 try{
@@ -64,7 +64,8 @@ public class Main {
                             placaSaida = placaSaida.replace("-","");
 
                             Timestamp horarioSaida = new Timestamp(System.currentTimeMillis());
-                            Controle ticket = estacionamento.registrarSaida(placaSaida, horarioSaida);
+
+                            Veiculo ticket = estacionamento.registrarSaida(placaSaida, horarioSaida);
 
                             if (ticket != null) {
                                 System.out.println("Saída registrada com sucesso!");
@@ -164,34 +165,5 @@ public class Main {
         }catch (Exception e){
             System.out.println("Erro: " + e.getMessage());
         }
-
-
-
-//        try {
-//            Estacionamento estacionamento = new Estacionamento();
-//
-//
-//            Veiculo veiculo = new Veiculo(04, "Volkswagem", "Fusca", "Preto", "CVU0878", "João", new Timestamp(System.currentTimeMillis()), null);
-//            estacionamento.registrarEntrada(veiculo);
-//
-//
-//            Controle ticket = estacionamento.registrarSaida("CVU0878", new Timestamp(System.currentTimeMillis() + 2 * 60 * 60 * 1000)); // 2 horas
-//            if (ticket != null) {
-//                System.out.println("Custo total: " + ticket.getValorTotal());
-//            }
-//
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
     }
 }
-
-/* - Criação de programa para entrada e saída de veículos em um estacionamento;
-
-- Um usuário qualquer deverá entrar no estacionamento e ter a sua placa cadastrada. Ela deverá conter: Modelo do
-veiculo, cor , placa, nome do motorista, horário de entrada, horário de saida, e foto do veiculo;
-
-- O sistema deverá controlar o período de permanência, emitindo o tíquete correspondente ao número de horas que o
-veiculo permanecer no estacionamento;
-
-- O sistema devera cobrar o estacionamento por hora;*/

@@ -11,6 +11,7 @@ public class Veiculo {
     private Timestamp horarioSaida;
     private byte[] fotoVeiculo;
     private double valorTotal;
+    private double valor;
 
     public Veiculo( String marca, String modelo, String cor, String placa, String nomeMotorista, Timestamp horarioEntrada, Timestamp horarioSaida, byte[] fotoVeiculo) {
 
@@ -24,14 +25,13 @@ public class Veiculo {
         this.fotoVeiculo = fotoVeiculo;
     }
 
-        public Veiculo(String marca, String modelo, String cor, String placa, String nomeMotorista, Timestamp horarioEntrada, Object fotos) {
+    public Veiculo(String marca, String modelo, String cor, String placa, String nomeMotorista, Timestamp horarioEntrada, Object fotos) {
         this.marca = marca;
         this.modelo = modelo;
         this.cor = cor;
         this.placa = placa;
         this.nomeMotorista = nomeMotorista;
         this.horarioEntrada = horarioEntrada;
-
     }
 
     public int getId() {
@@ -106,12 +106,12 @@ public class Veiculo {
         this.fotoVeiculo = fotoVeiculo;
     }
 
-    public long calculoPermanencia(){
-        if(horarioSaida != null && horarioEntrada != null){
-            //long millisegundos = horarioSaida.getTime() - horarioEntrada.getTime();
-            return horarioSaida.getTime() - horarioEntrada.getTime();
-        }
-        return 0;
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 
     public double getValorTotal(){
@@ -120,5 +120,12 @@ public class Veiculo {
 
     public void setValorTotal(double valorTotal) {
         this.valorTotal = valorTotal;
+    }
+
+    public long calculoPermanencia(){
+        if(horarioSaida != null && horarioEntrada != null){
+            return horarioSaida.getTime() - horarioEntrada.getTime();
+        }
+        return 0;
     }
 }

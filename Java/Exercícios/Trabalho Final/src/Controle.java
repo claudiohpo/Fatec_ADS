@@ -1,21 +1,19 @@
-import java.sql.Timestamp;
-
-public class Controle {
-    //private int id;
-    private Veiculo veiculo;
-    private Timestamp horaEntrada;
-    private Timestamp horaSaida;
-    private double valorTotal;
-
-    public Controle(Veiculo veiculo, Timestamp horaEntrada, Timestamp horaSaida, double valorTotal) {
-        //this.id = id;
-        this.veiculo = veiculo;
-        this.horaEntrada = horaEntrada;
-        this.horaSaida = horaSaida;
-        this.valorTotal = valorTotal;
-    }
-
-    public double getValorTotal() {
-        return valorTotal;
-    }
-}
+//import java.sql.Timestamp;
+//
+//public class Controle {
+//    private Veiculo veiculo;
+//    private Timestamp horaEntrada;
+//    private Timestamp horaSaida;
+//    private double valorTotal;
+//
+//    public Controle(Veiculo veiculo, Timestamp horaEntrada, Timestamp horaSaida, double valorTotal) {
+//        this.veiculo = veiculo;
+//        this.horaEntrada = horaEntrada;
+//        this.horaSaida = horaSaida;
+//        this.valorTotal = valorTotal;
+//    }
+//
+//    public double getValorTotal() {
+//        return valorTotal;
+//    }
+//}

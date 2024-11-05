@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Estacionamento {
-    private Connection conn;
+    private final Connection conn;
 
     public Estacionamento() throws SQLException {
         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/estacionamento", "root", "root");
@@ -12,7 +12,6 @@ public class Estacionamento {
     public void registrarEntrada(Veiculo veiculo) throws SQLException {
         String sql = "INSERT INTO veiculos (marca, modelo, cor, placa, nomeMotorista, horarioEntrada, fotoVeiculo) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
-//            stmt.setString(1, String.valueOf(veiculo.getId()));
             stmt.setString(1, veiculo.getMarca());
             stmt.setString(2, veiculo.getModelo());
             stmt.setString(3, veiculo.getCor());
@@ -36,7 +35,7 @@ public class Estacionamento {
         }
     }
 
-    public Controle registrarSaida(String placa, Timestamp horaSaida) throws SQLException {
+    public Veiculo registrarSaida(String placa, Timestamp horaSaida) throws SQLException {
         String buscaVeiculo = "SELECT * FROM veiculos WHERE placa = ? AND horarioSaida IS NULL";
         try (PreparedStatement stmt = conn.prepareStatement(buscaVeiculo)) {
             stmt.setString(1, placa);
@@ -52,27 +51,29 @@ public class Estacionamento {
 
                 long horas = veiculo.calculoPermanencia();
                 double custo = calcularCobranca(horas);
+                veiculo.setValorTotal(custo);
 
-                String atualizaVeiculo = "UPDATE veiculos SET horarioSaida = ? WHERE id = ?";
+                String atualizaVeiculo = "UPDATE veiculos SET horarioSaida = ?, valorTotal = ? WHERE id = ?";
                 try (PreparedStatement updateStmt = conn.prepareStatement(atualizaVeiculo)) {
                     updateStmt.setTimestamp(1, horaSaida);
-                    updateStmt.setInt(2, id);
+                    updateStmt.setDouble(2, custo);
+                    updateStmt.setInt(3, id);
                     updateStmt.executeUpdate();
                 }
+                return veiculo;
 
-                Controle ticket = new Controle( veiculo, horaEntrada, horaSaida, custo);
-
-                String insereTicket = "INSERT INTO controle (id_veiculo, horaEntrada, horaSaida, valorTotal) VALUES (?, ? , ?, ?)";
-                try (PreparedStatement ticketStmt = conn.prepareStatement(insereTicket)) {
-                    ticketStmt.setInt(1, id);
-                    //ticketStmt.setString(2, String.valueOf(veiculo));
-                    ticketStmt.setTimestamp(2, horaEntrada);
-                    ticketStmt.setTimestamp(3, horaSaida);
-                    ticketStmt.setDouble(4, custo);
-                    ticketStmt.executeUpdate();
-                }
-
-                return ticket;
+//                Veiculo ticket = new Veiculo( veiculo, horaEntrada, horaSaida, custo);
+//
+//                String insereTicket = "INSERT INTO controle (id_veiculo, horaEntrada, horaSaida, valorTotal) VALUES (?, ? , ?, ?)";
+//                try (PreparedStatement ticketStmt = conn.prepareStatement(insereTicket)) {
+//                    ticketStmt.setInt(1, id);
+//                    ticketStmt.setTimestamp(2, horaEntrada);
+//                    ticketStmt.setTimestamp(3, horaSaida);
+//                    ticketStmt.setDouble(4, custo);
+//                    ticketStmt.executeUpdate();
+//                }
+//
+//                return ticket;
             } else {
                 System.out.println("Veículo não encontrado ou já saiu.");
                 return null;
@@ -102,7 +103,6 @@ public class Estacionamento {
 
             while(rs.next()) {
                 Veiculo veiculo = new Veiculo(
-                        //rs.getString("id"),
                         rs.getString("marca"),
                         rs.getString("modelo"),
                         rs.getString("cor"),
@@ -112,7 +112,7 @@ public class Estacionamento {
                         rs.getBytes("fotoVeiculo"));
 
                 veiculo.setId(rs.getInt("id"));
-                //veiculo.setHorarioSaida();
+                veiculo.setValorTotal(rs.getDouble("valorTotal"));
                 veiculos.add(veiculo);
 
             }
@@ -122,7 +122,8 @@ public class Estacionamento {
 
     public List<Veiculo> consultarVeiculosHistorico() throws SQLException{
         List<Veiculo> veiculos = new ArrayList<>();
-        String sql = "SELECT v.*, c.valorTotal FROM veiculos v LEFT JOIN controle c ON v.id = c.id_veiculo";
+        //String sql = "SELECT v.*, c.valorTotal FROM veiculos v LEFT JOIN controle c ON v.id = c.id_veiculo";
+        String sql = "SELECT * FROM veiculos";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()){
@@ -139,19 +140,10 @@ public class Estacionamento {
                         rs.getBytes("fotoVeiculo"));
 
                 veiculo.setId(rs.getInt("id"));
-
-
-//                // Verifica se há um `valorTotal` registrado e define no objeto `veiculo`
-//                double valorTotal = rs.getDouble("valorTotal");
-//                veiculo.setValorTotal(valorTotal);
-
                 veiculo.setValorTotal(rs.getDouble("valorTotal"));
                 veiculos.add(veiculo);
-
             }
         }
         return veiculos;
     }
-
-
 }
