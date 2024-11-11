@@ -1,8 +1,11 @@
+import javax.swing.*;
+import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class Estacionamento {
+public class Estacionamento extends Component {
     private final Connection conn;
 
     public Estacionamento() throws SQLException {
@@ -10,8 +13,11 @@ public class Estacionamento {
     }
 
     public void registrarEntrada(Veiculo veiculo) throws SQLException {
+
         String sql = "INSERT INTO veiculos (marca, modelo, cor, placa, nomeMotorista, horarioEntrada, fotoVeiculo) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+
+            System.out.println("Foto 1: " + Arrays.toString(veiculo.getFotoVeiculo()));
             stmt.setString(1, veiculo.getMarca());
             stmt.setString(2, veiculo.getModelo());
             stmt.setString(3, veiculo.getCor());
@@ -20,8 +26,9 @@ public class Estacionamento {
             stmt.setTimestamp(6, veiculo.getHorarioEntrada());
             stmt.setBytes(7, veiculo.getFotoVeiculo());
 
+            System.out.println("Foto 2: " + Arrays.toString(veiculo.getFotoVeiculo()));
             stmt.executeUpdate();
-
+            System.out.println("Foto 3: " + Arrays.toString(veiculo.getFotoVeiculo()));
             ResultSet rs = stmt.getGeneratedKeys();
             if (rs.next()){
                 int idGerado = rs.getInt(1);
@@ -99,7 +106,7 @@ public class Estacionamento {
         String sql = "SELECT * FROM veiculos where horarioSaida IS NULL";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql);
-            ResultSet rs = stmt.executeQuery()){
+             ResultSet rs = stmt.executeQuery()){
 
             while(rs.next()) {
                 Veiculo veiculo = new Veiculo(
@@ -145,5 +152,56 @@ public class Estacionamento {
             }
         }
         return veiculos;
+    }
+
+    public void atualizarVeiculo(int id, Veiculo veiculo) throws SQLException{
+        String sql = "UPDATE veiculos SET marca = ?, modelo = ?, cor = ?, placa = ?, nomeMotorista = ? WHERE id = ?";
+
+        try (PreparedStatement stmt = conn.prepareStatement(sql)){
+
+            logConsoleSQL(id,veiculo);
+
+            stmt.setString(1, veiculo.getMarca());
+            stmt.setString(2, veiculo.getModelo());
+            stmt.setString(3, veiculo.getCor());
+            stmt.setString(4, veiculo.getPlaca());
+            stmt.setString(5, veiculo.getNomeMotorista());
+            stmt.setInt(6, id);
+
+            int linhaAtualizada = stmt.executeUpdate();
+
+//            if(linhaAtualizada > 0){
+//                System.out.println("Veiculo atualizado com sucesso!"); //Console
+//            }else {
+//                System.out.println("Nenhuma alteração realizada!"); //Console
+//            }
+        }
+    }
+
+    public void logConsoleSQL(int id, Veiculo veiculo) throws SQLException{
+        //Método criado para testes de SQL em console
+        String sql = "SELECT * FROM veiculos";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)){
+            System.out.println("Atualizando veículo ID: " + id);
+            System.out.println("Marca: " + veiculo.getMarca());
+            System.out.println("Modelo: " + veiculo.getModelo());
+            System.out.println("Cor: " + veiculo.getCor());
+            System.out.println("Placa: " + veiculo.getPlaca());
+            System.out.println("Nome do Motorista: " + veiculo.getNomeMotorista());
+            System.out.println("Foto: " + Arrays.toString(veiculo.getFotoVeiculo()));
+        }
+    }
+
+    public boolean placaDuplicada(String placa) throws SQLException{
+        String sql = "SELECT COUNT(*) FROM veiculos WHERE placa = ? AND horarioSaida is NULL";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, placa);
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt(1) > 0;
+                }
+            }
+        }
+        return false;
     }
 }

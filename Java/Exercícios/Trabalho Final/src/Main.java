@@ -1,4 +1,25 @@
+import javax.swing.*;
 import java.sql.SQLException;
+import java.util.InputMismatchException;
+
+public class Main {
+    public static void main(String[] args) {
+        new TelaInicial();
+
+        try{
+            Estacionamento estacionamento = new Estacionamento();
+        }catch (InputMismatchException e){
+            System.out.println("Erro: Entrada Inválida! Por favor insira um número.");
+            //JOptionPane.showMessageDialog( "Horário de entrada: " + horarioEntrada +"\nEntrada registrada com sucesso!");
+        }catch (SQLException e){
+            System.out.println("Erro de SQL: " + e.getMessage());
+        }catch (Exception e){
+            System.out.println("Erro: " + e.getMessage());
+        }
+    }
+}
+
+/*import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.InputMismatchException;
@@ -166,4 +187,4 @@ public class Main {
             System.out.println("Erro: " + e.getMessage());
         }
     }
-}
+}*/

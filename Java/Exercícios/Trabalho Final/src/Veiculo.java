@@ -25,13 +25,23 @@ public class Veiculo {
         this.fotoVeiculo = fotoVeiculo;
     }
 
-    public Veiculo(String marca, String modelo, String cor, String placa, String nomeMotorista, Timestamp horarioEntrada, Object fotos) {
+    public Veiculo(String marca, String modelo, String cor, String placa, String nomeMotorista, Timestamp horarioEntrada, byte[] fotoVeiculo) {
         this.marca = marca;
         this.modelo = modelo;
         this.cor = cor;
         this.placa = placa;
         this.nomeMotorista = nomeMotorista;
         this.horarioEntrada = horarioEntrada;
+        this.fotoVeiculo = fotoVeiculo;
+    }
+
+    public Veiculo(int id, String marca, String modelo, String cor, String placa, String nomeMotorista) {
+        this.id =id;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.cor = cor;
+        this. placa = placa;
+        this.nomeMotorista = nomeMotorista;
     }
 
     public int getId() {
