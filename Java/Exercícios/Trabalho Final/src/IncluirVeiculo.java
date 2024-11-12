@@ -44,7 +44,6 @@ public class IncluirVeiculo extends JFrame {
                 try {
                     fotoBytes = Files.readAllBytes(file.toPath()); // Lê a imagem em bytes
                     JOptionPane.showMessageDialog(this, "Foto selecionada com sucesso!");
-                    System.out.println("Foto: " + fotoBytes);
                 } catch (IOException ex) {
                     JOptionPane.showMessageDialog(this, "Erro ao carregar a foto.");
                 }

@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
@@ -26,9 +25,9 @@ public class Estacionamento extends Component {
             stmt.setTimestamp(6, veiculo.getHorarioEntrada());
             stmt.setBytes(7, veiculo.getFotoVeiculo());
 
-            System.out.println("Foto 2: " + Arrays.toString(veiculo.getFotoVeiculo()));
+
             stmt.executeUpdate();
-            System.out.println("Foto 3: " + Arrays.toString(veiculo.getFotoVeiculo()));
+
             ResultSet rs = stmt.getGeneratedKeys();
             if (rs.next()){
                 int idGerado = rs.getInt(1);
@@ -69,18 +68,6 @@ public class Estacionamento extends Component {
                 }
                 return veiculo;
 
-//                Veiculo ticket = new Veiculo( veiculo, horaEntrada, horaSaida, custo);
-//
-//                String insereTicket = "INSERT INTO controle (id_veiculo, horaEntrada, horaSaida, valorTotal) VALUES (?, ? , ?, ?)";
-//                try (PreparedStatement ticketStmt = conn.prepareStatement(insereTicket)) {
-//                    ticketStmt.setInt(1, id);
-//                    ticketStmt.setTimestamp(2, horaEntrada);
-//                    ticketStmt.setTimestamp(3, horaSaida);
-//                    ticketStmt.setDouble(4, custo);
-//                    ticketStmt.executeUpdate();
-//                }
-//
-//                return ticket;
             } else {
                 System.out.println("Veículo não encontrado ou já saiu.");
                 return null;
@@ -203,5 +190,13 @@ public class Estacionamento extends Component {
             }
         }
         return false;
+    }
+
+    public void excluirVeiculo(int id) throws SQLException{
+        String sql = "DELETE FROM veiculos WHERE id = ?";
+        try(PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, id);
+            stmt.executeUpdate();
+        }
     }
 }

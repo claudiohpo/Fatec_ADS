@@ -8,15 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17e9e988-03bb-48bb-8dc0-8ec1ab4b7b80" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/EditarVeiculo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/EditarVeiculo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/EditarVeiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/EditarVeiculo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/Estacionamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/Estacionamento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/Veiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/Veiculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/HistoricoVeiculo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/HistoricoVeiculo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/HistoricoVeiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/HistoricoVeiculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/IncluirVeiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/IncluirVeiculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditarVeiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditarVeiculo.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditarVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditarVeiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Estacionamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estacionamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HistoricoVeiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/HistoricoVeiculo.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HistoricoVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HistoricoVeiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IncluirVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IncluirVeiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SaidaVeiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaidaVeiculo.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SaidaVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaidaVeiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,35 +54,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EstacionamentoGUI.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.TelaInicial.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/claud/Documents/GitHub/Fatec_ADS/Java/Exercícios/Trabalho Final",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EstacionamentoGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TelaInicial.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/claud/Documents/GitHub/Fatec_ADS/Java/Exercícios/Trabalho Final&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -113,6 +124,8 @@
       <workItem from="1731107271962" duration="12779000" />
       <workItem from="1731197525103" duration="12571000" />
       <workItem from="1731243558216" duration="30014000" />
+      <workItem from="1731363898237" duration="18024000" />
+      <workItem from="1731384716591" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />

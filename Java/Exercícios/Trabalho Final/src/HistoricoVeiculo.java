@@ -9,6 +9,10 @@ public class HistoricoVeiculo extends JFrame{
     private JTable table1;
     private JPanel Historico;
     private JLabel lbl_total;
+    private JLabel lbl_foto;
+    private List<Veiculo> veiculos;
+
+
 
     public HistoricoVeiculo() throws SQLException {
         setContentPane(Historico);
@@ -21,13 +25,15 @@ public class HistoricoVeiculo extends JFrame{
 //        btn_cancelar.addActionListener(e ->{
 //            dispose();
 //        });
+
+        AjusteFoto.configurarSelecaoImagem(table1, lbl_foto,veiculos);
     }
 
     private void preencherTabela() throws SQLException {
         Estacionamento estacionamento = new Estacionamento();
-        List<Veiculo> veiculos = estacionamento.consultarVeiculosHistorico();
+        veiculos = estacionamento.consultarVeiculosHistorico();
 
-        String[] colunas = {"ID","Marca", "Modelo", "Cor", "Placa", "Nome", "Horario de Entrada", "Horário de Saída", "Valor"};
+        String[] colunas = {"ID","Marca", "Modelo", "Cor", "Placa", "Nome", "Horario de Entrada", "Horário de Saída", "Valor","Foto"};
         Object[][] dados = new Object[veiculos.size()][colunas.length]; //pode ser 7 no lugar do length (8 quando incluir a foto)
 
         SimpleDateFormat formatoSimples = new SimpleDateFormat("dd/MM/yyyy HH:mm");
@@ -55,6 +61,12 @@ public class HistoricoVeiculo extends JFrame{
             dados[i][8] = "R$ " + String.format("%.2f", valorTotal);
             total += valorTotal;
 
+            if(veiculos.get(i).getFotoVeiculo() != null){
+                dados[i][9] = "OK";
+            }else{
+                dados[i][9] = "-";
+            }
+
             //dados[i][8] = "R$ " + String.format("%.2f", veiculos.get(i).getValorTotal());
 
         }
@@ -64,8 +76,20 @@ public class HistoricoVeiculo extends JFrame{
             public boolean isCellEditable(int row, int column) {
                 return false;
             }
+
+            @Override
+            public Class<?> getColumnClass(int columnIndex) {
+                if (columnIndex == 7) {
+                    return String.class;
+                }
+                return String.class;
+            }
         });
-        AjusteColunaTabelas tca = new AjusteColunaTabelas(table1); tca.adjustColumns();
+
+
+        AjusteColunaTabelas tca = new AjusteColunaTabelas(table1);
+        tca.adjustColumns();
+
         lbl_total.setText("Total: R$ " + String.format("%.2f", total));
     }
 }
