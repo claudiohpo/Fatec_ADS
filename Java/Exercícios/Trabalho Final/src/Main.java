@@ -21,7 +21,7 @@ public class Main {
 
 
 
-//Código SQL
+////Código SQL
 //CREATE TABLE IF NOT EXISTS `estacionamento`.`veiculos` (
 //        `id` INT NOT NULL AUTO_INCREMENT,
 //  `marca` VARCHAR(50) NULL DEFAULT NULL,
