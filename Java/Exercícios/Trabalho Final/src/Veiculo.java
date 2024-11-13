@@ -12,6 +12,7 @@ public class Veiculo {
     private byte[] fotoVeiculo;
     private double valorTotal;
     private double valor;
+    private double valorHora;
 
     public Veiculo( String marca, String modelo, String cor, String placa, String nomeMotorista, Timestamp horarioEntrada, Timestamp horarioSaida, byte[] fotoVeiculo) {
 
@@ -33,6 +34,10 @@ public class Veiculo {
         this.nomeMotorista = nomeMotorista;
         this.horarioEntrada = horarioEntrada;
         this.fotoVeiculo = fotoVeiculo;
+    }
+
+    public Veiculo(double valorHora) {
+        this.valorHora = valorHora;
     }
 
     public Veiculo(int id, String marca, String modelo, String cor, String placa, String nomeMotorista) {
@@ -130,6 +135,14 @@ public class Veiculo {
 
     public void setValorTotal(double valorTotal) {
         this.valorTotal = valorTotal;
+    }
+
+    public double getValorHora() {
+        return valorHora;
+    }
+
+    public void setValorHora(double valorHora) {
+        this.valorHora = valorHora;
     }
 
     public long calculoPermanencia(){

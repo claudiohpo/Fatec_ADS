@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ public class Estacionamento extends Component {
 
     public void registrarEntrada(Veiculo veiculo) throws SQLException {
 
-        String sql = "INSERT INTO veiculos (marca, modelo, cor, placa, nomeMotorista, horarioEntrada, fotoVeiculo) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO veiculos (marca, modelo, cor, placa, nomeMotorista, horarioEntrada, fotoVeiculo, valorHora) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         try (PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
 
             System.out.println("Foto 1: " + Arrays.toString(veiculo.getFotoVeiculo()));
@@ -25,10 +24,11 @@ public class Estacionamento extends Component {
             stmt.setString(5, veiculo.getNomeMotorista());
             stmt.setTimestamp(6, veiculo.getHorarioEntrada());
             stmt.setBytes(7, veiculo.getFotoVeiculo());
+            stmt.setDouble(8, veiculo.getValorHora());
 
-            System.out.println("Foto 2: " + Arrays.toString(veiculo.getFotoVeiculo()));
+
             stmt.executeUpdate();
-            System.out.println("Foto 3: " + Arrays.toString(veiculo.getFotoVeiculo()));
+
             ResultSet rs = stmt.getGeneratedKeys();
             if (rs.next()){
                 int idGerado = rs.getInt(1);
@@ -52,12 +52,24 @@ public class Estacionamento extends Component {
                 int id = rs.getInt("id");
                 Timestamp horaEntrada = rs.getTimestamp("horarioEntrada");
 
-                Veiculo veiculo = new Veiculo(rs.getString("marca"), rs.getString("modelo"), rs.getString("cor"), placa, rs.getString("nomeMotorista"), horaEntrada, rs.getBytes("fotoVeiculo"));
+                Veiculo veiculo = new Veiculo(rs.getString("marca"), rs.getString("modelo"),
+                        rs.getString("cor"), placa, rs.getString("nomeMotorista"),
+                        horaEntrada, rs.getBytes("fotoVeiculo"));
                 veiculo.setId(id);
                 veiculo.setHorarioSaida(horaSaida);
 
+                // Aqui, buscamos o valorHora diretamente da tabela
+                double valorHora = rs.getDouble("valorHora");
+
+                if (valorHora <= 0) {
+                    System.out.println("Valor por hora inválido. Utilizando valor padrão.");
+                    valorHora = 5.0;  // Defina um valor padrão ou exiba um erro, se necessário
+                }
+
+                // Agora, calculamos a cobrança com o valorHora que foi buscado do banco
                 long horas = veiculo.calculoPermanencia();
-                double custo = calcularCobranca(horas);
+                double custo = calcularCobranca(horas, valorHora);
+
                 veiculo.setValorTotal(custo);
 
                 String atualizaVeiculo = "UPDATE veiculos SET horarioSaida = ?, valorTotal = ? WHERE id = ?";
@@ -69,18 +81,6 @@ public class Estacionamento extends Component {
                 }
                 return veiculo;
 
-//                Veiculo ticket = new Veiculo( veiculo, horaEntrada, horaSaida, custo);
-//
-//                String insereTicket = "INSERT INTO controle (id_veiculo, horaEntrada, horaSaida, valorTotal) VALUES (?, ? , ?, ?)";
-//                try (PreparedStatement ticketStmt = conn.prepareStatement(insereTicket)) {
-//                    ticketStmt.setInt(1, id);
-//                    ticketStmt.setTimestamp(2, horaEntrada);
-//                    ticketStmt.setTimestamp(3, horaSaida);
-//                    ticketStmt.setDouble(4, custo);
-//                    ticketStmt.executeUpdate();
-//                }
-//
-//                return ticket;
             } else {
                 System.out.println("Veículo não encontrado ou já saiu.");
                 return null;
@@ -88,18 +88,35 @@ public class Estacionamento extends Component {
         }
     }
 
-    private double calcularCobranca(long duracaoMilissegundos) {
-        double valorPorHora = 5.0; // Valor fixo por hora
-        long duracaoMinutos = duracaoMilissegundos / (60 * 1000);
+//    private double calcularCobranca(long duracaoMilissegundos) {
+//        double valorPorHora = 5.0; // Valor fixo por hora
+//        long duracaoMinutos = duracaoMilissegundos / (60 * 1000);
+//
+//        if (duracaoMinutos <5){
+//            return 0;
+//        }
+//
+//        long horasCobradas = (duracaoMinutos + 59) / 60;
+//
+//        return horasCobradas * valorPorHora;
+//    }
 
-        if (duracaoMinutos <5){
+    private double calcularCobranca(long duracaoMilissegundos, double valorHora) {
+        if (valorHora <= 0) {
+            // Caso o valorHora seja inválido, retornamos 0 ou algum valor de erro
+            return 0;
+        }
+
+        long duracaoMinutos = duracaoMilissegundos / (60 * 1000);
+        if (duracaoMinutos < 5) {
             return 0;
         }
 
         long horasCobradas = (duracaoMinutos + 59) / 60;
-
-        return horasCobradas * valorPorHora;
+        return horasCobradas * valorHora;
     }
+
+
 
     public List<Veiculo> consultarVeiculos() throws SQLException{
         List<Veiculo> veiculos = new ArrayList<>();
@@ -148,6 +165,7 @@ public class Estacionamento extends Component {
 
                 veiculo.setId(rs.getInt("id"));
                 veiculo.setValorTotal(rs.getDouble("valorTotal"));
+                veiculo.setValorHora(rs.getDouble("valorHora"));
                 veiculos.add(veiculo);
             }
         }
@@ -189,6 +207,7 @@ public class Estacionamento extends Component {
             System.out.println("Placa: " + veiculo.getPlaca());
             System.out.println("Nome do Motorista: " + veiculo.getNomeMotorista());
             System.out.println("Foto: " + Arrays.toString(veiculo.getFotoVeiculo()));
+            System.out.println("Valor p Hora: " + veiculo.getValorHora());
         }
     }
 
@@ -204,4 +223,40 @@ public class Estacionamento extends Component {
         }
         return false;
     }
+
+    public void excluirVeiculo(int id) throws SQLException{
+        String sql = "DELETE FROM veiculos WHERE id = ?";
+        try(PreparedStatement stmt = conn.prepareStatement(sql)){
+            stmt.setInt(1, id);
+            stmt.executeUpdate();
+        }
+    }
+
+    public Double getUltimoValorHora() throws SQLException {
+        String sql = "SELECT valorHora FROM veiculos ORDER BY id DESC LIMIT 1";
+        try (PreparedStatement stmt = conn.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+            if (rs.next()) {
+                return rs.getDouble("valorHora");
+            }
+        }
+        return 5.0;  // Valor padrão caso não encontre nenhum valor
+    }
+
+    public Double getValorHoraPorPlaca(String placa) throws SQLException {
+        String sql = "SELECT valorHora FROM veiculos WHERE placa = ? LIMIT 1";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, placa);
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getDouble("valorHora");
+                }
+            }
+        }
+        return null; // Retorna null se o valorHora não for encontrado
+    }
+
+
+
+
 }

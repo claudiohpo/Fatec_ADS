@@ -11,6 +11,8 @@ public class SaidaVeiculo extends JFrame {
     private JButton btn_cancelar;
     private JButton btn_saida;
     private JTextField txt_placa;
+    private JLabel lbl_foto;
+    private List<Veiculo> veiculos;
 
     public SaidaVeiculo() throws SQLException {
         setContentPane(Saida);
@@ -22,6 +24,7 @@ public class SaidaVeiculo extends JFrame {
 
         preencherTabela();
 
+        AjusteFoto.configurarSelecaoImagem(table1, lbl_foto,veiculos);
 
         table1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -38,6 +41,7 @@ public class SaidaVeiculo extends JFrame {
         });
 
         btn_saida.addActionListener(e -> {
+            //int linhaSelecionada = table1.getSelectedRow();
            String placa = txt_placa.getText().toUpperCase().replace("-","");
 
            if (placa.isEmpty() || placa.isBlank()) {
@@ -70,9 +74,9 @@ public class SaidaVeiculo extends JFrame {
 
     private void preencherTabela() throws SQLException{
         Estacionamento estacionamento = new Estacionamento();
-        List<Veiculo> veiculos = estacionamento.consultarVeiculos();
+        veiculos = estacionamento.consultarVeiculos();
 
-        String[] colunas = {"ID","Marca", "Modelo", "Cor", "Placa", "Nome", "Horario de Entrada"};
+        String[] colunas = {"ID","Marca", "Modelo", "Cor", "Placa", "Nome", "Horario de Entrada", "Foto"};
         Object[][] dados = new Object[veiculos.size()][colunas.length]; //nomlugar de length colocar 7
 
         SimpleDateFormat formatoSimples = new SimpleDateFormat("dd/MM/yyyy HH:mm");
@@ -85,6 +89,11 @@ public class SaidaVeiculo extends JFrame {
             dados[i][4] = veiculos.get(i).getPlaca();
             dados[i][5] = veiculos.get(i).getNomeMotorista();
             dados[i][6] = formatoSimples.format(veiculos.get(i).getHorarioEntrada());
+            if(veiculos.get(i).getFotoVeiculo() != null){
+                dados[i][7] = "OK";
+            }else{
+                dados[i][7] = "-";
+            }
         }
 
         table1.setModel(new DefaultTableModel(dados, colunas) {
@@ -92,10 +101,19 @@ public class SaidaVeiculo extends JFrame {
             public boolean isCellEditable(int row, int column) {
                 return false; // Impede a edição em qualquer célula
             }
+
+            @Override
+            public Class<?> getColumnClass(int columnIndex) {
+                if (columnIndex == 7) {
+                    return String.class;
+                }
+                return String.class;
+            }
         });
 
         txt_placa.setText("");
 
-        AjusteColunaTabelas tca = new AjusteColunaTabelas(table1); tca.adjustColumns();
+        AjusteColunaTabelas tca = new AjusteColunaTabelas(table1);
+        tca.adjustColumns();
     }
 }
