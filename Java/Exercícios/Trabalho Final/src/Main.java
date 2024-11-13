@@ -19,6 +19,31 @@ public class Main {
     }
 }
 
+
+
+////Código SQL
+//CREATE TABLE IF NOT EXISTS `estacionamento`.`veiculos` (
+//        `id` INT NOT NULL AUTO_INCREMENT,
+//  `marca` VARCHAR(50) NULL DEFAULT NULL,
+//  `modelo` VARCHAR(100) NULL DEFAULT NULL,
+//  `cor` VARCHAR(45) NULL DEFAULT NULL,
+//  `placa` VARCHAR(7) NULL DEFAULT NULL,
+//  `nomeMotorista` VARCHAR(100) NULL DEFAULT NULL,
+//  `horarioEntrada` VARCHAR(30) NULL DEFAULT NULL,
+//  `horarioSaida` VARCHAR(30) NULL DEFAULT NULL,
+//  `valorTotal` FLOAT NULL DEFAULT NULL,
+//  `fotoVeiculo` MEDIUMBLOB NULL DEFAULT NULL,
+//PRIMARY KEY (`id`),
+//UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE)
+//ENGINE = InnoDB
+//        AUTO_INCREMENT = 48
+//DEFAULT CHARACTER SET = utf8mb4
+//        COLLATE = utf8mb4_0900_ai_ci
+
+
+
+
+
 /*import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
