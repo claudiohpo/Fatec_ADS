@@ -8,28 +8,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17e9e988-03bb-48bb-8dc0-8ec1ab4b7b80" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31a05044-63c9-479f-bc11-e7042737d66d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31a05044-63c9-479f-bc11-e7042737d66d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trabalho Final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Trabalho Final.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/AjusteColunaTabelas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/AjusteColunaTabelas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/AjusteFoto$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/AjusteFoto$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/AjusteFoto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/AjusteFoto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/EditarVeiculo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/EditarVeiculo$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/EditarVeiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/EditarVeiculo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/Estacionamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/Estacionamento.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/HistoricoVeiculo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/HistoricoVeiculo$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/HistoricoVeiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/HistoricoVeiculo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/IncluirVeiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/IncluirVeiculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/Veiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/Veiculo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditarVeiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditarVeiculo.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AjusteColunaTabelas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AjusteColunaTabelas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AjusteFoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AjusteFoto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controle.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EditarVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditarVeiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Estacionamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estacionamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HistoricoVeiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/HistoricoVeiculo.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HistoricoVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HistoricoVeiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IncluirVeiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/IncluirVeiculo.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IncluirVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IncluirVeiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SaidaVeiculo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaidaVeiculo.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SaidaVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaidaVeiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Veiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TelaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TelaInicial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temp.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +138,9 @@
       <workItem from="1731384716591" duration="33000" />
       <workItem from="1731450294461" duration="7296000" />
       <workItem from="1731459474184" duration="23000" />
-      <workItem from="1731459557263" duration="8241000" />
+      <workItem from="1731459557263" duration="8529000" />
+      <workItem from="1731560868412" duration="1212000" />
+      <workItem from="1731626202744" duration="7451000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -165,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731459729608</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <option name="closed" value="true" />
+      <created>1731468714053</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731468714053</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <option name="closed" value="true" />
+      <created>1731468740462</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731468740462</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

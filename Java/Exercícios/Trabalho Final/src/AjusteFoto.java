@@ -12,10 +12,9 @@ public class AjusteFoto {
 
                 if (fotoBytes != null) {
                     ImageIcon fotoIcon = new ImageIcon(fotoBytes);
-                    Image img = fotoIcon.getImage().getScaledInstance(120, 80, Image.SCALE_SMOOTH); // Miniatura
+                    Image img = fotoIcon.getImage().getScaledInstance(120, 80, Image.SCALE_SMOOTH); // Miniatura da foto nas telas
                     lblFoto.setIcon(new ImageIcon(img));
 
-                    // Remove todos os MouseListeners antes de adicionar o novo
                     for (var listener : lblFoto.getMouseListeners()) {
                         lblFoto.removeMouseListener(listener);
                     }

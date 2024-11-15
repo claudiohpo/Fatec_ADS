@@ -27,7 +27,6 @@ public class AjusteColunaTabelas {
             int width = component.getPreferredSize().width + table.getIntercellSpacing().width;
             preferredWidth = Math.max(preferredWidth, width);
 
-            // We've exceeded the maximum width, no need to check other rows
             if (preferredWidth >= maxWidth) {
                 preferredWidth = maxWidth;
                 break;

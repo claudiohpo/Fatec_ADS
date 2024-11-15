@@ -16,7 +16,6 @@ public class Estacionamento extends Component {
         String sql = "INSERT INTO veiculos (marca, modelo, cor, placa, nomeMotorista, horarioEntrada, fotoVeiculo, valorHora) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         try (PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
 
-            System.out.println("Foto 1: " + Arrays.toString(veiculo.getFotoVeiculo()));
             stmt.setString(1, veiculo.getMarca());
             stmt.setString(2, veiculo.getModelo());
             stmt.setString(3, veiculo.getCor());
@@ -25,15 +24,8 @@ public class Estacionamento extends Component {
             stmt.setTimestamp(6, veiculo.getHorarioEntrada());
             stmt.setBytes(7, veiculo.getFotoVeiculo());
             stmt.setDouble(8, veiculo.getValorHora());
-
-
             stmt.executeUpdate();
 
-            ResultSet rs = stmt.getGeneratedKeys();
-            if (rs.next()){
-                int idGerado = rs.getInt(1);
-                System.out.println("ID Registrado: " + idGerado);
-            }
             try (ResultSet generatedKeys = stmt.getGeneratedKeys()) {
                 if (generatedKeys.next()) {
                     veiculo.setId(generatedKeys.getInt(1));
@@ -58,15 +50,13 @@ public class Estacionamento extends Component {
                 veiculo.setId(id);
                 veiculo.setHorarioSaida(horaSaida);
 
-                // Aqui, buscamos o valorHora diretamente da tabela
                 double valorHora = rs.getDouble("valorHora");
 
                 if (valorHora <= 0) {
-                    System.out.println("Valor por hora inválido. Utilizando valor padrão.");
-                    valorHora = 5.0;  // Defina um valor padrão ou exiba um erro, se necessário
+
+                    valorHora = 5.0;
                 }
 
-                // Agora, calculamos a cobrança com o valorHora que foi buscado do banco
                 long horas = veiculo.calculoPermanencia();
                 double custo = calcularCobranca(horas, valorHora);
 
@@ -82,28 +72,13 @@ public class Estacionamento extends Component {
                 return veiculo;
 
             } else {
-                System.out.println("Veículo não encontrado ou já saiu.");
                 return null;
             }
         }
     }
 
-//    private double calcularCobranca(long duracaoMilissegundos) {
-//        double valorPorHora = 5.0; // Valor fixo por hora
-//        long duracaoMinutos = duracaoMilissegundos / (60 * 1000);
-//
-//        if (duracaoMinutos <5){
-//            return 0;
-//        }
-//
-//        long horasCobradas = (duracaoMinutos + 59) / 60;
-//
-//        return horasCobradas * valorPorHora;
-//    }
-
     private double calcularCobranca(long duracaoMilissegundos, double valorHora) {
         if (valorHora <= 0) {
-            // Caso o valorHora seja inválido, retornamos 0 ou algum valor de erro
             return 0;
         }
 
@@ -138,7 +113,6 @@ public class Estacionamento extends Component {
                 veiculo.setId(rs.getInt("id"));
                 veiculo.setValorTotal(rs.getDouble("valorTotal"));
                 veiculos.add(veiculo);
-
             }
         }
         return veiculos;
@@ -146,7 +120,6 @@ public class Estacionamento extends Component {
 
     public List<Veiculo> consultarVeiculosHistorico() throws SQLException{
         List<Veiculo> veiculos = new ArrayList<>();
-        //String sql = "SELECT v.*, c.valorTotal FROM veiculos v LEFT JOIN controle c ON v.id = c.id_veiculo";
         String sql = "SELECT * FROM veiculos";
 
         try (PreparedStatement stmt = conn.prepareStatement(sql);
@@ -177,8 +150,6 @@ public class Estacionamento extends Component {
 
         try (PreparedStatement stmt = conn.prepareStatement(sql)){
 
-            logConsoleSQL(id,veiculo);
-
             stmt.setString(1, veiculo.getMarca());
             stmt.setString(2, veiculo.getModelo());
             stmt.setString(3, veiculo.getCor());
@@ -187,27 +158,6 @@ public class Estacionamento extends Component {
             stmt.setInt(6, id);
 
             int linhaAtualizada = stmt.executeUpdate();
-
-//            if(linhaAtualizada > 0){
-//                System.out.println("Veiculo atualizado com sucesso!"); //Console
-//            }else {
-//                System.out.println("Nenhuma alteração realizada!"); //Console
-//            }
-        }
-    }
-
-    public void logConsoleSQL(int id, Veiculo veiculo) throws SQLException{
-        //Método criado para testes de SQL em console
-        String sql = "SELECT * FROM veiculos";
-        try (PreparedStatement stmt = conn.prepareStatement(sql)){
-            System.out.println("Atualizando veículo ID: " + id);
-            System.out.println("Marca: " + veiculo.getMarca());
-            System.out.println("Modelo: " + veiculo.getModelo());
-            System.out.println("Cor: " + veiculo.getCor());
-            System.out.println("Placa: " + veiculo.getPlaca());
-            System.out.println("Nome do Motorista: " + veiculo.getNomeMotorista());
-            System.out.println("Foto: " + Arrays.toString(veiculo.getFotoVeiculo()));
-            System.out.println("Valor p Hora: " + veiculo.getValorHora());
         }
     }
 
@@ -240,23 +190,6 @@ public class Estacionamento extends Component {
                 return rs.getDouble("valorHora");
             }
         }
-        return 5.0;  // Valor padrão caso não encontre nenhum valor
+        return 5.0;
     }
-
-    public Double getValorHoraPorPlaca(String placa) throws SQLException {
-        String sql = "SELECT valorHora FROM veiculos WHERE placa = ? LIMIT 1";
-        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, placa);
-            try (ResultSet rs = stmt.executeQuery()) {
-                if (rs.next()) {
-                    return rs.getDouble("valorHora");
-                }
-            }
-        }
-        return null; // Retorna null se o valorHora não for encontrado
-    }
-
-
-
-
 }

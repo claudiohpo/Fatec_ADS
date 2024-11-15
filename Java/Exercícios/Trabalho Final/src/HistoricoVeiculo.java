@@ -1,6 +1,5 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableColumnModel;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -19,12 +18,7 @@ public class HistoricoVeiculo extends JFrame{
         setTitle("Consulta e Alterações de Veículos");
         setSize(900, 600);
         setLocationRelativeTo(null);
-
         preencherTabela();
-
-//        btn_cancelar.addActionListener(e ->{
-//            dispose();
-//        });
 
         AjusteFoto.configurarSelecaoImagem(table1, lbl_foto,veiculos);
     }
@@ -34,13 +28,10 @@ public class HistoricoVeiculo extends JFrame{
         veiculos = estacionamento.consultarVeiculosHistorico();
 
         String[] colunas = {"ID","Marca", "Modelo", "Cor", "Placa", "Nome", "Horario de Entrada", "Horário de Saída", "Valor","Foto","Valor p/ Hora"};
-        Object[][] dados = new Object[veiculos.size()][colunas.length]; //pode ser 7 no lugar do length (8 quando incluir a foto)
+        Object[][] dados = new Object[veiculos.size()][colunas.length];
 
         SimpleDateFormat formatoSimples = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
-//        if (veiculosHistorico.isEmpty()) {
-//            System.out.println("Não há histórico de veículos no Sistema.");
-//        } else {}
         double total = 0.0;
 
         for(int i = 0; i < veiculos.size(); i++){
@@ -69,9 +60,6 @@ public class HistoricoVeiculo extends JFrame{
 
             double valorHora = veiculos.get(i).getValorHora();
             dados[i][10] = "R$ " + String.format("%.2f",valorHora);
-
-            //dados[i][8] = "R$ " + String.format("%.2f", veiculos.get(i).getValorTotal());
-
         }
 
         table1.setModel(new DefaultTableModel(dados, colunas) {
@@ -88,7 +76,6 @@ public class HistoricoVeiculo extends JFrame{
                 return String.class;
             }
         });
-
 
         AjusteColunaTabelas tca = new AjusteColunaTabelas(table1);
         tca.adjustColumns();
