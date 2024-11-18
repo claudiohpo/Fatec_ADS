@@ -10,12 +10,11 @@ public class Cnae {
     private String codigoGrupo;
     private String codigoClasse;
     private String codigoSubclasse;
-    private String atividades;
 
     public Cnae(String codigo, String descricaoSubclasse, String descricaoClasse,
                 String descricaoGrupo, String descricaoDivisao, String descricaoSecao,
                 String codigoSecao, String codigoDivisao, String codigoGrupo,
-                String codigoClasse, String codigoSubclasse, String atividades) {
+                String codigoClasse, String codigoSubclasse) {
 
         this.codigo = codigo;
         this.descricaoSubclasse = descricaoSubclasse;
@@ -28,7 +27,6 @@ public class Cnae {
         this.codigoGrupo = codigoGrupo;
         this.codigoClasse = codigoClasse;
         this.codigoSubclasse = codigoSubclasse;
-        this.atividades = atividades;
     }
 
     public String getCodigo() {
@@ -117,13 +115,5 @@ public class Cnae {
 
     public void setCodigoSubclasse(String codigoSubclasse) {
         this.codigoSubclasse = codigoSubclasse;
-    }
-
-    public String getAtividades() {
-        return atividades;
-    }
-
-    public void setAtividades(String atividades) {
-        this.atividades = atividades;
     }
 }

@@ -25,30 +25,10 @@ public class CnaeEngine {
         }
         conn.disconnect();
 
-        // Exibe a resposta para depuração
-        System.out.println("Resposta da API: " + response.toString());
-
         try {
-            // Lida com a resposta em formato de array JSON
+            // Tratamento da resposta do JSON
             JSONArray jsonArray = new JSONArray(response.toString());
             JSONObject json = jsonArray.getJSONObject(0);
-
-            // Pega a seção Atividades
-            //JSONObject atividadesObj = json.getJSONObject("atividades");
-            //String atividades = json.getString("atividades");
-
-            // Pega a seção Atividades
-            JSONArray atividadesArray = json.getJSONArray("atividades");
-            String atividades = atividadesArray.getString(0);
-
-//            for (int i = 0; i < atividadesArray.length(); i++) {
-//                atividades.append(atividadesArray.getString(i));
-//                if (i < atividadesArray.length() - 1) {
-//                    atividades.append(", "); // Adiciona uma vírgula e espaço entre as atividades
-//                }
-//            }
-            System.out.println("Atividades: " + atividades.toString());
-
 
             // Pega a descrição da subclasse e código
             String descricaoSubclasse = json.getString("descricao");
@@ -83,6 +63,7 @@ public class CnaeEngine {
             JSONObject secaoCodObj = divisaoObj.getJSONObject("secao");
             String codigoSecao = secaoCodObj.getString("id");
 
+            //Console
             System.out.println("Subclasse: " + descricaoSubclasse);
             System.out.println("Classe: " + descricaoClasse);
             System.out.println("Grupo: " + descricaoGrupo);
@@ -91,7 +72,7 @@ public class CnaeEngine {
 
             return new Cnae(codigo, descricaoSubclasse, descricaoClasse, descricaoGrupo,
                     descricaoDivisao, descricaoSecao, codigoSecao, codigoDivisao,
-                    codigoGrupo, codigoClasse, codigoSubclasse, atividades);
+                    codigoGrupo, codigoClasse, codigoSubclasse);
         } catch (Exception e) {
             throw new Exception("Erro ao processar JSON: " + e.getMessage());
         }

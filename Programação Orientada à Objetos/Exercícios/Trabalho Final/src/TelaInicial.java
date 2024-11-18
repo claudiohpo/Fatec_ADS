@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 public class TelaInicial extends JFrame {
     private JLabel lbl_titulo;
@@ -17,7 +18,8 @@ public class TelaInicial extends JFrame {
     private JLabel lbl_grupoCod;
     private JLabel lbl_classeCod;
     private JLabel lbl_subClasseCod;
-    private JLabel lbl_atividades;
+    private JLabel lbl_informacoes;
+    private JButton btn_ajuda;
 
     public TelaInicial() {
 
@@ -31,12 +33,10 @@ public class TelaInicial extends JFrame {
         btn_pesquisar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //Limitação para entrada de somente numeros, desprezando qualquer outro caracter inserido
+                //Tratamento para entrada de somente números na consulta, desprezando qualquer outro carácter inserido
                 String numCNAE = txt_numCNAE.getText().replaceAll("[^0-9]","");
                 try{
                     Cnae cnae = CnaeEngine.consultarCnae(numCNAE);
-
-                    lbl_atividades.setText("<html>" + cnae.getAtividades()  + "</html>");
 
                     lbl_secao.setText("<html>" + cnae.getDescricaoSecao() + "</html>");
                     lbl_secaoCod.setText(cnae.getCodigoSecao());
@@ -54,9 +54,34 @@ public class TelaInicial extends JFrame {
                     lbl_subClasseCod.setText(cnae.getCodigoSubclasse());
 
                 }catch (Exception ex){
-                    lbl_subClasse.setText("Erro ao consultar CNAE: " + ex.getMessage());
+                    lbl_secao.setText("");
+                    lbl_secaoCod.setText("");
+
+                    lbl_divisao.setText("");
+                    lbl_divisaoCod.setText("");
+
+                    lbl_grupo.setText("");
+                    lbl_grupoCod.setText("");
+
+                    lbl_classe.setText("");
+                    lbl_classeCod.setText("");
+
+                    lbl_subClasse.setText("");
+                    lbl_subClasseCod.setText("");
+
+                    lbl_informacoes.setText("<html>" + "Erro ao consultar CNAE: " + ex.getMessage() + "</html>");
                 }
             }
+        });
+
+        btn_ajuda.addActionListener(e -> {
+            Ajuda ajuda = null;
+            try {
+                ajuda = new Ajuda();
+            } catch (Exception ex) {
+                throw new RuntimeException(ex);
+            }
+            ajuda.setVisible(true);
         });
     }
 }
