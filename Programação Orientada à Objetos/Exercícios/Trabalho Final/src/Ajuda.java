@@ -9,7 +9,7 @@ public class Ajuda extends JFrame {
 
         setTitle("Ajuda");
         setSize(380, 220);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
         setContentPane(Ajuda);
