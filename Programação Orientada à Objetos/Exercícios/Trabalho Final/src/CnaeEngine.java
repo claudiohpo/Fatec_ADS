@@ -7,6 +7,7 @@ import org.json.JSONObject;
 
 public class CnaeEngine {
     public static Cnae consultarCnae(String codigo) throws Exception {
+        //Realizado a busca na API por Subclasse, realizado o tratamento do JSON para extrair a Classe, Grupo, Divisão e Seção.
         String endpoint = "https://servicodados.ibge.gov.br/api/v2/cnae/subclasses/" + codigo;
         URL url = new URL(endpoint);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
