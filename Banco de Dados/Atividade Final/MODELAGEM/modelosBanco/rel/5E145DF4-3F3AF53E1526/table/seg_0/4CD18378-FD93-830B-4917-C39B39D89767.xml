@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4CD18378-FD93-830B-4917-C39B39D89767" name="OPERACAO">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>8BF54FC9-CF6E-72AC-50E2-391C537E97AE</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="opr_id" id="0947D34F-5EAF-9FBE-F53C-C7D14CE72800">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>21E966DC-3AC0-9D68-8CED-108F7ABFC23A</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="opr_dt_entrada" id="7C33E6FA-1EF6-3B50-A489-5FA487ED603E">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>D1796808-3205-158D-0DF9-9300EFE025EE</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="opr_dt_entrega" id="E93E073C-F9A1-500A-7D16-58F2D3C7A59B">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>1052CBB8-DE02-140D-CB23-3FC4C1D24CB9</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="opr_qtd_pecas" id="29AE6B20-1032-3A32-2ACF-1AF1A2E2C6A4">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>EA4FCFDE-5B8F-555F-1646-CCC0E3BE9F27</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="opr_valor_total" id="B81264EB-5984-0365-3C46-B6AEBEE48D4E">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>BC686C25-60D7-C2BA-6E6D-CBC22883CDB0</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="opr_cli_id" id="CC252BE1-1AD6-99CF-2310-2274EEE412C5">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>BE6C1F92-D9C2-F89D-5357-2083EC5E8681</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FB05622-7D3D-1368-A580-4BB89A97BAD5" referredColumn="60076479-6156-118B-4032-DEEF4B1F13F4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="421006AE-9780-C7C8-6A65-AB07C88A5C6D" name="opr_PK">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>687CAB72-BB48-4829-3E02-2F418A69CA5E</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0947D34F-5EAF-9FBE-F53C-C7D14CE72800"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77EBBC81-C281-E39F-C5E9-6E97AC5F2B76" name="opr_cli_FK">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>8F2ED59F-ABAD-5A7F-0907-701E657B310B</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC252BE1-1AD6-99CF-2310-2274EEE412C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

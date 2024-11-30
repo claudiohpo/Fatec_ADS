@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4B6FD45-E325-D274-1525-2E422F2DDF38" name="ENDERECO">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>D97ED1B0-FB12-C6FC-0186-0CEB74BC1CF4</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="end_id" id="1ECB3AF2-B3D9-14F7-15D4-3646E4D99B93">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>BD46E8AD-83F7-C7B1-7AD6-FCFFA2E99C82</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_bairro" id="320504D2-2555-202B-A88D-80E662BDC2E7">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>F6890ABC-6D8F-F532-F090-45D07461E36C</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_cidade" id="75D4B2D3-4A40-5718-6590-66E48FD63097">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>847B369C-02E8-BFC7-450D-2F83122647DC</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_cep" id="BE5CC45F-662F-2725-BE5E-305C1F57C215">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>ED8DE105-0866-3BFC-9262-13DA9EF10F56</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="684D0B52-FC88-205C-705A-9C29CCCBC3CA" name="end_PK">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:12:00 UTC</createdTime>
+<generatorID>F6D2DDE4-BE95-4F98-A076-61843520DDE4</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ECB3AF2-B3D9-14F7-15D4-3646E4D99B93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

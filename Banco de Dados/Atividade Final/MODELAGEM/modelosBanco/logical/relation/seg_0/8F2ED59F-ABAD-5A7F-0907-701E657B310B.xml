@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="opr_TEM_cli" directorySegmentName="seg_0" id="8F2ED59F-ABAD-5A7F-0907-701E657B310B">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:51:36 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<sourcePk>033E621C-85AB-5F03-480C-9A00D604AEAB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0D04AA82-B220-F3B6-46A5-CF63939B460B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8BF54FC9-CF6E-72AC-50E2-391C537E97AE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

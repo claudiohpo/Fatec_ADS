@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8BF54FC9-CF6E-72AC-50E2-391C537E97AE" name="OPERACAO">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:42:02 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="opr_id" id="21E966DC-3AC0-9D68-8CED-108F7ABFC23A">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:42:46 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="opr_dt_entrada" id="D1796808-3205-158D-0DF9-9300EFE025EE">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:42:47 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="opr_dt_entrega" id="1052CBB8-DE02-140D-CB23-3FC4C1D24CB9">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:42:47 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="opr_qtd_pecas" id="EA4FCFDE-5B8F-555F-1646-CCC0E3BE9F27">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:42:47 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="opr_valor_total" id="BC686C25-60D7-C2BA-6E6D-CBC22883CDB0">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:42:48 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cli_id" id="BE6C1F92-D9C2-F89D-5357-2083EC5E8681">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:51:36 UTC</createdTime>
+<generatorID>8F2ED59F-ABAD-5A7F-0907-701E657B310B</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<referedAttribute>57F30106-B75A-8FB8-781A-BD25F840DE84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="687CAB72-BB48-4829-3E02-2F418A69CA5E" name="OPERACAO PK">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:43:13 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>21E966DC-3AC0-9D68-8CED-108F7ABFC23A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+Clientes:
+    id_cliente (PK)
+    nome_completo
+    numero_whatsapp
+    id_endereco (FK)
+
+Enderecos:
+    id_endereco (PK)
+    bairro
+    cidade
+    cep
+
+Operacoes:
+    id_operacao (PK)
+    id_cliente (FK)
+    data_entrada
+    data_entrega
+    quantidade_pecas
+    valor_total

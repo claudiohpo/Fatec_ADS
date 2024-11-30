@@ -1,0 +1,64 @@
+Nome Completo
+Bairro
+Cidade
+CEP
+Numero WhatsApp
+Data Entrada
+Data Entrega
+Qtd Pecas
+Valor Total
+
+----------------------------------------
+1FN
+
+Nome Completo
+Bairro
+Cidade
+CEP
+Numero WhatsApp
+Data Entrada
+Data Entrega
+Qtd Pecas
+Valor Total
+
+-----------------------------------------
+2FN
+
+Cliente
+	ID Cliente
+	Nome Completo
+	Bairro
+	Cidade
+	CEP
+	Numero WhatsApp
+
+Operação
+	ID Operação
+	ID Cliente
+	Data Entrada
+	Data Entrega
+	Qtd Pecas
+	Valor Total
+	
+---------------------------------------------------
+3FN
+
+Clientes:
+    ID Cliente (PK)
+    Nome Completo
+    Numero Whatsapp
+    ID Endereco (FK)
+
+Enderecos:
+    ID Endereco (PK)
+    Bairro
+    Cidade
+    Cep
+
+Operacoes:
+    ID Operacao (PK)
+    ID Cliente (FK)
+    Data Entrada
+    Data Entrega
+    Qtd Pecas
+    Valor Total

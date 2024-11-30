@@ -8,10 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17e9e988-03bb-48bb-8dc0-8ec1ab4b7b80" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31a05044-63c9-479f-bc11-e7042737d66d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/31a05044-63c9-479f-bc11-e7042737d66d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Programação Orientada à Objetos/Exercícios/Trabalho Final/src/CnaeEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Programação Orientada à Objetos/Exercícios/Trabalho Final/src/CnaeEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Trabalho Final/SaidaVeiculo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +123,9 @@
       <workItem from="1731960739809" duration="3283000" />
       <workItem from="1732057606404" duration="169000" />
       <workItem from="1732058886314" duration="963000" />
+      <workItem from="1732062259054" duration="1507000" />
+      <workItem from="1732234257883" duration="988000" />
+      <workItem from="1732323576720" duration="708000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />

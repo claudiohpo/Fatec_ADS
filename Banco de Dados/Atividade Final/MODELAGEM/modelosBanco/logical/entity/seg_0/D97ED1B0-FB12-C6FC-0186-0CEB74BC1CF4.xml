@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D97ED1B0-FB12-C6FC-0186-0CEB74BC1CF4" name="ENDERECO">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:38:45 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="end_id" id="BD46E8AD-83F7-C7B1-7AD6-FCFFA2E99C82">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:40:02 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="end_bairro" id="F6890ABC-6D8F-F532-F090-45D07461E36C">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:40:02 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="end_cidade" id="847B369C-02E8-BFC7-450D-2F83122647DC">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:40:02 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="end_cep" id="ED8DE105-0866-3BFC-9262-13DA9EF10F56">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:40:03 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F6D2DDE4-BE95-4F98-A076-61843520DDE4" name="ENDERECO PK">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:40:16 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD46E8AD-83F7-C7B1-7AD6-FCFFA2E99C82</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

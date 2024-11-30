@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0D04AA82-B220-F3B6-46A5-CF63939B460B" name="CLIENTE">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:34:41 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cli_id" id="57F30106-B75A-8FB8-781A-BD25F840DE84">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:35:42 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cli_nome_completo" id="65F2E6E5-2EDF-B45E-9052-7B785CCC8074">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:35:43 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cli_numero_whatsapp" id="3A557087-A947-C8BB-EC34-C688B856DC46">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:35:43 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="end_id" id="4122FA8A-172D-9D32-C062-3D979816550B">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-29 00:06:34 UTC</createdTime>
+<generatorID>871050A5-480F-8A1D-BA27-056B1B7A004F</generatorID>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<referedAttribute>BD46E8AD-83F7-C7B1-7AD6-FCFFA2E99C82</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="033E621C-85AB-5F03-480C-9A00D604AEAB" name="CLIENTE PK">
+<createdBy>Ryan</createdBy>
+<createdTime>2024-11-28 23:35:55 UTC</createdTime>
+<ownerDesignName>modelosBanco</ownerDesignName>
+<engineerTo>
+<item key="5E145DF4-3FD4-29C0-4C09-3F3AF53E1526" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>57F30106-B75A-8FB8-781A-BD25F840DE84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
