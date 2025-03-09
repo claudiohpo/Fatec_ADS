@@ -1,5 +1,5 @@
 interface ICategoryRequest {
-    id?: number;
+    id?: string;
     name: string;
     description: string;
 }

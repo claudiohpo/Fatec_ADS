@@ -1,4 +1,5 @@
 interface IClientRequest { // Cria a interface IClientRequest
+    id?: string;
     name: string; // O campo name é obrigatório
     email: string; // O campo email é obrigatório
     phone: string; // O campo phone é obrigatório
