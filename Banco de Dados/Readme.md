@@ -10,5 +10,5 @@
 
 ## Atividades em Sala
 
-### - [06 de Agosto de 2024](https://github.com/claudiohpo/Fatec_ADS/tree/main/Java/Atividades%20em%20Sala/Aulas/Aula%2006-08-2024)
+### - [-](https)
 
