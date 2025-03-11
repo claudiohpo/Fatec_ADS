@@ -7,7 +7,17 @@ class CreateClientController {
         
         const createClientService = new CreateClientService();
         
-        const client = await createClientService.execute({name, phone, email, address, neighborhood, city, state});
+        const client = await createClientService.execute(
+            {
+                name, 
+                phone, 
+                email, 
+                address, 
+                neighborhood, 
+                city, 
+                state
+            }
+        );
         
         response.json({client}); 
     }

@@ -2,8 +2,11 @@ import { IClientRequest } from "../../Interface/IClientInterface";
 
 class CreateClientService {
     async execute({ name, email, address, neighborhood, city, state }: IClientRequest) {
-        if(!email) {
+        if (!email) {
             throw new Error("Email incorreto!");
+        }
+        if (!address) {
+            throw new Error("Endereço não pode ser vazio!");
         }
         var vclient = {
             name: name,
