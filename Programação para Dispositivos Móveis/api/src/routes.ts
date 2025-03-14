@@ -6,6 +6,8 @@ import { ListUsersController } from "./controller/user/ListUsersController";
 import { UpdateUserController } from "./controller/user/UpdateUserController";
 import { DeleteUserController } from "./controller/user/DeleteUserController";
 
+import { AuthenticateUserController } from "./controller/Authenticate/AuthenticateUserController";
+
 import { CreateCategoryController } from "./controller/category/CreateCategoryController";
 import { DeleteCategoryController } from "./controller/category/DeleteCategoryController";
 import { UpdateCategoryController } from "./controller/category/UpdateCategoryController";
@@ -32,6 +34,8 @@ const listUsersController = new ListUsersController();
 const updateUserController = new UpdateUserController();
 const deleteUserController = new DeleteUserController();
 
+const authenticateUserController = new AuthenticateUserController();
+
 const createCategoryController = new CreateCategoryController();
 const deleteCategoryController = new DeleteCategoryController();
 const updateCategoryController = new UpdateCategoryController();
@@ -53,6 +57,10 @@ const updateClientController = new UpdateClientController();
 const deleteClientController = new DeleteClientController();
 
 const router = Router();
+//router.use();
+
+
+router.post("/login", authenticateUserController.handle);
 
 // Define a rota POST /users que chama o método handle do controlador
 router.post("/users", createUserController.handle);
@@ -79,5 +87,6 @@ router.post("/client", createClientController.handle);
 router.get("/client", listClientController.handle);
 router.put("/client/:id", updateClientController.handle);
 router.delete("/client/:id", deleteClientController.handle);
+
 
 export {router};
