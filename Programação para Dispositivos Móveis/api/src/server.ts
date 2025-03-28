@@ -2,7 +2,9 @@
 import express, { NextFunction,Response,Request} from "express";
 import {router} from "./routes";
 import "express-async-errors"; // Permite que o express entenda erros assíncronos
-import "reflect-metadata"; 
+import "reflect-metadata";
+import "./database/index"; // Importa a configuração do banco de dados
+
 
 const app = express();
 
