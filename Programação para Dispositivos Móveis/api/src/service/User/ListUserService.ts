@@ -1,19 +1,13 @@
+import { getCustomRepository} from "typeorm";
+import { UsersRepositories } from "../../repositories/UsersRepositories";
+
+
 class ListUserService {
     async execute() {
-        const users = [
-            {
-                name: "Cláudio Henrique",
-                email: "claudiohpo@gmail.com",
-                admin: false,
-                password: "123456"
-            },
-            {
-                name: "André Vitor",
-                email: "andre@gmail.com",
-                admin: false,
-                password: "123456"
-            }
-        ];
+        const usersRepositories =  getCustomRepository(UsersRepositories);
+        
+        const users = await usersRepositories.find();
+            
         return users;
     }
 }

@@ -10,7 +10,7 @@ class AuthenticateUserController {
         const token = await authenticateUserService.execute({email, password}); // Cria um objeto token com os dados recebidos
         
         
-        response.json(token);  
+        response.json({message:token}); // Retorna o token em formato JSON
     }
 }
 

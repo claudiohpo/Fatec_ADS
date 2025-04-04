@@ -2,6 +2,8 @@ import { IAuthenticateRequest } from "../../Interface/IAuthenticateUserInterface
 import { sign } from "jsonwebtoken";
 import { hash } from "bcryptjs";
 import { compare } from "bcryptjs";
+import { UsersRepositories } from "../../repositories/UsersRepositories";
+import { getCustomRepository } from "typeorm";
 
 class AuthenticateUserService{
     async execute({ email, password }: IAuthenticateRequest){
@@ -12,9 +14,16 @@ class AuthenticateUserService{
         if (!password) {
             throw new Error("Senha incorreta!");
         }
+        const usersRepositories = getCustomRepository(UsersRepositories);
+        const user = await usersRepositories.findOne({
+            email,
+        });
+        if (!user) {
+            throw new Error("Email incorreto!");
+        }
 
-        const passwordHash = await hash("fatec", 8);
-        const passwordMatch = await compare(password, passwordHash);
+       // const passwordHash = await hash("fatec", 8);
+        const passwordMatch = await compare(password, user?.password);
 
         if (!passwordMatch) {
             throw new Error("Senha incorreta!");

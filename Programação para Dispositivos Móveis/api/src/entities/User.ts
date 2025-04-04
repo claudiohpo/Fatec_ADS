@@ -6,7 +6,7 @@ class User {
     @PrimaryColumn()
     readonly id!: string; //! = campo obrigatorio
 
-    @PrimaryColumn()
+    @Column()
     name!: string;
 
     @Column()

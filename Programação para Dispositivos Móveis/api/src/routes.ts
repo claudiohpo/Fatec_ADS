@@ -27,6 +27,7 @@ import { CreateClientController } from "./controller/client/CreateClientControll
 import { ListClientController } from "./controller/client/ListClientController";
 import { UpdateClientController } from "./controller/client/UpdateClientController";
 import { DeleteClientController } from "./controller/client/DeleteClientController";
+import { ensureAuthenticated } from "./middleware/ensureAuthenticated";
 
 
 const createUserController = new CreateUserController();
@@ -57,10 +58,10 @@ const updateClientController = new UpdateClientController();
 const deleteClientController = new DeleteClientController();
 
 const router = Router();
-//router.use();
-
-
 router.post("/login", authenticateUserController.handle);
+router.use(ensureAuthenticated);
+
+
 
 // Define a rota POST /users que chama o método handle do controlador
 router.post("/users", createUserController.handle);
