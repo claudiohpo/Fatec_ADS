@@ -1,4 +1,6 @@
 import { ISaleRequest } from "../../Interface/ISaleInterface";
+import { SaleRepository } from "../../repositories/SaleRepository";
+import { getCustomRepository } from "typeorm";
 
 class CreateSaleService {
     async execute({ date, product, client, quantity, total }: ISaleRequest) {
@@ -17,14 +19,24 @@ class CreateSaleService {
         if (!total) {
             throw new Error("Total incorreto!");
         }
-        var vsale = {
-            date: date,
-            product: product,
-            client: client,
-            quantity: quantity,
-            total: total
-        };
-        return vsale;
+        
+        //Acessar o repositório de vendas
+        const saleRepository = getCustomRepository(SaleRepository);
+
+        //cria a venda
+        const sale = saleRepository.create({
+            date,
+            product,
+            client,
+            quantity,
+            total,
+        });
+
+        // Salvar no banco de dados
+        await saleRepository.save(sale);
+
+        
+        return sale;
     }
 }
 export { CreateSaleService };
