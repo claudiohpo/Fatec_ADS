@@ -59,9 +59,6 @@ const deleteClientController = new DeleteClientController();
 
 const router = Router();
 router.post("/login", authenticateUserController.handle);
-router.use(ensureAuthenticated);
-
-
 
 // Define a rota POST /users que chama o método handle do controlador
 router.post("/users", createUserController.handle);
@@ -89,5 +86,6 @@ router.get("/client", listClientController.handle);
 router.put("/client/:id", updateClientController.handle);
 router.delete("/client/:id", deleteClientController.handle);
 
+router.use(ensureAuthenticated); //ativa Autenticação para as rotas abaixo
 
 export {router};
