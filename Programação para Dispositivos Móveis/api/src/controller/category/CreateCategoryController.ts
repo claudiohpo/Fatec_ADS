@@ -7,15 +7,21 @@ class CreateCategoryController {
         
         const createCategoryService = new CreateCategoryService();
 
-        try {
-            const category = await createCategoryService.execute({
-                name, 
-                description
-            });
-            return response.status(201).json(category);  // Retorna uma mensagem de sucesso
-        }catch (error) {
-            return response.status(400).json({ error: error.message }); // Retorna uma mensagem de erro
-        }
+        const category = await createCategoryService.execute({
+            name, 
+            description
+        });
+        response.json(category); // Retorna uma mensagem de sucesso
+
+        // try {
+        //     const category = await createCategoryService.execute({
+        //         name, 
+        //         description
+        //     });
+        //     return response.status(201).json(category);  // Retorna uma mensagem de sucesso
+        // }catch (error) {
+        //     return response.status(400).json({ error: error.message }); // Retorna uma mensagem de erro
+        // }
     }
 }
 export { CreateCategoryController };
