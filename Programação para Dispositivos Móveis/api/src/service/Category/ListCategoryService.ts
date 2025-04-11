@@ -1,15 +1,12 @@
+import { getCustomRepository } from "typeorm";
+import { CategoriesRepositories } from "../../repositories/CategoriesRepositories";
+
 class ListCategoryService{
     async execute(){
-        const categories = [
-            {
-                name: "Eletrônicos",
-                description: "Categoria de produtos eletrônicos"
-            },
-            {
-                name: "Livros",
-                description: "Categoria de livros"
-            }
-        ];
+        const categoriesRepositories = getCustomRepository(CategoriesRepositories);
+
+        const categories = await categoriesRepositories.find();
+            
         return categories;
     }
 }

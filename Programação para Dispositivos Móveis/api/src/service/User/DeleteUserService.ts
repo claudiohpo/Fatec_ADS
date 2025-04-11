@@ -1,7 +1,6 @@
 import { getCustomRepository } from "typeorm";
 import { UsersRepositories } from "../../repositories/UsersRepositories";
 
-
 class DeleteUserService {
     async execute(id: string) {
         const usersRepositories = getCustomRepository(UsersRepositories);	// Cria uma instância do repositório de usuários

@@ -1,5 +1,5 @@
 import { ISaleRequest } from "../../Interface/ISaleInterface";
-import { SaleRepository } from "../../repositories/SaleRepository";
+import { SalesRepositories } from "../../repositories/SalesRepositories";
 import { getCustomRepository } from "typeorm";
 
 class CreateSaleService {
@@ -20,8 +20,9 @@ class CreateSaleService {
             throw new Error("Total incorreto!");
         }
         
+    
         //Acessar o repositório de vendas
-        const saleRepository = getCustomRepository(SaleRepository);
+        const saleRepository = getCustomRepository(SalesRepositories);
 
         //cria a venda
         const sale = saleRepository.create({

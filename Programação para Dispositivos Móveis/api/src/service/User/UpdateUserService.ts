@@ -6,6 +6,9 @@ import { hash } from "bcryptjs";
 
 class UpdateUserService {
     async execute({ id, name, email, admin = false, password }: IUserRequest) {
+        if(!id) {
+            throw new Error("ID vazio!");
+        }
         if(!email) {
             throw new Error("Email incorreto!");
         }

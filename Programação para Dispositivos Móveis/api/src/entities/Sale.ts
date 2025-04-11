@@ -1,3 +1,4 @@
+import { ParseOptions } from "querystring";
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
 import { v4 as uuid } from "uuid";
 
@@ -7,7 +8,7 @@ class Sale {
     readonly id!: string; //! = campo obrigatorio
 
     @Column()
-    date!: string;
+    date!: Date;
 
     @Column()
     product!: string;
@@ -18,8 +19,8 @@ class Sale {
     @Column()
     quantity!: number;
 
-    @Column()
-    total!: number;
+    @Column("decimal", { precision: 10, scale: 2 })
+    total!: number ;
 
     @CreateDateColumn()
     created_at!: Date;

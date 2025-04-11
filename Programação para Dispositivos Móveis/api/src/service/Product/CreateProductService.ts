@@ -1,4 +1,6 @@
 import { IProductRequest } from '../../Interface/IProductInterface';
+import { ProductsRepositories } from '../../repositories/ProductsRepositories';
+import { getCustomRepository } from 'typeorm';
 
 class CreateProductService {
     async execute({ name, description, price, category }: IProductRequest) {
@@ -8,13 +10,23 @@ class CreateProductService {
         if (!description) {
             throw new Error("Descrição não pode ser vazia!");
         }
-        var vproduct = {
-            name: name,
-            description: description,
-            price: price,
-            category: category
-        };
-        return vproduct;
+
+        const productsRepositories = getCustomRepository(ProductsRepositories);
+        const productAlreadyExists = await productsRepositories.findOne({ name });
+        if (productAlreadyExists) {
+            throw new Error("Produto já existe!");
+        }
+
+        const product = productsRepositories.create({
+            name,
+            description,
+            price,
+            category,
+        });
+
+        await productsRepositories.save(product);
+        
+        return product;
     }
 }
 export { CreateProductService };

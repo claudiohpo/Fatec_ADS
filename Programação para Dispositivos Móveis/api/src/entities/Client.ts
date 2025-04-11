@@ -1,22 +1,31 @@
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
 import { v4 as uuid } from "uuid";
 
-@Entity("users")
-class User {
+@Entity("clients")
+class Client {
     @PrimaryColumn()
     readonly id!: string; //! = campo obrigatorio
 
     @Column()
-    name!: string;
+    name: string;
 
     @Column()
-    email!: string;
+    email: string;
 
     @Column()
-    admin!: boolean;
+    phone: string;
 
     @Column()
-    password!: string;
+    address!: string;
+
+    @Column()
+    neighborhood!: string;
+
+    @Column()
+    city!: string;
+
+    @Column()
+    state!: string;
 
     @CreateDateColumn()
     created_at!: Date;
@@ -30,5 +39,4 @@ class User {
         } // O id é gerado automaticamente se não for fornecido
     }
 }
-
-export { User };
+export { Client };

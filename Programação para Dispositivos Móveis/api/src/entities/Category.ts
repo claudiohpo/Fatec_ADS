@@ -1,8 +1,8 @@
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
 import { v4 as uuid } from "uuid";
 
-@Entity("users")
-class User {
+@Entity("categories")
+class Category {
     @PrimaryColumn()
     readonly id!: string; //! = campo obrigatorio
 
@@ -10,13 +10,7 @@ class User {
     name!: string;
 
     @Column()
-    email!: string;
-
-    @Column()
-    admin!: boolean;
-
-    @Column()
-    password!: string;
+    description!: string;
 
     @CreateDateColumn()
     created_at!: Date;
@@ -30,5 +24,4 @@ class User {
         } // O id é gerado automaticamente se não for fornecido
     }
 }
-
-export { User };
+export { Category };

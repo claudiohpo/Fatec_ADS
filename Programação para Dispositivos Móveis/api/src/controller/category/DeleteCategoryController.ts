@@ -7,7 +7,7 @@ class DeleteCategoryController {
     const deleteCategoryService = new DeleteCategoryService(); // Cria um objeto de serviço
     const msg = await deleteCategoryService.execute(id); // Chama o método execute do serviço
 
-        response.json({msg});  // Retorna uma mensagem de sucesso
+        response.json({message: "Registro " + id + "excluido com Sucesso!"});  // Retorna uma mensagem de sucesso
     }
 }
 export { DeleteCategoryController };
