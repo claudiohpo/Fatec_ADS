@@ -30,9 +30,9 @@ import { DeleteClientController } from "./controller/client/DeleteClientControll
 import { ensureAuthenticated } from "./middleware/ensureAuthenticated";
 
 import { CreateSupplierController } from "./controller/supplier/CreateSupplierController";
-// import { ListSupplierController } from "./controller/supplier/ListSupplierController";
-// import { UpdateSupplierController } from "./controller/supplier/UpdateSupplierController"; 
-// import { DeleteSupplierController } from "./controller/supplier/DeleteSupplierController";
+import { ListSupplierController } from "./controller/supplier/ListSupplierController";
+import { UpdateSupplierController } from "./controller/supplier/UpdateSupplierController"; 
+import { DeleteSupplierController } from "./controller/supplier/DeleteSupplierController";
 
 
 const createUserController = new CreateUserController();
@@ -63,9 +63,9 @@ const updateClientController = new UpdateClientController();
 const deleteClientController = new DeleteClientController();
 
 const createSupplierController = new CreateSupplierController();
-// const listSupplierController = new ListSupplierController();
-// const updateSupplierController = new UpdateSupplierController();
-// const deleteSupplierController = new DeleteSupplierController();
+const listSupplierController = new ListSupplierController();
+const updateSupplierController = new UpdateSupplierController();
+const deleteSupplierController = new DeleteSupplierController();
 
 const router = Router();
 router.post("/login", authenticateUserController.handle);
@@ -97,9 +97,9 @@ router.put("/client/:id", updateClientController.handle);
 router.delete("/client/:id", deleteClientController.handle);
 
 router.post("/supplier", createSupplierController.handle);
-// router.get("/supplier", listSupplierController.handle);
-// router.put("/supplier/:id", updateSupplierController.handle);
-// router.delete("/supplier/:id", deleteSupplierController.handle);
+router.get("/supplier", listSupplierController.handle);
+router.put("/supplier/:id", updateSupplierController.handle);
+router.delete("/supplier/:id", deleteSupplierController.handle);
 
 router.use(ensureAuthenticated); //ativa Autenticação para as rotas abaixo
 
