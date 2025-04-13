@@ -10,6 +10,12 @@ class CreateProductService {
         if (!description) {
             throw new Error("Descrição não pode ser vazia!");
         }
+        if (!price || price <= 0) {
+            throw new Error("Preço não pode ser vazio!");
+        }
+        if (!category) {
+            throw new Error("Categoria não pode ser vazia!");
+        }
 
         const productsRepositories = getCustomRepository(ProductsRepositories);
         const productAlreadyExists = await productsRepositories.findOne({ name });

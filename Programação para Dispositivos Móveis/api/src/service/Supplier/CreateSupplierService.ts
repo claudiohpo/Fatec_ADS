@@ -10,13 +10,16 @@ class CreateSupplierService {
         if (!cnpj) {
             throw new Error("CNPJ vazio!");
         }
-        if (!phone) {
-            throw new Error("Telefone vazio!");
-        }
         if (!email) {
             throw new Error("Email vazio!");
         }
-        if(!bank && !agency && !account && !accountType) {
+        if (!phone) {
+            throw new Error("Telefone vazio!");
+        }
+        if (!address || !neighborhood || !city || !state || !zipCode) {
+            throw new Error("Endereço incompleto, revise os dados!");
+        }
+        if(!bank || !agency || !account || !accountType) {
             throw new Error("Dados bancários obrigatórios vazios!");
         }
         const suppliersRepositories = getCustomRepository(SuppliersRepositories);

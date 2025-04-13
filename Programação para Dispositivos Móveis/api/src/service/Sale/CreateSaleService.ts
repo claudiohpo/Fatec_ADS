@@ -5,22 +5,21 @@ import { getCustomRepository } from "typeorm";
 class CreateSaleService {
     async execute({ date, product, client, quantity, total }: ISaleRequest) {
         if (!date) {
-            throw new Error("Data incorreta!");
+            throw new Error("Data vazia!");
         }
         if (!product) {
-            throw new Error("Produto incorreto!");
+            throw new Error("Produto vazio!");
         }
         if (!client) {
-            throw new Error("Cliente incorreto!");
+            throw new Error("Cliente vazio!");
         }
-        if (quantity <= 0) {
-            throw new Error("Quantidade deve ser maior que zero!");
+        if (!quantity || quantity <= 0) {
+            throw new Error("Quantidade vazia ou menor que zero!");
         }
         if (!total) {
-            throw new Error("Total incorreto!");
+            throw new Error("Total vazio!");
         }
-        
-    
+            
         //Acessar o repositório de vendas
         const saleRepository = getCustomRepository(SalesRepositories);
 
@@ -35,7 +34,6 @@ class CreateSaleService {
 
         // Salvar no banco de dados
         await saleRepository.save(sale);
-
         
         return sale;
     }

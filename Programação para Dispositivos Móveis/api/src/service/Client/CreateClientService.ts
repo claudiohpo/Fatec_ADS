@@ -13,6 +13,18 @@ class CreateClientService {
         if (!phone) {
             throw new Error("Telefone vazio!");
         }
+        if (!address) {
+            throw new Error("Endereço vazio!");
+        }
+        if (!neighborhood) {
+            throw new Error("Bairro vazio!");
+        }
+        if (!city) {
+            throw new Error("Cidade vazio!");
+        }
+        if (!state) {
+            throw new Error("Estado vazio!");
+        }
 
         const clientRepository = getCustomRepository(ClientsRepositories);
 

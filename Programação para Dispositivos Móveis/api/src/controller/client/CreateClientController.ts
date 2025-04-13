@@ -7,19 +7,26 @@ class CreateClientController {
         
         const createClientService = new CreateClientService();
        
-        const client = await createClientService.execute(
-            {
-                name, 
-                phone, 
-                email, 
-                address, 
-                neighborhood, 
-                city, 
-                state
+        try {
+            const client = await createClientService.execute(
+                {
+                    name, 
+                    phone, 
+                    email, 
+                    address, 
+                    neighborhood, 
+                    city, 
+                    state
+                }
+            );
+            
+            return response.status(201).json(client); 
+        } catch (error) {
+            if (error instanceof Error) {
+                return response.status(400).json({ message: error.message });
             }
-        );
-        
-        response.json({client}); 
+            return response.status(500).json({ message: "Erro interno do servidor" });
+        }
     }
 }
 export { CreateClientController };

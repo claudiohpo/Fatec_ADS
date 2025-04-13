@@ -9,10 +9,20 @@ class CreateUserController {
         
         const createUserService = new CreateUserService(); // Cria um objeto de serviço
         
-        const user = await createUserService.execute({name, email, admin, password}); // Cria um objeto user com os dados recebidos
-        
-        
-        response.json(user);  
+        try {
+            const user = await createUserService.execute({
+                name, 
+                email, 
+                admin, 
+                password}); // Cria um objeto user com os dados recebidos
+            
+            return response.status(201).json(user); // Retorna o usuário criado com status 201
+        } catch (error) {
+            if (error instanceof Error) {
+                return response.status(400).json({ message: error.message }); // Retorna erro 400 se houver erro
+            }
+            return response.status(500).json({ message: "Erro interno do servidor" }); // Retorna erro 500 para erros internos
+        }
     }
 }
 export { CreateUserController };

@@ -5,8 +5,20 @@ import { hash } from "bcryptjs";
 
 class CreateUserService {
     async execute({ name, email, admin = false, password }: IUserRequest) {
-        if (!email) {
-            throw new Error("Email incorreto!");
+        if (!name) {
+            throw new Error("Nome vazio!");
+        }
+        if (!email || !email.includes("@")) {
+            throw new Error("Email vazio ou incorreto!");
+        }
+        if (!password) {
+            throw new Error("Senha vazia!");
+        }
+        if (password.length < 6) {
+            throw new Error("Senha deve ter no mínimo 6 caracteres!");
+        }
+        if (!admin) {
+            throw new Error("Admin não definido!");
         }
 
         const usersRepositories = getCustomRepository(UsersRepositories);
@@ -17,7 +29,11 @@ class CreateUserService {
 
         const passwordHash = await hash(password, 8);
 
-        const user = usersRepositories.create({name, email, admin, password: passwordHash,});
+        const user = usersRepositories.create({
+            name, 
+            email, 
+            admin, 
+            password: passwordHash,});
         
         // Salvar no banco de dados
         await usersRepositories.save(user);

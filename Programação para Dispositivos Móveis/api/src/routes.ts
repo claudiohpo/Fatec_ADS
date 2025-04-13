@@ -71,32 +71,32 @@ const router = Router();
 router.post("/login", authenticateUserController.handle);
 
 // Define a rota POST /users que chama o método handle do controlador
-router.post("/users", createUserController.handle);
+router.post("/users", createUserController.handle.bind(createUserController)); //bind é usado para garantir que o this dentro do método handle aponte para a instância correta do controlador
 router.get("/users", listUsersController.handle);
 router.put("/users/:id", updateUserController.handle);
 router.delete("/users/:id", deleteUserController.handle);
 
-router.post("/category", createCategoryController.handle);
+router.post("/category", createCategoryController.handle.bind(createCategoryController));
 router.get("/category", listCategoryController.handle);
 router.put("/category/:id", updateCategoryController.handle);
 router.delete("/category/:id", deleteCategoryController.handle);
 
-router.post("/product", createProductController.handle);
+router.post("/product", createProductController.handle.bind(createProductController)); //bind é usado para garantir que o this dentro do método handle aponte para a instância correta do controlador
 router.get("/product", listProductController.handle);   
 router.put("/product/:id", updateProductController.handle);
 router.delete("/product/:id", deleteProductController.handle);
 
-router.post("/sale", createSaleController.handle);
+router.post("/sale", createSaleController.handle.bind(createSaleController));
 router.get("/sale", listSaleController.handle);
 router.put("/sale/:id", updateSaleController.handle);
 router.delete("/sale/:id", deleteSaleController.handle);
 
-router.post("/client", createClientController.handle);
+router.post("/client", createClientController.handle.bind(createClientController));
 router.get("/client", listClientController.handle);
 router.put("/client/:id", updateClientController.handle);
 router.delete("/client/:id", deleteClientController.handle);
 
-router.post("/supplier", createSupplierController.handle);
+router.post("/supplier", createSupplierController.handle.bind(createSupplierController));
 router.get("/supplier", listSupplierController.handle);
 router.put("/supplier/:id", updateSupplierController.handle);
 router.delete("/supplier/:id", deleteSupplierController.handle);

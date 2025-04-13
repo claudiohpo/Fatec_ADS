@@ -7,9 +7,21 @@ class CreateSaleController {
 
         const createSaleService = new CreateSaleService();
 
-        const sale = await createSaleService.execute({date, product, client, quantity, total});
-        
-        response.json({sale});
+        try {
+            const sale = await createSaleService.execute({
+                date, 
+                product, 
+                client, 
+                quantity, 
+                total});
+            
+            return response.status(201).json(sale); 
+        } catch (error) {
+            if (error instanceof Error) {
+                return response.status(400).json({ message: error.message });
+            }
+            return response.status(500).json({ message: "Erro interno do servidor" });
+        }
     }
 }
 export { CreateSaleController };
