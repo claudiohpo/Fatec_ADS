@@ -1,5 +1,4 @@
 //Esse arquivo define um controlador para criar usuários.
-
 import { Request, Response } from "express";
 import { CreateUserService } from "../../service/User/CreateUserService";
 
@@ -15,7 +14,6 @@ class CreateUserController {
                 email, 
                 admin, 
                 password}); // Cria um objeto user com os dados recebidos
-            
             return response.status(201).json(user); // Retorna o usuário criado com status 201
         } catch (error) {
             if (error instanceof Error) {

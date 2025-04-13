@@ -12,7 +12,6 @@ class UpdateCategoryController {
             id, 
             name, 
             description});
-
         // Retorna uma mensagem de sucesso e os dados da categoria atualizada
         response.json({
             message: `Registro ${id} atualizado com sucesso`,

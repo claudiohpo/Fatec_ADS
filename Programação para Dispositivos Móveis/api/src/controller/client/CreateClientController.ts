@@ -19,7 +19,6 @@ class CreateClientController {
                     state
                 }
             );
-            
             return response.status(201).json(client); 
         } catch (error) {
             if (error instanceof Error) {

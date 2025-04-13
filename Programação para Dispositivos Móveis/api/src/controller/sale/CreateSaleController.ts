@@ -14,7 +14,6 @@ class CreateSaleController {
                 client, 
                 quantity, 
                 total});
-            
             return response.status(201).json(sale); 
         } catch (error) {
             if (error instanceof Error) {

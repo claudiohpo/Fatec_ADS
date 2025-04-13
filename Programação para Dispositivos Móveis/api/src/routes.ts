@@ -81,7 +81,7 @@ router.get("/category", listCategoryController.handle);
 router.put("/category/:id", updateCategoryController.handle);
 router.delete("/category/:id", deleteCategoryController.handle);
 
-router.post("/product", createProductController.handle.bind(createProductController)); //bind é usado para garantir que o this dentro do método handle aponte para a instância correta do controlador
+router.post("/product", createProductController.handle.bind(createProductController));
 router.get("/product", listProductController.handle);   
 router.put("/product/:id", updateProductController.handle);
 router.delete("/product/:id", deleteProductController.handle);

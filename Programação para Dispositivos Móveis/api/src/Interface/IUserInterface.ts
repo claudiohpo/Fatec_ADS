@@ -5,5 +5,4 @@ interface IUserRequest { // Cria a interface IUserRequest
     admin?: boolean; // O campo admin é opcional
     password: string; // O campo password é obrigatório
 }
-
 export { IUserRequest }; // Exporta a interface IUserRequest

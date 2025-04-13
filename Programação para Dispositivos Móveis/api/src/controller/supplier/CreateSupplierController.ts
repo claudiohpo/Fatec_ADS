@@ -23,7 +23,6 @@ class CreateSupplierController {
                 account,
                 accountType
             });
-
             return response.status(201).json(supplier); 
         } catch (error) {
             if (error instanceof Error) {

@@ -5,7 +5,6 @@ import "express-async-errors"; // Permite que o express entenda erros assíncron
 import "reflect-metadata";
 import "./database/index"; // Importa a configuração do banco de dados
 
-
 const app = express();
 
 app.use(express.json()); // Permite que a API entenda JSON no body das requisições

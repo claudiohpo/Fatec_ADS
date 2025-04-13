@@ -38,5 +38,4 @@ class AuthenticateUserService{
         return token;
     }
 }
-
 export { AuthenticateUserService }; // Exporta a classe AuthenticateUserService
