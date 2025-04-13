@@ -11,7 +11,11 @@ class UpdateSaleController {
 
         const sale = await updateSaleService.execute({id, date, product, client, quantity, total});
 
-        response.json({sale});
+        // Retorna uma mensagem de sucesso e os dados da venda atualizada
+        response.json({
+            message: `Registro ${id} atualizado com sucesso`,
+            sale
+        });
     }
 }
 export { UpdateSaleController };

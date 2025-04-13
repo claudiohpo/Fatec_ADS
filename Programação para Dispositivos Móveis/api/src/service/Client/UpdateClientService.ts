@@ -7,10 +7,7 @@ class UpdateClientService {
         if(!id) {
             throw new Error("ID vazio!");
         }
-        if (!email) {
-            throw new Error("Email incorreto!");
-        }
-        
+               
         const clientsRepositories = getCustomRepository(ClientsRepositories);
         const clientAlreadyExists = await clientsRepositories.findOne({
             id,
@@ -19,13 +16,13 @@ class UpdateClientService {
             throw new Error("Cliente não existe!");
         }
 
-        clientAlreadyExists.name = name
-        clientAlreadyExists.email = email
-        clientAlreadyExists.phone = phone
-        clientAlreadyExists.address = address
-        clientAlreadyExists.neighborhood = neighborhood
-        clientAlreadyExists.city = city
-        clientAlreadyExists.state = state
+        if (name !== undefined) clientAlreadyExists.name = name
+        if (email !== undefined) clientAlreadyExists.email = email
+        if (phone !== undefined) clientAlreadyExists.phone = phone
+        if (address !== undefined) clientAlreadyExists.address = address
+        if (neighborhood !== undefined) clientAlreadyExists.neighborhood = neighborhood
+        if (city !== undefined) clientAlreadyExists.city = city
+        if (state !== undefined) clientAlreadyExists.state = state
         clientAlreadyExists.updated_at = new Date()
         await clientsRepositories.update(id, clientAlreadyExists)
 

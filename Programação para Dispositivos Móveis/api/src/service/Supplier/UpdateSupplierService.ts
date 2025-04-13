@@ -15,21 +15,24 @@ class UpdateSupplierService {
         if (!supplierAlreadyExists) {
             throw new Error("Fornecedor não existe!");
         }
-        supplierAlreadyExists.name = name;
-        supplierAlreadyExists.cnpj = cnpj;
-        supplierAlreadyExists.email = email;
-        supplierAlreadyExists.phone = phone;
-        supplierAlreadyExists.address = address;
-        supplierAlreadyExists.neighborhood = neighborhood;
-        supplierAlreadyExists.city = city;
-        supplierAlreadyExists.state = state;
-        supplierAlreadyExists.zipCode = zipCode;
-        supplierAlreadyExists.bank = bank;
-        supplierAlreadyExists.agency = agency;
-        supplierAlreadyExists.account = account;
-        supplierAlreadyExists.accountType = accountType;
+        
+        if (name !== undefined) supplierAlreadyExists.name = name;
+        if (cnpj !== undefined) supplierAlreadyExists.cnpj = cnpj;
+        if (email !== undefined) supplierAlreadyExists.email = email;
+        if (phone !== undefined) supplierAlreadyExists.phone = phone;
+        if (address !== undefined) supplierAlreadyExists.address = address;
+        if (neighborhood !== undefined) supplierAlreadyExists.neighborhood = neighborhood;
+        if (city !== undefined) supplierAlreadyExists.city = city;
+        if (state !== undefined) supplierAlreadyExists.state = state;
+        if (zipCode !== undefined) supplierAlreadyExists.zipCode = zipCode;
+        if (bank !== undefined) supplierAlreadyExists.bank = bank;
+        if (agency !== undefined) supplierAlreadyExists.agency = agency;
+        if (account !== undefined) supplierAlreadyExists.account = account;
+        if (accountType !== undefined) supplierAlreadyExists.accountType = accountType;
         supplierAlreadyExists.updated_at = new Date();
-        return await suppliersRepositories.update(id, supplierAlreadyExists);
+        
+        await suppliersRepositories.update(id, supplierAlreadyExists);
+        return supplierAlreadyExists;
     }
 }
 export { UpdateSupplierService };

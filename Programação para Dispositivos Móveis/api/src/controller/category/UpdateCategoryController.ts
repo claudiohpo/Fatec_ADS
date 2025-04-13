@@ -10,7 +10,11 @@ class UpdateCategoryController {
 
         const category = await updateCategoryService.execute({id, name, description});
 
-        response.json({message:"Registro "+id + " atualizado com Sucesso"});  // Retorna uma mensagem de sucesso
+        // Retorna uma mensagem de sucesso e os dados da categoria atualizada
+        response.json({
+            message: `Registro ${id} atualizado com sucesso`,
+            category
+        });
     }
 }
 export { UpdateCategoryController };

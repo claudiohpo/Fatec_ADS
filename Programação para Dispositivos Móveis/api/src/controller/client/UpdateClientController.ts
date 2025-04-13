@@ -10,7 +10,11 @@ class UpdateClientController {
 
         const client = await updateClientService.execute({id, name, phone, email, address, neighborhood, city, state});
 
-        response.json({message:"Registro "+id + " atualizado com Sucesso"}); 
+        // Retorna uma mensagem de sucesso e os dados do cliente atualizado
+        response.json({
+            message: `Registro ${id} atualizado com sucesso`,
+            client
+        });
     }
 }
 export { UpdateClientController };

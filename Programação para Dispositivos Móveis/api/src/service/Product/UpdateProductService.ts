@@ -7,10 +7,7 @@ class UpdateProductService {
         if(!id) {
             throw new Error("ID vazio!");
         }
-        if(!name) {
-            throw new Error("Nome incorreto!");
-        }
-
+        
         const productsRepositories = getCustomRepository(ProductsRepositories);
         const productAlreadyExists = await productsRepositories.findOne({   
             id,
@@ -19,10 +16,11 @@ class UpdateProductService {
             throw new Error("Produto não existe!");
         }
 
-        productAlreadyExists.name = name
-        productAlreadyExists.description = description
-        productAlreadyExists.price = price
-        productAlreadyExists.category = category
+        if (name !== undefined) productAlreadyExists.name = name
+        if (description !== undefined) productAlreadyExists.description = description
+        if (price !== undefined) productAlreadyExists.price = price
+        if (category !== undefined) productAlreadyExists.category = category
+        
         productAlreadyExists.updated_at = new Date()
         await productsRepositories.update(id ,productAlreadyExists)
 

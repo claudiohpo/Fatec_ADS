@@ -7,22 +7,7 @@ class UpdateSaleService {
         if(!id) {
             throw new Error("ID vazio!");
         }
-        if(!date) {
-            throw new Error("Data incorreta!");
-        }
-        if(!product) {
-            throw new Error("Produto vazio!");
-        }
-        if(!client) {
-            throw new Error("Cliente vazio!");
-        }
-        if(!quantity) {
-            throw new Error("Quantidade vazia!");
-        }
-        if(!total) {
-            throw new Error("Total vazio!");
-        }
-        
+              
         const salesRepositories = getCustomRepository(SalesRepositories);
         const saleAlreadyExists = await salesRepositories.findOne({
             id,
@@ -31,11 +16,11 @@ class UpdateSaleService {
             throw new Error("Venda não existe!");
         }
 
-        saleAlreadyExists.date = date
-        saleAlreadyExists.product = product
-        saleAlreadyExists.client = client
-        saleAlreadyExists.quantity = quantity
-        saleAlreadyExists.total = total
+        if (date !== undefined) saleAlreadyExists.date = date
+        if (product !== undefined) saleAlreadyExists.product = product
+        if (client !== undefined) saleAlreadyExists.client = client
+        if (quantity !== undefined) saleAlreadyExists.quantity = quantity
+        if (total !== undefined) saleAlreadyExists.total = total
         saleAlreadyExists.updated_at = new Date()
         await salesRepositories.update(id ,saleAlreadyExists)
         

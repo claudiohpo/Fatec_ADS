@@ -7,10 +7,7 @@ class UpdateCategoryService {
         if(!id) {
             throw new Error("ID vazio!");
         }
-        if(!name) {
-            throw new Error("Nome incorreto!");
-        }
-
+        
         const categoriesRepositories = getCustomRepository(CategoriesRepositories);
         const categoryAlreadyExists = await categoriesRepositories.findOne({
             id,
@@ -19,8 +16,8 @@ class UpdateCategoryService {
             throw new Error("Categoria não existe!");
         }
 
-        categoryAlreadyExists.name = name
-        categoryAlreadyExists.description = description
+        if (name !== undefined) categoryAlreadyExists.name = name
+        if (description !== undefined) categoryAlreadyExists.description = description
         categoryAlreadyExists.updated_at = new Date()
         await categoriesRepositories.update(id ,categoryAlreadyExists)
 

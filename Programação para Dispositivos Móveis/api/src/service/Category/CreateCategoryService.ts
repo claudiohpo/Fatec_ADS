@@ -5,7 +5,7 @@ import { getCustomRepository } from "typeorm";
 class CreateCategoryService {
     async execute({ name, description }: ICategoryRequest) {
         if(!name) {
-            throw new Error("Nome incorreto!");
+            throw new Error("Nome não pode estar vazio!");
         }
 
         if(!description) {

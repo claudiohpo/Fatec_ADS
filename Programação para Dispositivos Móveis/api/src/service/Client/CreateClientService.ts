@@ -5,22 +5,26 @@ import { getCustomRepository } from "typeorm";
 class CreateClientService {
     async execute({ name, email, phone, address, neighborhood, city, state }: IClientRequest) {
         if(!name) {
-            throw new Error("Nome incorreto!");
+            throw new Error("Nome não pode estar vazio!");
         }
         if (!email) {
-            throw new Error("Email incorreto!");
+            throw new Error("Email vazio!");
         }
         if (!phone) {
-            throw new Error("Telefone incorreto!");
+            throw new Error("Telefone vazio!");
         }
 
         const clientRepository = getCustomRepository(ClientsRepositories);
 
         const clientAlreadyExists = await clientRepository.findOne({
-            where: [{ email }, { phone }],
+            where: [
+                { email: email },
+                { phone: phone }
+            ]
         });
+        
         if (clientAlreadyExists) {
-            throw new Error("Cliente já existe!");
+            throw new Error("Cliente já existe! Verique email e telefone!");
         }
 
         const client = clientRepository.create({

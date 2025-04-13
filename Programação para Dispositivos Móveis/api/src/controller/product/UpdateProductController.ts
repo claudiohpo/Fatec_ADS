@@ -11,7 +11,11 @@ class UpdateProductController {
 
         const product = await updateProductService.execute({id, name, category, description, price});
        
-        response.json({message:"Registro "+id + " atualizado com Sucesso"});
+        // Retorna uma mensagem de sucesso e os dados do produto atualizado
+        response.json({
+            message: `Registro ${id} atualizado com sucesso`,
+            product
+        });
     }
 }
 export { UpdateProductController};
