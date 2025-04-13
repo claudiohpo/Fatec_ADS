@@ -85,7 +85,7 @@ Este projeto foi desenvolvido como parte da disciplina **Programação para Disp
 
 ## 👨‍💻 Autor
 
-**Seu Nome Aqui**  
+**Cláudio Henrique P. Oliveira**  
 📧 claudiohpo@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/claudiohpo/)
 
