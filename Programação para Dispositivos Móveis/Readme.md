@@ -1,6 +1,8 @@
 # Programação para Dispositivos Móveis
 
-* 
+* Exercícios realizados em sala e entregas.
+
+  
 ## Exercícios
 
 ### - [--](link)
