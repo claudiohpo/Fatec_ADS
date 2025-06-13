@@ -1,24 +1,35 @@
 import { StatusBar } from "expo-status-bar";
-import { View, Text, Image, Alert, ActivityIndicator} from "react-native";
+import { View, Text, Image, Alert, ActivityIndicator } from "react-native";
 import { styles } from "./styles";
 import { theme } from "../../global/styles/theme";
 import logoSmall from "../../../assets/app-name-small.png";
 import { Button } from "../../components/Button";
-import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
 import { ButtonWhite } from "../../components/ButtonWhite";
 import { useNavigation } from "@react-navigation/native";
 import Photo from "../../../assets/Profile_photo.png";
-import * as ImagePicker from 'expo-image-picker';
-
 
 export function ProfilePhoto() {
   const navigation = useNavigation<any>();
 
-  const [photoUri, setPhotoUri] = useState<string | null>(null);
-
-
   const handleNavigateContinue = () => {
     navigation.navigate("ProfileCreated");
+  };
+
+  const handlePress = () => {
+    Alert.alert(
+      "Selecionar foto de perfil",
+      "Você deseja selecionar uma foto de perfil?",
+      [
+        {
+          text: "Cancelar",
+          style: "cancel",
+        },
+        {
+          text: "OK",
+          onPress: () => console.log("OK Pressed"),
+        },
+      ]
+    );
   };
 
   return (
@@ -28,26 +39,28 @@ export function ProfilePhoto() {
         Seu perfil foi criado com sucesso! {"\n"}
       </Text>
 
-      {/* Se já escolheu uma foto, exibe; senão exibe a padrão */}
-      <Image 
-        source={ photoUri ? { uri: photoUri } : require("../../../assets/Profile_photo.png") } 
-        style={styles.image} 
-        resizeMode="cover" 
-      />
+      <Image source={Photo} style={styles.image} resizeMode="stretch" />
 
       <View style={styles.content}>
-        {/* ← TORNEI ESTE TRECHO CLICÁVEL */}
-        <TouchableOpacity onPress={pickImage}>
-          <Text style={styles.subtitle}>
-            Selecionar foto de perfil{"\n"}
-          </Text>
-        </TouchableOpacity>
+        <Text
+          style={[
+            styles.subtitle,
+            { color: "#007BFF", textDecorationLine: "underline" },
+          ]}
+          onPress={handlePress}
+        >
+          {" "}
+          Selecionar foto de perfil
+        </Text>
       </View>
 
       <View style={styles.controlsbutons}>
         <Button title="Continuar" onPress={handleNavigateContinue} />
         <Text>{"\n"}</Text>
-        <ButtonWhite title="Pular esta etapa" onPress={handleNavigateContinue} />
+        <ButtonWhite
+          title="Pular esta etapa"
+          onPress={handleNavigateContinue}
+        />
       </View>
     </View>
   );

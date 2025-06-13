@@ -5,7 +5,7 @@ import { theme } from "../../global/styles/theme";
 import logoSmall from "../../../assets/app-name-small.png";
 import { Button } from "../../components/Button";
 import { useNavigation } from "@react-navigation/native";
-import EmailImg from "../../../assets/Email.png";
+import Like from "../../../assets/like.png";
 
 export function ProfileCreated() {
   const navigation = useNavigation<any>();
@@ -20,7 +20,7 @@ export function ProfileCreated() {
       <Text style={styles.title}>
         Seu perfil foi criado com sucesso! {"\n"}
       </Text>
-      <Image source={EmailImg} style={styles.image} resizeMode="stretch" />
+      <Image source={Like} style={styles.image} resizeMode="stretch" />
 
       <View style={styles.content}>
         <Text style={styles.subtitle}>

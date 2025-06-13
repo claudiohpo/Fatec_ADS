@@ -21,13 +21,14 @@ export const styles = StyleSheet.create({
   image: {
     width: '65%',
     height: 275,
+    marginTop: 50
   },
   input: {
     color: theme.colors.primary,
     fontFamily: theme.fonts.text400,
     fontSize: 25,
     textAlign: 'center',
-    fontWeight:'bold',
+    fontWeight: 'bold',
     borderBottomColor: theme.colors.primary,
     borderBottomWidth: 2,
     marginBottom: 10,
