@@ -25,6 +25,10 @@ export function SignIn() {
     navigation.navigate("Password");
   };
 
+  const handleNavigateCheckEmail = () => {
+    navigation.navigate("CheckEmail");
+  };
+
   return (
     <View style={styles.container}>
       <Image source={logoSmall} style={styles.imageLogo} resizeMode="stretch" />
@@ -41,7 +45,7 @@ export function SignIn() {
           placeholder="Insira seu e-mail"
           keyboardType="email-address"
           placeholderTextColor={theme.colors.primary}
-          maxLength={20}
+          maxLength={50}
         ></TextInput>
         <Text style={styles.label}>Senha {"\n"}</Text>
         <TextInput
@@ -60,7 +64,7 @@ export function SignIn() {
       </View>
 
       <View style={styles.controlsbutons}>
-        <Button title="Continuar" />
+        <Button title="Fazer Login" />
         <Text>{"\n"}</Text>
         <ButtonWhite title="Voltar" onPress={handleNavigateHome}/>
       </View>
@@ -70,6 +74,19 @@ export function SignIn() {
         <Image source={facebook}  style={styles.linha}/>
         <Image source={apple} style={styles.linha} />
       </View>
+
+      <View>
+        <Text style={styles.label}>
+          Novo usuário?{' '}
+          <Text
+            style={[styles.label, { color: '#007BFF', textDecorationLine: 'underline' }]}
+            onPress={() => navigation.navigate('Address')} //apontar para a tela de criação de conta
+          >
+            Crie sua conta
+    </Text>
+  </Text>
+</View>
+       
     </View>
   );
 }

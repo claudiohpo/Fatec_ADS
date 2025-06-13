@@ -21,9 +21,8 @@ export const styles = StyleSheet.create({
   input: {
     color: theme.colors.primary,
     fontFamily: theme.fonts.text400,
-    fontSize: 25,
-    textAlign: 'center',
-    fontWeight:'bold',
+    fontSize: 15,
+    textAlign: 'left',
     borderBottomColor: theme.colors.primary,
     borderBottomWidth: 2,
     marginBottom: 10,
@@ -70,6 +69,19 @@ export const styles = StyleSheet.create({
     marginBottom: 64,
     fontFamily: theme.fonts.title500,
     lineHeight: 25
+  },
+  city: {
+    color: theme.colors.secondary90,
+    fontFamily: theme.fonts.text400,
+    fontSize: 15,
+    fontWeight: 'bold',
+    textAlign: 'left',
+  },
+  location: {
+    color: theme.colors.primary,
+    fontFamily: theme.fonts.text400,
+    fontSize: 12,
+    textAlign: 'left', 
   }
 
 });

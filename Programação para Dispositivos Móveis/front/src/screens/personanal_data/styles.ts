@@ -23,11 +23,10 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.text400,
     fontSize: 15,
     textAlign: 'left',
-    fontWeight:'bold',
     borderBottomColor: theme.colors.primary,
     borderBottomWidth: 2,
     marginBottom: 10,
-    marginTop: 10,
+    marginTop: 10
   },
   content: {
     marginTop: 0,
@@ -70,6 +69,30 @@ export const styles = StyleSheet.create({
     marginBottom: 64,
     fontFamily: theme.fonts.title500,
     lineHeight: 25
-  }
-
+  },
+  city: {
+    color: theme.colors.secondary90,
+    fontFamily: theme.fonts.text400,
+    fontSize: 15,
+    fontWeight: 'bold',
+    textAlign: 'left',
+    marginBottom: 10
+  },
+  location: {
+    color: theme.colors.primary,
+    fontFamily: theme.fonts.text400,
+    fontSize: 12,
+    textAlign: 'left', 
+    marginBottom: 15
+  },
+  city2: {
+    color: theme.colors.secondary90,
+    fontFamily: theme.fonts.text400,
+    fontSize: 15,
+    fontWeight: 'bold',
+    textAlign: 'left',
+    marginBottom: 10,
+    borderBottomColor: theme.colors.primary,
+    borderBottomWidth: 2
+  },
 });

@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
     borderBottomColor: theme.colors.primary,
     borderBottomWidth: 2,
     marginBottom: 10,
-    marginTop: 10,
+    marginTop: 10
   },
   content: {
     marginTop: 0,

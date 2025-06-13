@@ -11,14 +11,40 @@ import { Button } from "../../components/Button";
 import { TextInput } from "react-native-gesture-handler";
 import { ButtonWhite } from "../../components/ButtonWhite";
 import { useNavigation } from "@react-navigation/native";
+import React, { useState } from "react";
 
-export function Confirm() {
-
+export function Password() {
 
   const navigation = useNavigation<any>();
 
+  const [email, setEmail] = useState("");
+
   const handleNavigateHome = () => {
     navigation.navigate("Home");
+  };
+
+  const handleNavigateSignIn = () => {
+    navigation.navigate("SignIn");
+  };
+
+  const handleNavigateCheckEmail = () => {
+    if (email.trim() === "") {
+      Alert.alert("Erro", "Campo e-mail vazio, insira seu e-mail e tente novamente.");
+      return;
+    }
+
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!regexEmail.test(email)) {
+      Alert.alert("Erro", "Formato de e-mail inválido.");
+      return;
+    }
+
+    navigation.navigate("CheckEmail");
+  };
+
+  const handleNavigateConfirm = () => {
+    navigation.navigate("Confirm");
   };
 
   return (
@@ -30,41 +56,28 @@ export function Confirm() {
           Esqueceu a senha {"\n"}
         </Text>
 
-        <Text style={styles.label}>E-mail {"\n"}</Text>
+        <Text 
+          style={styles.label}>
+            Digite seu e-mail abaixo para receber 
+            as instruções de redefinição de senha. {"\n"}</Text>
         <TextInput
           style={styles.input}
-          placeholder="Confirmado"
+          placeholder="Insira seu e-mail"
           keyboardType="email-address"
           placeholderTextColor={theme.colors.primary}
           maxLength={20}
+          value={email} 
+          onChangeText={setEmail}
         ></TextInput>
-        <Text style={styles.label}>Senha {"\n"}</Text>
-        <TextInput
-          style={styles.input}
-          keyboardType="number-pad"
-          placeholder="Insira senha (apenas numeros)"
-          maxLength={6}
-          secureTextEntry
-          placeholderTextColor={theme.colors.primary}
-        ></TextInput>
-
-        <View style={styles.controls}>
-          <Text style={styles.label}>Lembrar de Mim</Text>
-          <Text style={styles.label} onPress={handleNavigateHome}>Esqueci Minha Senha</Text>
-        </View>
+        
       </View>
 
       <View style={styles.controlsbutons}>
-        <Button title="Continuar" />
+        <Button title="Recuperar senha" onPress={handleNavigateCheckEmail}/>
         <Text>{"\n"}</Text>
-        <ButtonWhite title="Voltar" onPress={handleNavigateHome}/>
+        <ButtonWhite title="Voltar" onPress={handleNavigateSignIn}/>
       </View>
-      <Image source={linha} style={styles.linha} />
-      {/* <View style={styles.controls}>
-        <Image source={google} style={styles.linha} />
-        <Image source={facebook} style={styles.linha} />
-        <Image source={apple} style={styles.linha} />
-      </View> */}
+      
     </View>
   );
 }
