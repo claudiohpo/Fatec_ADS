@@ -7,17 +7,22 @@ import { Button } from "../../components/Button";
 import { TextInput } from "react-native-gesture-handler";
 import { ButtonWhite } from "../../components/ButtonWhite";
 import { useNavigation } from "@react-navigation/native";
+import { useState } from "react";
+import MaskInput from 'react-native-mask-input';
 
 export function PersonalData() {
+
+const [celular, setCelular] = useState('');
+const [telefone, setTelefone] = useState('');
 
  const navigation = useNavigation<any>();
  
    const handleNavigateBack = () => {
-     navigation.navigate("Address");
+     navigation.navigate("Address2");
    };
    
    const handleNavigateContinue = () => {
-     navigation.navigate("home");
+     navigation.navigate("AccountData");
    };
  
    return (
@@ -52,26 +57,31 @@ export function PersonalData() {
        </View>
  
        <View>
-         <Text style={styles.label}>Celular * </Text>
-         <TextInput
-                   style={styles.input}
-                   placeholder="Insira seu celular com DDD"
-                   keyboardType="number-pad"
-                   placeholderTextColor={theme.colors.primary}
-                   maxLength={11}
-                 ></TextInput>
-       </View>
+      <Text style={styles.label}>Celular *</Text>
+
+      <MaskInput
+        style={styles.input}
+        value={celular}
+        onChangeText={setCelular}
+        keyboardType="number-pad"
+        placeholder="Insira seu celular com DDD"
+        placeholderTextColor={theme.colors.primary}
+        mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+      />
+    </View>
  
        <View>
          <Text style={styles.label}>Telefone </Text>
-         <TextInput
-                   style={styles.input}
-                   placeholder="Insira seu telefone com DDD"
-                   keyboardType="number-pad"
-                   placeholderTextColor={theme.colors.primary}
-                   maxLength={10}
-                 ></TextInput>
-       </View>    
+         <MaskInput
+        style={styles.input}
+        value={telefone}
+        onChangeText={setTelefone}
+        keyboardType="number-pad"
+        placeholder="Insira seu telefone com DDD"
+        placeholderTextColor={theme.colors.primary}
+        mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+      />
+      </View>   
  
        </View>
  

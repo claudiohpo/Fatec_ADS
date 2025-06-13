@@ -8,6 +8,9 @@ import { Address2 } from '../screens/address2';
 import { CheckEmail } from '../screens/check_email';
 import { Address } from '../screens/address';
 import { PersonalData } from '../screens/personanal_data';
+import { AccountData } from '../screens/account_data';
+import { ProfilePhoto } from '../screens/profile_photo';
+import { ProfileCreated } from '../screens/profile_created';
 
 const Stack = createStackNavigator();
 
@@ -22,6 +25,9 @@ export function AppRoutes() {
       <Stack.Screen name="CheckEmail" component={CheckEmail} />
       <Stack.Screen name="Address" component={Address} />
       <Stack.Screen name="PersonalData" component={PersonalData} />
+      <Stack.Screen name="AccountData" component={AccountData} />
+      <Stack.Screen name="ProfilePhoto" component={ProfilePhoto} />
+      <Stack.Screen name="ProfileCreated" component={ProfileCreated} />
 
     </Stack.Navigator>
   );
