@@ -11,6 +11,7 @@ import { PersonalData } from '../screens/personanal_data';
 import { AccountData } from '../screens/account_data';
 import { ProfilePhoto } from '../screens/profile_photo';
 import { ProfileCreated } from '../screens/profile_created';
+import { Products } from '../screens/products';
 
 const Stack = createStackNavigator();
 
@@ -28,6 +29,7 @@ export function AppRoutes() {
       <Stack.Screen name="AccountData" component={AccountData} />
       <Stack.Screen name="ProfilePhoto" component={ProfilePhoto} />
       <Stack.Screen name="ProfileCreated" component={ProfileCreated} />
+      <Stack.Screen name="Products" component={Products} />
 
     </Stack.Navigator>
   );

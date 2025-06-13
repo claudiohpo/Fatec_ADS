@@ -23,11 +23,10 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.text400,
     fontSize: 15,
     textAlign: 'left',
-    fontWeight:'bold',
     borderBottomColor: theme.colors.primary,
     borderBottomWidth: 2,
     marginBottom: 10,
-    marginTop: 10,
+    marginTop: 10
   },
   content: {
     marginTop: 0,
@@ -44,12 +43,11 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     flexDirection: 'row',
     width: '100%',
-    paddingHorizontal: 5,
-    marginBottom: 20
+    paddingHorizontal: 5
   },
   title: {
     color: theme.colors.text,
-    textAlign: 'center',
+    textAlign: 'left',
     fontSize: 25,
     fontWeight: 'bold',
     marginBottom: 5,
@@ -72,10 +70,29 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.title500,
     lineHeight: 25
   },
-  label2: {
-    color: theme.colors.primary,
-    fontFamily: theme.fonts.text500,
-    fontSize: 12,
+  city: {
+    color: theme.colors.secondary90,
+    fontFamily: theme.fonts.text400,
+    fontSize: 15,
+    fontWeight: 'bold',
     textAlign: 'left',
+    marginBottom: 10
+  },
+  location: {
+    color: theme.colors.primary,
+    fontFamily: theme.fonts.text400,
+    fontSize: 12,
+    textAlign: 'left', 
+    marginBottom: 15
+  },
+  city2: {
+    color: theme.colors.secondary90,
+    fontFamily: theme.fonts.text400,
+    fontSize: 15,
+    fontWeight: 'bold',
+    textAlign: 'left',
+    marginBottom: 10,
+    borderBottomColor: theme.colors.primary,
+    borderBottomWidth: 2
   },
 });

@@ -17,12 +17,16 @@ export function SignIn() {
 
   const navigation = useNavigation<any>();
 
-  const handleNavigateHome = () => {
-    navigation.navigate("Home");
+  const handleNavigateLogin = () => {
+    navigation.navigate("Products");
   };
 
   const handleNavigateReset = () => {
     navigation.navigate("Password");
+  };
+
+  const handleNavigateHome = () => {
+    navigation.navigate("Home");
   };
 
   const handleNavigateCheckEmail = () => {
@@ -58,13 +62,13 @@ export function SignIn() {
         ></TextInput>
 
         <View style={styles.controls}>
-          <Text style={styles.label}>Lembrar de Mim</Text>
-          <Text style={styles.label} onPress={handleNavigateReset}>Esqueci Minha Senha</Text>
+          <Text style={styles.label2}>Lembrar de Mim</Text>
+          <Text style={styles.label2} onPress={handleNavigateReset}>Esqueci Minha Senha</Text>
         </View>
       </View>
 
       <View style={styles.controlsbutons}>
-        <Button title="Fazer Login" />
+        <Button title="Fazer Login" onPress={handleNavigateLogin} />
         <Text>{"\n"}</Text>
         <ButtonWhite title="Voltar" onPress={handleNavigateHome}/>
       </View>
