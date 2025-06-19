@@ -13,7 +13,6 @@ export function Start() {
 
   const handleNavigate = () => {
     navigation.navigate("SignIn");
-    // navigation.goBack();
   };
 
   return (

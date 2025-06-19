@@ -84,7 +84,7 @@ export function SignIn() {
           Novo usuário?{' '}
           <Text
             style={[styles.label, { color: '#007BFF', textDecorationLine: 'underline' }]}
-            onPress={() => navigation.navigate('Address')} //apontar para a tela de criação de conta
+            onPress={() => navigation.navigate('Address')} 
           >
             Crie sua conta
     </Text>

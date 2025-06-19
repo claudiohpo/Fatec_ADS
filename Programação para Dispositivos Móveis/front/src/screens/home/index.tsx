@@ -2,7 +2,6 @@ import { StatusBar } from "expo-status-bar";
 import { View, Text, Image, Alert, ActivityIndicator } from "react-native";
 import { styles } from "./styles";
 import IllustrationImg from "../../../assets/Ilustration.png";
-//import logoSmall from '../../assets/LogoSmall.png';
 import { ButtonWhite } from "../../components/ButtonWhite";
 import { Background } from "../../components/Background";
 import { useNavigation, useFocusEffect } from "@react-navigation/native";
@@ -13,7 +12,6 @@ export function Home() {
 
   const handleNavigate = () => {
     navigation.navigate("SignIn");
-    // navigation.goBack();
   };
 
   return (

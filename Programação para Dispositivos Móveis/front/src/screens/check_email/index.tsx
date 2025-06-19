@@ -49,43 +49,4 @@ export function CheckEmail() {
       </View>
     
   );
-  
-  
-  
-  
-  /*return (
-    <View style={styles.container}>
-      <Image 
-        source={logoSmall} 
-        style={styles.imageLogo} 
-        resizeMode="stretch" />
-
-      <Text 
-        style={styles.title}>
-          Confira seu e-mail {"\n"}
-      </Text>
-
-      <Image 
-        source={EmailImg} 
-        style={styles.image} 
-        resizeMode="stretch" />
-
-      <View style={styles.controlsbutons}>
-        
-      </View>
-
-      <View style={styles.content}>
-        <Text 
-          style={styles.subtitle}>
-          Enviamos as instruções em seu e-mail
-          para restaurar a sua senha. {"\n"}
-        </Text>
-
-        <Button 
-          title="Entrar" 
-          onPress={handleNavigateSignIn} />
-        <Text>{"\n"}</Text>
-      </View>
-    </View>
-  );*/
 }
