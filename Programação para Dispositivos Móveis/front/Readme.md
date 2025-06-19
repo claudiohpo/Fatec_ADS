@@ -101,6 +101,8 @@ Use um emulador ou o **Expo Go** no seu dispositivo móvel para testar.
 
 ## 👨‍💻 Autor
 
-**Cláudio Oliveira**  
-📧 claudio.oliveira@example.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/claudio-oliveira)
+**Cláudio Henrique P. Oliveira**  
+📧 claudiohpo@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/claudiohpo/)
+
+---
