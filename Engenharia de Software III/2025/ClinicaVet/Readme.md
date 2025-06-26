@@ -1,4 +1,4 @@
-# 🐾 Clínica Veterinária – Projeto de Software (Engenharia de Software III)
+# 🐾 Clínica Veterinária – Projeto de Software
 
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
