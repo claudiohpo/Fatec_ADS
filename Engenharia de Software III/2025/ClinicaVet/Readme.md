@@ -151,7 +151,7 @@ ClinicaVet/
 4. **Cadastro de Pet**: selecione dono, informe dados do pet e clique em "Cadastrar Pet".  
 5. **Agendamento de Consulta**: escolha pet, data, hora, descritivo e clique em "Salvar Agendamento". 
 6. **Receituário**:  escolha pet, veterinário, adicione diagnóstico, medicamentos prescritos, data do atendimento e clique em "Salvar Receituário".
-7. **Cadsatro de Medicamentos**: preencha dados e clique em "Cadastrar Medicamento". 
+7. **Cadastro de Medicamentos**: preencha os dados e clique em "Cadastrar Medicamento". 
 
 
 ---
