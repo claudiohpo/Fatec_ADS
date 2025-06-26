@@ -1,0 +1,24 @@
+<section class="view">
+    <h2>Agendamento de Consultas</h2>
+    <form id="formAgendamento" class="form-style">
+        <div class="form-group">
+            <select name="petId" required>
+                <option value="">Selecione um pet...</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select name="veterinarianId" required>
+                <option value="">Selecione um veterinário...</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <textarea name="anamnese" id="descricao" placeholder="Informe os sintomas relatados pelo Dono do pet" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="date">Data do Agendamento</label>
+            <input type="datetime-local" name="date" id="date" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar Agendamento</button>
+        <button type="button" id="btn-list-agendamentos">Listar Agendamentos</button>
+    </form>
+</section>

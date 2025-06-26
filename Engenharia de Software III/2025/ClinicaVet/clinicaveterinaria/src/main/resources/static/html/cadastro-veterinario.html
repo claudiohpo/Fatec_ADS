@@ -1,0 +1,23 @@
+<section class="view">
+    <h2>Cadastro de Veterinário</h2>
+    <form id="formVet" class="form-style">
+        <div class="form-group">
+            <input type="text" name="nome" placeholder="Nome do Veterinário" required />
+        </div>
+        <div class="form-group">
+            <input type="text" name="crmv" placeholder="CRMV" required />
+        </div>
+        <div class="form-group">
+            <input type="text" name="especialidade" placeholder="Especialidade" required />
+        </div>
+        <div class="form-group">
+            <input type="text" name="telefone" placeholder="Telefone" required />
+        </div>
+        <div class="form-group" style="text-align: left; width: 100%;">
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input id="dataNascimento" type="date" name="dataNascimento" required />
+        </div>
+        <button type="submit" class="btn">Cadastrar Veterinário</button>
+        <button type="button" id="btn-list-veterinarios">Listar Veterinários</button>
+    </form>
+</section>

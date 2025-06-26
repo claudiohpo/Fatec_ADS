@@ -1,0 +1,300 @@
+:root {
+    --azul: #0044cc;
+    --amarelo: #ffcc00;
+    --branco: #ffffff;
+    --cinza-claro: #f4f4f4;
+    --texto: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--texto);
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.button-group button {
+    background-color: var(--amarelo);
+    color: var(--azul);
+    border: 2px solid var(--azul);
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-group button:hover,
+.button-group button.active {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+/* Main content */
+
+main {
+    flex: 1;
+    padding: 40px 0;
+}
+
+/* View geral */
+
+.view {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--branco);
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view.hidden {
+    display: none;
+}
+
+.view h2 {
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+    color: var(--azul);
+}
+
+/* Formulário */
+
+.view form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Agrupamento dos inputs  */
+
+.view form .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* Label para inputs */
+
+.view form .form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--azul);
+}
+
+/* Inputs, selects, textarea */
+
+.view form input,
+.view form select,
+.view form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--azul);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s ease;
+    resize: vertical;
+}
+
+.view form input:focus,
+.view form select:focus,
+.view form textarea:focus {
+    outline: none;
+    border-color: var(--amarelo);
+    box-shadow: 0 0 5px var(--amarelo);
+}
+
+/* Botão */
+
+.view form button {
+    background-color: var(--amarelo);
+    color: var(--azul);
+    border: 2px solid var(--azul);
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+}
+
+.view form button:hover {
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Textarea ajustes */
+
+textarea {
+    min-height: 100px;
+}
+
+.view img {
+    display: block;
+    margin: 20px auto 0;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.table thead {
+    background-color: #f4f4f4;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.btn-action {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.view.table-view {
+    max-width: none;
+    width: 100%;
+    padding: 30px 25px;
+}
+
+/* Centralizar o cabeçalho do título: */
+.view.table-view h2 {
+    text-align: center;
+}
+
+/* E garantir que a tabela escale */
+.view.table-view .table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Centraliza só a última coluna (Ações) */
+.table td:last-child {
+    text-align: center;
+}
+
+/* Botões de ação arredondados */
+.btn-action {
+    display: inline-block;
+    margin: 0.25rem 0;
+    border-radius: 0.5rem;
+}
+
+/* Ajuste interno nos botões */
+.btn-action {
+    padding: 0.5em 1em;
+}
+
+/* Estilo para a opção desabilitada simulando o placeholder */
+select:invalid,
+input[type="date"]:invalid {
+    color: #888;
+}
+
+/* Opções válidas com a cor preta */
+select option,
+input[type="date"] {
+    color: #000;
+}
+
+/* Estilo inicial (sem valor) - cinza */
+input:invalid {
+    color: #888;
+}
+
+/* Quando o campo tem valor (válido) - preto */
+input:valid {
+    color: #000;
+}
+
+/* Placeholder cinza para selects */
+select:invalid {
+    color: #888;
+}
+
+/* Quando selecionado um valor (válido), volta ao preto */
+select:valid {
+    color: #000;
+}

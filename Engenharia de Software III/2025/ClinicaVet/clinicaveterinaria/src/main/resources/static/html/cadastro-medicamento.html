@@ -1,0 +1,22 @@
+<section class="view">
+    <h2>Cadastro de Medicamento</h2>
+    <form id="formMedicamento" class="form-style">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Nome do Medicamento" required />
+        </div>
+        <div class="form-group">
+            <input type="text" name="manufacturer" placeholder="Fabricante" required />
+        </div>
+        <div class="form-group">
+            <input type="number" name="dosage" placeholder="Dosagem" step="0.01" required />
+        </div>
+        <div class="form-group">
+            <input type="text" name="unit" placeholder="Unidade (mg, ml...)" required />
+        </div>
+        <div class="form-group">
+            <input type="number" name="stock" placeholder="Quantidade em Estoque" required />
+        </div>
+        <button type="submit" class="btn">Cadastrar Medicamento</button>
+        <button type="button" id="btn-list-medicamentos">Listar Medicamentos</button>
+    </form>
+</section>
