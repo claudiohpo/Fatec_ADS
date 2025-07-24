@@ -11,7 +11,7 @@ public class MongoDBConnection {
     private MongoDatabase database;
 
     private MongoDBConnection() {
-        String uri = "mongodb+srv://fatecADS:fatec123@clinicavet.nsgakn6.mongodb.net/?retryWrites=true&w=majority&appName=ClinicaVet";
+        String uri = "Insira aqui sua chave de conexão com banco de dados";
         client = MongoClients.create(uri);
         database = client.getDatabase("ClinicaVet");
     }
